@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /crm/
+Disallow: /sql/
+
+Sitemap: https://estudevet.com.br/sitemap.xml

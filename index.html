@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EstudeVet · Ferramentas para a rotina veterinária</title>
+<meta name="description" content="Planilhas, agendas e materiais prontos para veterinários autônomos e clínicas. Conte o seu caso pelo WhatsApp e veja o que resolve.">
+<meta name="theme-color" content="#1c1e1d">
+<link rel="icon" href="data:image/png;base64,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">
+<meta property="og:title" content="EstudeVet · Ferramentas para a rotina veterinária">
+<meta property="og:description" content="Planilhas, agendas e materiais prontos para veterinários. Conte o seu caso e eu digo o que resolve.">
+<meta property="og:type" content="website">
+<style>
+/* ===================== tokens ===================== */
+:root{
+  --grafite:#292827; --grafite-2:#1b1a19; --grafite-3:#3d3b39;
+  --verde:#30a560; --verde-2:#26874e; --verde-3:#7ad9a3; --verde-claro:#e7f5ec;
+  --ambar:#c9822f; --ambar-claro:#fbf1e2;
+  --bg:#f6f6f3; --surface:#fff; --surface-2:#eef0ec;
+  --ink:#1a1c1b; --ink-2:#565c58; --ink-3:#8a918c;
+  --rail:#1c1e1d; --rail-ink:#b6bdb8;
+  --line:#e3e6e1; --line-2:#eef1ee;
+  --r:14px; --r-lg:20px;
+  --sh:0 1px 2px rgba(26,28,27,.05);
+  --sh-md:0 14px 30px -18px rgba(26,28,27,.4);
+  --sh-lg:0 30px 70px -30px rgba(26,28,27,.5);
+  --mk-escuro:var(--ink); --mk-verde:var(--verde); --mk-contorno:#fff;
+  --topo:60px;
+  --mola:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--topo) + 18px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.6 'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body.travado{overflow:hidden}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,select,textarea{font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+h1,h2,h3{margin:0;letter-spacing:-.034em;font-weight:800;text-wrap:balance}
+p{margin:0 0 12px}
+.hide{display:none !important}
+
+/* ===================== animação de entrada ===================== */
+.rev{opacity:0;transform:translateY(18px)}
+.rev.vi{opacity:1;transform:none;transition:opacity .62s var(--mola),transform .62s var(--mola);
+  transition-delay:calc(var(--i,0) * 70ms)}
+
+/* ===================== portão de entrada ===================== */
+#portao{position:fixed;inset:0;z-index:90;overflow:auto;
+  background:linear-gradient(152deg,#1e201f 0%,#1d3325 52%,#15402c 100%);
+  display:grid;place-items:center;padding:24px 16px}
+#portao.saiu{opacity:0;pointer-events:none;transform:scale(1.02);
+  transition:opacity .45s var(--mola),transform .45s var(--mola)}
+.pt-brilho{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.pt-brilho.a{width:420px;height:420px;background:rgba(48,165,96,.36);top:-150px;right:-120px;
+  animation:flutua 18s ease-in-out infinite}
+.pt-brilho.b{width:320px;height:320px;background:rgba(201,130,47,.2);bottom:-160px;left:-80px;
+  animation:flutua 23s ease-in-out infinite reverse}
+.pt-caixa{position:relative;width:min(1020px,100%);display:grid;grid-template-columns:1fr 1fr;
+  gap:0;background:var(--surface);border-radius:26px;overflow:hidden;box-shadow:var(--sh-lg)}
+.pt-esq{background:transparent;color:#e9ede9;padding:44px 40px;display:flex;flex-direction:column;
+  justify-content:center;position:relative}
+.pt-esq::before{content:"";position:absolute;inset:0;
+  background:linear-gradient(160deg,#242626 0%,#1f3628 60%,#17422e 100%)}
+.pt-esq > *{position:relative}
+.pt-marca{display:flex;align-items:center;gap:11px;margin-bottom:30px}
+.pt-marca .mk{width:42px;height:auto;--mk-escuro:#3d3b39;--mk-contorno:#fff}
+.pt-marca b{color:#fff;font-size:19px;letter-spacing:-.035em;font-weight:800}
+.pt-marca b i{font-style:normal;color:var(--verde)}
+.pt-esq h1{color:#fff;font-size:clamp(25px,3.2vw,32px);line-height:1.13;margin-bottom:14px}
+.pt-esq h1 i{font-style:normal;color:var(--verde-3)}
+.pt-esq p{color:#b6c6bb;font-size:16px;max-width:40ch;margin-bottom:24px}
+.pt-lista{list-style:none;padding:0;margin:0;display:grid;gap:13px}
+.pt-lista li{display:flex;gap:12px;align-items:flex-start;color:#cfdcd4;font-size:14.5px;line-height:1.5}
+.pt-lista .v{width:22px;height:22px;border-radius:7px;background:rgba(122,217,163,.17);
+  color:var(--verde-3);display:grid;place-items:center;flex:none;font-size:12px;font-weight:800;margin-top:1px}
+.pt-rodape{margin-top:30px;color:#8ba296;font-size:12.5px;line-height:1.55}
+
+.pt-dir{padding:40px 38px;display:flex;flex-direction:column;justify-content:center}
+.pt-dir h2{font-size:21px;margin-bottom:6px}
+.pt-dir .ab{color:var(--ink-2);font-size:14.5px;margin-bottom:22px}
+.pt-passo{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--verde-2);
+  font-weight:800;margin-bottom:9px}
+.pt-opc{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:18px}
+.pt-opc label{display:flex;align-items:center;gap:9px;border:1.5px solid var(--line);border-radius:12px;
+  padding:13px;cursor:pointer;font-size:13.5px;font-weight:600;transition:.16s;background:var(--surface)}
+.pt-opc label:hover{border-color:var(--verde);transform:translateY(-1px)}
+.pt-opc input{accent-color:var(--verde);width:16px;height:16px;flex:none}
+.pt-opc label:has(input:checked){border-color:var(--verde);background:var(--verde-claro);color:var(--verde-2)}
+.pt-dir .campo{margin-bottom:13px}
+.opcional{font-weight:500;color:var(--ink-3)}
+.pt-enviar{width:100%;background:var(--verde);color:#fff;padding:16px;border-radius:13px;
+  font-weight:800;font-size:16px;box-shadow:0 14px 28px -14px var(--verde);margin-top:6px;
+  transition:transform .18s var(--mola),background .18s;display:flex;align-items:center;
+  justify-content:center;gap:9px}
+.pt-enviar:hover{background:var(--verde-2);transform:translateY(-2px)}
+.pt-enviar:disabled{opacity:.6;transform:none;cursor:wait}
+.pt-enviar svg{width:17px;height:17px;fill:currentColor}
+.pt-nota{font-size:12px;color:var(--ink-3);text-align:center;margin:12px 0 0;line-height:1.5}
+
+@media (max-width:860px){
+  /* No celular o portão vira uma coluna só que rola por inteiro. Grid com
+     place-items aqui fazia o conteúdo passar da altura da tela e sumir.   */
+  #portao{display:block;padding:0}
+  .pt-caixa{display:block;width:100%;border-radius:0;box-shadow:none;min-height:100vh}
+  .pt-esq{padding:30px 22px 26px}
+  .pt-esq h1{font-size:25px}
+  .pt-lista{gap:10px}
+  .pt-rodape{display:none}
+  .pt-dir{padding:26px 22px 40px}
+  .pt-opc{grid-template-columns:1fr 1fr;gap:8px}
+  .pt-opc label{padding:12px 10px;font-size:12.5px}
+}
+
+/* saudação no topo depois que a pessoa entra */
+.ola{color:#9fb0a6;font-size:13px;white-space:nowrap}
+.ola b{color:#fff;font-weight:700}
+@media (max-width:640px){.ola{display:none}}
+
+/* ===================== topo ===================== */
+.topo{position:fixed;inset:0 0 auto 0;height:var(--topo);z-index:40;
+  background:rgba(28,30,29,.92);backdrop-filter:saturate(150%) blur(10px);
+  display:flex;align-items:center;gap:12px;padding:0 16px;
+  border-bottom:1px solid rgba(255,255,255,.07)}
+.topo .mk{width:34px;height:auto;flex:none;--mk-escuro:#3d3b39;--mk-contorno:#fff}
+.topo b{color:#fff;font-size:17px;letter-spacing:-.035em;font-weight:800}
+.topo b i{font-style:normal;color:var(--verde)}
+.topo .sp{flex:1}
+.zap{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:#fff;
+  padding:10px 16px;border-radius:11px;font-weight:700;font-size:13.5px;white-space:nowrap;
+  transition:transform .18s var(--mola),background .18s}
+.zap:hover{background:var(--verde-2);transform:translateY(-1px)}
+.zap:active{transform:none}
+.zap svg{width:16px;height:16px;fill:currentColor;flex:none}
+
+/* ===================== estrutura ===================== */
+.app{display:grid;grid-template-columns:232px 1fr;padding-top:var(--topo);
+  max-width:1280px;margin:0 auto;align-items:start}
+.trilho{position:sticky;top:var(--topo);padding:26px 14px;display:flex;flex-direction:column;gap:3px}
+.trilho a{display:flex;align-items:center;gap:11px;padding:10px 13px;border-radius:11px;
+  font-size:14px;color:var(--ink-2);font-weight:500;transition:.16s}
+.trilho a:hover{background:var(--surface-2);color:var(--ink)}
+.trilho a.on{background:var(--surface);color:var(--ink);font-weight:700;box-shadow:var(--sh);
+  border:1px solid var(--line)}
+.trilho .n{width:22px;height:22px;border-radius:7px;background:var(--surface-2);color:var(--ink-3);
+  display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;transition:.16s}
+.trilho a.on .n{background:var(--verde);color:#fff}
+.trilho .rot{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:700;padding:16px 13px 7px}
+.conteudo{padding:26px 20px 90px;min-width:0}
+section{margin-bottom:38px;scroll-margin-top:calc(var(--topo) + 18px)}
+.rot-sec{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:700;margin:0 0 11px;display:flex;align-items:center;gap:9px}
+.rot-sec::before{content:"";width:16px;height:2px;border-radius:2px;background:var(--verde)}
+
+.painel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:26px;box-shadow:var(--sh)}
+.painel h2{font-size:21px;margin-bottom:8px}
+.painel .sub{color:var(--ink-2);font-size:15px;margin:0}
+
+/* ===================== abertura ===================== */
+.abertura{position:relative;overflow:hidden;border:0;color:#e9ede9;padding:40px 32px;
+  background:linear-gradient(152deg,#232524 0%,#20372a 55%,#17422e 100%)}
+.abertura .brilho{position:absolute;border-radius:50%;filter:blur(64px);pointer-events:none}
+.brilho.a{width:380px;height:380px;background:rgba(48,165,96,.42);top:-140px;right:-90px;
+  animation:flutua 17s ease-in-out infinite}
+.brilho.b{width:300px;height:300px;background:rgba(201,130,47,.22);bottom:-150px;left:10%;
+  animation:flutua 21s ease-in-out infinite reverse}
+@keyframes flutua{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-26px,22px) scale(1.14)}}
+.abertura .selo-mk{position:absolute;right:-30px;bottom:-40px;width:290px;opacity:.06;
+  --mk-escuro:#fff;--mk-contorno:transparent;pointer-events:none}
+.abertura .dentro{position:relative}
+.abertura h1{color:#fff;font-size:clamp(26px,4.6vw,37px);line-height:1.1;margin-bottom:13px;max-width:20ch}
+.abertura h1 i{font-style:normal;color:var(--verde-3)}
+.abertura p{color:#b6c6bb;font-size:16.5px;max-width:54ch}
+.selos{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.selos span{font-size:12.5px;background:rgba(122,217,163,.13);border:1px solid rgba(122,217,163,.3);
+  color:#a9e3c1;padding:6px 13px;border-radius:99px;font-weight:600}
+.abertura .acoes{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}
+.btn-claro{background:#fff;color:var(--grafite);padding:12px 20px;border-radius:12px;
+  font-weight:700;font-size:14.5px;transition:transform .18s var(--mola),box-shadow .18s;
+  box-shadow:0 10px 24px -14px rgba(0,0,0,.7)}
+.btn-claro:hover{transform:translateY(-2px)}
+.btn-vazado{border:1.5px solid rgba(255,255,255,.28);color:#dfe8e2;padding:12px 20px;
+  border-radius:12px;font-weight:700;font-size:14.5px;transition:.18s}
+.btn-vazado:hover{border-color:var(--verde-3);color:#fff}
+
+/* ===================== vitrine ===================== */
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(252px,1fr));gap:17px}
+.prod{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh);text-align:left;
+  transition:transform .26s var(--mola),box-shadow .26s,border-color .2s;width:100%;padding:0}
+.prod:hover{transform:translateY(-5px);box-shadow:var(--sh-md);border-color:var(--verde)}
+.capa{height:146px;flex:none;position:relative;overflow:hidden;background:var(--surface-2)}
+.capa img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s var(--mola)}
+.prod:hover .capa img{transform:scale(1.07)}
+.capa .fundo{position:absolute;inset:0;display:grid;place-items:center}
+.capa .sigla{font-size:34px;font-weight:800;letter-spacing:-.07em;color:#fff;opacity:.9}
+.capa .brilho-capa{position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 42%,rgba(20,22,21,.62) 100%)}
+.capa .abrir{position:absolute;left:13px;bottom:11px;color:#fff;font-size:12.5px;font-weight:700;
+  display:flex;align-items:center;gap:6px;opacity:0;transform:translateY(7px);
+  transition:.26s var(--mola)}
+.prod:hover .capa .abrir{opacity:1;transform:none}
+.capa .abrir svg{width:14px;height:14px;fill:currentColor}
+.n-fotos{position:absolute;right:11px;top:11px;background:rgba(20,22,21,.72);color:#fff;
+  font-size:11px;font-weight:700;padding:4px 9px;border-radius:99px;backdrop-filter:blur(4px)}
+.prod-corpo{padding:17px 18px 18px;display:flex;flex-direction:column;flex:1}
+.prod h3{font-size:16px;margin-bottom:5px;line-height:1.25}
+.prod .desc{color:var(--ink-2);font-size:13.5px;margin:0 0 15px}
+.prod .pe{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.etq{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:5px 11px;border-radius:99px;background:var(--verde-claro);color:var(--verde-2);white-space:nowrap}
+.ver{font-size:13px;font-weight:700;color:var(--verde-2);display:flex;align-items:center;gap:5px}
+.ver svg{width:13px;height:13px;fill:currentColor;transition:transform .22s var(--mola)}
+.prod:hover .ver svg{transform:translateX(3px)}
+.carregando{color:var(--ink-3);font-size:14px;padding:30px 0;text-align:center;
+  grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:11px}
+.giro{width:17px;height:17px;border:2.5px solid var(--line);border-top-color:var(--verde);
+  border-radius:50%;animation:gira .8s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+/* ===================== modal do produto ===================== */
+.veu{position:fixed;inset:0;z-index:70;background:rgba(18,20,19,.62);backdrop-filter:blur(5px);
+  display:grid;place-items:center;padding:26px;opacity:0;pointer-events:none;transition:.24s}
+.veu.on{opacity:1;pointer-events:auto}
+.folha{background:var(--surface);border-radius:24px;width:min(940px,100%);max-height:88vh;
+  overflow:auto;box-shadow:var(--sh-lg);transform:translateY(22px) scale(.985);
+  transition:transform .32s var(--mola)}
+.veu.on .folha{transform:none}
+.folha-grade{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}
+.fechar{position:absolute;right:16px;top:16px;z-index:5;width:38px;height:38px;border-radius:12px;
+  background:rgba(20,22,21,.62);color:#fff;display:grid;place-items:center;font-size:17px;
+  backdrop-filter:blur(6px);transition:.16s}
+.fechar:hover{background:rgba(20,22,21,.85)}
+
+.galeria{position:relative;background:var(--grafite-2);display:flex;flex-direction:column;min-height:100%}
+.tela{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+  flex:1;min-height:330px;background:var(--grafite-2)}
+.tela::-webkit-scrollbar{display:none}
+.tela figure{margin:0;min-width:100%;scroll-snap-align:center;position:relative;
+  display:grid;place-items:center;background:var(--grafite-2);overflow:hidden}
+.tela figure img{width:100%;height:100%;object-fit:cover;display:block}
+.tela figure figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 18px 14px;
+  background:linear-gradient(180deg,transparent,rgba(16,18,17,.88));color:#e9ede9;font-size:13px}
+.vazio-galeria{min-width:100%;display:grid;place-items:center;text-align:center;padding:30px;
+  color:#9aa49d;font-size:13.5px;line-height:1.6}
+.vazio-galeria .sigla-g{font-size:52px;font-weight:800;letter-spacing:-.07em;color:#fff;
+  opacity:.9;margin-bottom:12px}
+.seta{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.9);color:var(--grafite);display:grid;place-items:center;
+  font-size:17px;font-weight:700;box-shadow:0 6px 16px -8px rgba(0,0,0,.6);transition:.16s}
+.seta:hover{background:#fff;transform:translateY(-50%) scale(1.07)}
+.seta.esq{left:12px} .seta.dir{right:12px}
+.pontos{display:flex;gap:7px;justify-content:center;padding:13px 0;background:var(--grafite-2)}
+.pontos b{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.28);
+  transition:.2s;cursor:pointer}
+.pontos b.on{background:var(--verde);width:20px;border-radius:99px}
+
+.folha-txt{padding:30px;display:flex;flex-direction:column}
+.folha-txt .etq{align-self:flex-start;margin-bottom:12px}
+.folha-txt h3{font-size:24px;line-height:1.16;margin-bottom:9px}
+.folha-txt .sub-m{color:var(--ink-2);font-size:15px;margin:0 0 16px}
+.folha-txt .desc-m{color:var(--ink-2);font-size:14.5px;margin:0 0 18px}
+.pontos-lista{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:9px}
+.pontos-lista li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ink-2)}
+.pontos-lista .v{width:19px;height:19px;border-radius:6px;background:var(--verde-claro);
+  color:var(--verde-2);display:grid;place-items:center;flex:none;font-size:11px;font-weight:800;margin-top:2px}
+.folha-txt .rodape-m{margin-top:auto;padding-top:6px}
+.zap-largo{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+  background:var(--verde);color:#fff;padding:15px;border-radius:13px;font-weight:800;font-size:15.5px;
+  box-shadow:0 12px 26px -14px var(--verde);transition:transform .18s var(--mola),background .18s}
+.zap-largo:hover{background:var(--verde-2);transform:translateY(-2px)}
+.zap-largo svg{width:19px;height:19px;fill:currentColor}
+.dica-m{font-size:12px;color:var(--ink-3);text-align:center;margin:10px 0 0}
+
+/* ===================== formulário ===================== */
+.campo{margin-bottom:15px}
+.campo label{display:block;font-size:12.5px;font-weight:700;margin-bottom:6px;color:var(--ink-2)}
+.campo input,.campo select,.campo textarea{width:100%;padding:12px 14px;border-radius:11px;
+  border:1.5px solid var(--line);background:var(--surface);outline:none;transition:.16s}
+.campo textarea{min-height:122px;resize:vertical}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--verde);
+  box-shadow:0 0 0 3.5px var(--verde-claro)}
+.campo .dica{font-size:12px;color:var(--ink-3);margin:6px 0 0}
+.dupla{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opcoes{display:grid;grid-template-columns:repeat(auto-fit,minmax(152px,1fr));gap:9px}
+.opcoes label{display:flex;align-items:center;gap:9px;border:1.5px solid var(--line);border-radius:11px;
+  padding:12px 13px;cursor:pointer;font-size:13.5px;font-weight:600;transition:.16s;background:var(--surface)}
+.opcoes label:hover{border-color:var(--verde);transform:translateY(-1px)}
+.opcoes input{accent-color:var(--verde);width:16px;height:16px;flex:none}
+.opcoes label:has(input:checked){border-color:var(--verde);background:var(--verde-claro);color:var(--verde-2)}
+.enviar{width:100%;background:var(--verde);color:#fff;padding:16px;border-radius:13px;
+  font-weight:800;font-size:15.5px;box-shadow:0 12px 26px -14px var(--verde);
+  transition:transform .18s var(--mola),background .18s;
+  display:flex;align-items:center;justify-content:center;gap:9px}
+.enviar:hover{background:var(--verde-2);transform:translateY(-2px)}
+.enviar:disabled{opacity:.6;transform:none;cursor:wait}
+.enviar svg{width:19px;height:19px;fill:currentColor}
+.nota-privacidade{font-size:12px;color:var(--ink-3);text-align:center;margin:11px 0 0;line-height:1.5}
+.mel{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+/* ===================== passos e limites ===================== */
+.passos{display:grid;gap:2px}
+.passo{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line-2)}
+.passo:last-child{border-bottom:0}
+.passo .n{width:31px;height:31px;border-radius:10px;background:var(--verde-claro);color:var(--verde-2);
+  display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.passo b{display:block;font-size:14.5px;margin-bottom:2px}
+.passo span{color:var(--ink-2);font-size:13.5px}
+.limites p{font-size:14px;color:var(--ink-2);margin:0 0 13px;padding-left:14px;
+  border-left:2px solid var(--line)}
+.limites p:last-child{margin-bottom:0}
+.limites b{color:var(--ink)}
+
+.rodape{border-top:1px solid var(--line);padding:24px 0 0;color:var(--ink-3);font-size:13px;gap:8px 18px;flex-wrap:wrap;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.rodape a{color:var(--ink-2);font-weight:600}
+
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:45;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+  display:none;gap:11px;align-items:center;box-shadow:0 -12px 30px -22px rgba(0,0,0,.55)}
+.barra .txt{flex:1;min-width:0;font-size:12.5px;color:var(--ink-2);line-height:1.35}
+.barra .txt b{display:block;color:var(--ink);font-size:13.5px}
+
+#aviso{position:fixed;left:50%;bottom:88px;transform:translate(-50%,14px);background:var(--grafite);
+  color:#fff;padding:13px 20px;border-radius:13px;font-size:14px;z-index:80;opacity:0;
+  pointer-events:none;transition:.22s;width:calc(100% - 36px);max-width:400px;text-align:center}
+#aviso.on{opacity:1;transform:translate(-50%,0)}
+
+@media (max-width:900px){
+  .app{grid-template-columns:1fr}
+  .trilho{display:none}
+  .conteudo{padding:18px 16px 112px}
+  .abertura{padding:30px 20px}
+  .abertura .selo-mk{width:200px;right:-50px;bottom:-30px}
+  .painel{padding:20px}
+  .dupla{grid-template-columns:1fr}
+  .barra{display:flex}
+  .topo .zap{display:none}
+  .grade{grid-template-columns:repeat(auto-fill,minmax(214px,1fr));gap:13px}
+  .veu{padding:0;align-items:flex-end}
+  .folha{width:100%;max-height:94vh;border-radius:22px 22px 0 0}
+  .folha-grade{grid-template-columns:1fr}
+  .tela{min-height:0;aspect-ratio:16/11;flex:none}
+  .folha-txt{padding:22px 20px 26px}
+  .folha-txt h3{font-size:21px}
+  .seta{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important;scroll-behavior:auto !important}
+  .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mk" viewBox="0 0 580 440"><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-contorno,#fff)"><path d="M5139 4276 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1634 -566 -1794 -623 -3320 -1199 l-279 -106 -63 -62 -63 -62 62 -64
+c35 -35 132 -116 215 -179 84 -64 151 -118 149 -122 -10 -16 -296 -673 -296
+-679 0 -4 30 -37 68 -74 50 -49 82 -71 126 -87 164 -60 562 -224 568 -234 13
+-20 9 -90 -8 -146 -10 -36 -30 -69 -59 -100 l-44 -47 67 -67 c65 -64 72 -68
+247 -138 364 -144 747 -278 1086 -380 l141 -42 70 69 c38 38 94 99 123 135
+176 218 387 398 761 650 132 90 222 137 410 217 328 141 752 261 1194 341 235
+42 287 49 549 70 l234 19 68 68 69 68 -67 69 c-116 117 -162 135 -528 202
+-308 56 -570 97 -1200 185 -281 39 -516 73 -523 75 -11 4 298 297 723 685 775
+706 1156 1081 1424 1403 13 16 9 23 -49 82 -36 36 -67 65 -71 65 -3 0 -170
+-56 -370 -124z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-escuro,#292827)"><path d="M5139 4156 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1432 -496 -1807 -629 -2619 -935 -806 -304 -979 -369 -983 -374 -3 -3
+381 -296 434 -331 1 0 -67 -160 -153 -355 -85 -194 -153 -358 -151 -364 3 -6
+22 -17 43 -25 156 -55 644 -257 663 -274 85 -78 78 -237 -15 -337 -25 -27 -41
+-51 -36 -54 19 -12 376 -151 557 -218 213 -78 503 -175 716 -239 l142 -42 31
+35 c17 19 63 72 101 118 93 110 258 274 375 372 177 149 499 374 636 445 347
+180 873 345 1414 442 235 42 287 49 549 70 128 11 238 24 243 29 16 16 -57 59
+-145 87 -85 27 -333 75 -667 130 -202 32 -1184 174 -1460 210 -69 9 -132 19
+-140 21 -11 4 -3 17 31 47 25 23 201 186 390 362 189 176 425 394 524 485 674
+614 992 922 1198 1159 112 129 128 151 109 151 -5 0 -173 -56 -373 -124z
+m-2881 -1317 c65 -13 150 -65 179 -108 27 -39 30 -89 8 -131 -14 -28 -80 -79
+-119 -94 -16 -5 -12 -11 28 -38 97 -64 169 -196 169 -313 1 -211 -179 -385
+-400 -387 -120 -1 -215 37 -296 119 -176 177 -143 455 71 594 l44 28 -29 14
+c-70 37 -108 109 -91 173 15 58 100 123 185 143 54 13 193 13 251 0z m549
+-1163 c30 -54 53 -99 51 -101 -6 -5 -496 -274 -605 -333 -62 -33 -115 -57
+-117 -54 -23 38 -107 204 -105 206 2 2 121 68 264 146 143 79 298 165 345 192
+47 26 91 47 98 45 8 -1 38 -46 69 -101z"/><path d="M2035 2361 c-147 -66 -152 -281 -10 -355 54 -28 147 -29 194 -1 56
+33 93 87 99 144 7 72 -5 117 -41 158 -61 69 -160 92 -242 54z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-verde,#30a560)"><path d="M2040 2846 c-82 -15 -154 -51 -191 -95 -74 -91 -38 -179 101 -245 62
+-29 71 -31 185 -31 145 1 215 23 283 90 38 39 42 47 42 94 0 44 -5 56 -36 91
+-47 51 -126 88 -216 100 -87 11 -86 11 -168 -4z"/><path d="M2575 1698 c-88 -49 -247 -137 -352 -195 -106 -58 -193 -109 -193
+-113 0 -8 70 -145 97 -188 l14 -23 77 42 c214 115 628 343 636 350 8 7 -100
+220 -112 218 -4 -1 -79 -41 -167 -91z"/></g></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.2-1.3c1.4.8 3 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3c-.9-1.4-1.3-3-1.3-4.6C3.5 7.3 7.3 3.5 12 3.5S20.5 7.3 20.5 12 16.7 20.2 12 20.2z"/></symbol>
+  <symbol id="lupa" viewBox="0 0 24 24"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></symbol>
+  <symbol id="seta" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<div id="portao">
+  <span class="pt-brilho a"></span><span class="pt-brilho b"></span>
+  <div class="pt-caixa">
+
+    <div class="pt-esq">
+      <div class="pt-marca">
+        <svg class="mk" viewBox="0 0 580 440" role="img" aria-label="EstudeVet"><use href="#mk"/></svg>
+        <b>Estude<i>Vet</i></b>
+      </div>
+      <h1>Me diz quem você é e eu te mostro <i>o que resolve o seu caso</i></h1>
+      <p>Do outro lado desta página estão as ferramentas que eu já construí para
+         a rotina veterinária. Antes de te mostrar, quero saber com quem estou falando.</p>
+      <ul class="pt-lista">
+        <li><span class="v">1</span><span>Você vê tudo que já existe, com as telas de cada material</span></li>
+        <li><span class="v">2</span><span>Se algum servir, você me pergunta em um toque</span></li>
+        <li><span class="v">3</span><span>Se nenhum servir, você descreve o seu caso e eu respondo se dá para fazer</span></li>
+      </ul>
+      <p class="pt-rodape">Quem responde sou eu, pelo WhatsApp. Não existe robô, não existe fila
+         e você não vai receber disparo em massa.</p>
+    </div>
+
+    <div class="pt-dir">
+      <p class="pt-passo">Leva vinte segundos</p>
+      <h2>Quem está do outro lado?</h2>
+      <p class="ab">Pergunto isso porque a conversa com quem atende em domicílio é diferente
+         da conversa com quem toca uma clínica.</p>
+
+      <div class="campo">
+        <label>Você é</label>
+        <div class="pt-opc" id="pt-perfil">
+          <label><input type="radio" name="ptpf" value="Veterinário autônomo" checked><span>Veterinário autônomo</span></label>
+          <label><input type="radio" name="ptpf" value="Dono ou gestor de clínica"><span>Dono ou gestor de clínica</span></label>
+          <label><input type="radio" name="ptpf" value="Recém-formado"><span>Recém-formado</span></label>
+          <label><input type="radio" name="ptpf" value="Outro"><span>Outro</span></label>
+        </div>
+      </div>
+
+      <div class="campo"><label for="pt_nome">Seu nome</label>
+        <input id="pt_nome" autocomplete="name" placeholder="Como você quer ser chamado"></div>
+
+      <div class="campo"><label for="pt_zap">Seu WhatsApp</label>
+        <input id="pt_zap" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(79) 99999 9999">
+        <p class="dica">É por aqui que eu respondo. Não mando nada sem você falar comigo antes.</p></div>
+
+      <div class="campo"><label for="pt_email">E-mail <span class="opcional">(opcional)</span></label>
+        <input id="pt_email" type="email" autocomplete="email" placeholder="Só se você preferir por e-mail"></div>
+
+      <input class="mel" type="text" id="pt_site" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button class="pt-enviar" id="pt-entrar">
+        Ver os materiais
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#seta"/></svg>
+      </button>
+      <p class="pt-nota" id="pt-nota"></p>
+    </div>
+
+  </div>
+</div>
+
+<header class="topo">
+  <svg class="mk" viewBox="0 0 580 440" role="img" aria-label="EstudeVet"><use href="#mk"/></svg>
+  <b>Estude<i>Vet</i></b>
+  <span class="sp"></span>
+  <span class="ola hide" id="ola"></span>
+  <a class="zap" href="#falar"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Falar comigo</a>
+</header>
+
+<div class="app">
+
+  <nav class="trilho" id="trilho">
+    <span class="rot">Navegar</span>
+    <a href="#inicio"  data-s="inicio"><span class="n">1</span>Início</a>
+    <a href="#vitrine" data-s="vitrine"><span class="n">2</span>O que já existe</a>
+    <a href="#falar"   data-s="falar"><span class="n">3</span>Me conta o seu caso</a>
+    <a href="#como"    data-s="como"><span class="n">4</span>Como funciona</a>
+    <a href="#limites" data-s="limites"><span class="n">5</span>O que fica de fora</a>
+  </nav>
+
+  <main class="conteudo">
+
+    <section id="inicio">
+      <div class="painel abertura rev">
+        <span class="brilho a"></span><span class="brilho b"></span>
+        <svg class="selo-mk" viewBox="0 0 580 440" aria-hidden="true"><use href="#mk"/></svg>
+        <div class="dentro">
+          <h1>Ferramentas prontas para a rotina veterinária, e o que <i>ainda não existe</i> eu faço para você</h1>
+          <p>Planilhas, agendas e materiais que eu já construí estão logo abaixo. Se nenhum resolve
+             o seu caso, me conta o que trava o seu dia e eu respondo dizendo se dá para resolver,
+             como, e quanto custa.</p>
+          <div class="selos">
+            <span>Feito para autônomo e para clínica</span>
+            <span>Resposta pelo WhatsApp</span>
+            <span>Sem cadastro para falar comigo</span>
+          </div>
+          <div class="acoes">
+            <a class="btn-claro" href="#vitrine">Ver o que já existe</a>
+            <a class="btn-vazado" href="#falar">Contar o meu caso</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vitrine">
+      <p class="rot-sec rev">O que já existe</p>
+      <div class="painel rev" style="margin-bottom:17px">
+        <h2>A vitrine</h2>
+        <p class="sub">Toque em qualquer um para abrir e ver as telas, como ele funciona na prática
+           e para quem serve. De lá você me pergunta direto no WhatsApp.</p>
+      </div>
+      <div class="grade" id="grade">
+        <div class="carregando"><span class="giro"></span>Carregando a vitrine</div>
+      </div>
+    </section>
+
+    <section id="falar">
+      <p class="rot-sec rev">Me conta o seu caso</p>
+      <div class="painel rev">
+        <h2>O que trava o seu dia?</h2>
+        <p class="sub" style="margin-bottom:20px" id="sub-falar">Escreva do seu jeito. Ao enviar, o
+           WhatsApp abre com a mensagem já escrita e você só confere e manda.</p>
+
+        <div class="campo">
+          <label for="f_caso">O que você precisa resolver</label>
+          <textarea id="f_caso" placeholder="Escreva do seu jeito. Por exemplo: atendo em domicílio em Aracaju e não sei se o preço que cobro pela viagem cobre o custo do carro. Ou: minha recepção perde ligação de preço e eu não sei o que ela está falando."></textarea>
+          <p class="dica">Quanto mais concreto, mais rápido eu digo se resolvo e como.</p>
+        </div>
+
+        <div class="campo">
+          <label for="f_prazo">Quando você precisa</label>
+          <select id="f_prazo">
+            <option>Sem pressa, quero entender primeiro</option>
+            <option>Nas próximas duas semanas</option>
+            <option>Este mês</option>
+            <option>É urgente</option>
+          </select>
+        </div>
+
+        <input class="mel" type="text" id="f_site" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button class="enviar" id="btn-enviar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+          Enviar pelo WhatsApp
+        </button>
+        <p class="nota-privacidade" id="nota-privacidade"></p>
+      </div>
+    </section>
+
+    <section id="como">
+      <p class="rot-sec rev">Como funciona</p>
+      <div class="painel rev">
+        <h2>Da sua mensagem até a solução</h2>
+        <p class="sub" style="margin-bottom:6px">Sem proposta de dez páginas e sem reunião para marcar reunião.</p>
+        <div class="passos">
+          <div class="passo"><span class="n">1</span><div><b>Você escreve o caso</b>
+            <span>Pelo formulário acima ou direto no WhatsApp, em dois minutos</span></div></div>
+          <div class="passo"><span class="n">2</span><div><b>Eu respondo com uma pergunta ou duas</b>
+            <span>O que faltou para eu entender o tamanho do problema</span></div></div>
+          <div class="passo"><span class="n">3</span><div><b>Digo se já existe pronto ou se dá para fazer</b>
+            <span>Se um material da vitrine resolve, eu falo. Você não paga por algo sob medida à toa</span></div></div>
+          <div class="passo"><span class="n">4</span><div><b>Escopo e preço por escrito</b>
+            <span>Com prazo e o que está incluído. Se não fizer sentido, não custa nada</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="limites">
+      <p class="rot-sec rev">O que fica de fora</p>
+      <div class="painel limites rev">
+        <h2>Prefiro dizer antes de você perder tempo</h2>
+        <p style="margin-top:14px"><b>Conduta clínica.</b> Diagnóstico, protocolo, dose e escolha de
+          tratamento não entram em nada que eu faço. Meu trabalho é comunicação, organização e gestão
+          do negócio.</p>
+        <p><b>Sistema de gestão de clínica.</b> Prontuário, ficha de paciente e faturamento são outro
+          tipo de produto. Se for isso que você precisa, me chama do mesmo jeito, que eu indico quem
+          faz bem.</p>
+        <p><b>Parecer contábil ou jurídico.</b> As planilhas são ferramentas de gestão, e os modelos
+          de documento são base para o seu contador ou advogado revisar.</p>
+      </div>
+      <div class="rodape">
+        <span>EstudeVet · Ferramentas para a rotina veterinária</span>
+        <a href="/diagnostico/">Fazer o diagnóstico</a>
+        <a href="#" id="link-zap-rodape">WhatsApp (74) 99999 1455</a>
+        <a href="/privacidade/">Política de privacidade</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="barra">
+  <div class="txt"><b>Fale comigo</b>Conte o seu caso e eu respondo</div>
+  <a class="zap" href="#falar"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Começar</a>
+</div>
+
+<div class="veu" id="veu" role="dialog" aria-modal="true" aria-labelledby="m-titulo">
+  <div class="folha" id="folha" style="position:relative">
+    <button class="fechar" id="m-fechar" aria-label="Fechar">✕</button>
+    <div class="folha-grade">
+      <div class="galeria">
+        <div class="tela" id="m-tela"></div>
+        <button class="seta esq" id="m-esq" aria-label="Foto anterior" style="transform:translateY(-50%) rotate(180deg)">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="#seta"/></svg></button>
+        <button class="seta dir" id="m-dir" aria-label="Próxima foto">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="#seta"/></svg></button>
+        <div class="pontos" id="m-pontos"></div>
+      </div>
+      <div class="folha-txt">
+        <span class="etq" id="m-etq">Material</span>
+        <h3 id="m-titulo">Produto</h3>
+        <p class="sub-m" id="m-sub"></p>
+        <p class="desc-m" id="m-desc"></p>
+        <ul class="pontos-lista" id="m-bullets"></ul>
+        <div class="rodape-m">
+          <button class="zap-largo" id="m-zap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+            Perguntar sobre isto
+          </button>
+          <p class="dica-m">Abre o WhatsApp com o nome deste material já escrito.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="aviso"></div>
+
+<script>
+const CONFIG = {
+  /* Número que recebe tudo. Com 55 e DDD, só dígitos. */
+  WHATSAPP: "5574999991455",
+
+  /* Supabase: a vitrine lê produtos publicados com a chave anônima.
+     A política "catalogo publicado" já libera essa leitura para visitante. */
+  SUPABASE_URL: "https://opuaaoccuzkbahuvwamf.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9wdWFhb2NjdXprYmFodXZ3YW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2MDQ0MjQsImV4cCI6MjEwNDE4MDQyNH0.egbaw_TfReccQCWyp_uwcN-mjzwjkDfIewZXj6R1jNA",
+
+  /* true = além de abrir o WhatsApp, grava o pedido na tabela leads. */
+  SALVAR_LEAD: true,
+
+  /* A vitrine não mostra preço de propósito: a conversa vem antes do valor. */
+  MOSTRAR_PRECO: false,
+
+  /* true = a pessoa se apresenta antes de ver a vitrine. Portão ganha lead e
+     perde visitante. Para medir sem ele, ponha false. */
+  PORTAO: true,
+};
+
+const $ = s => document.querySelector(s);
+const esc = t => String(t ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const so = t => String(t ?? '').replace(/\D/g, '');
+
+let td;
+function aviso(m){ const a = $('#aviso'); a.textContent = m; a.classList.add('on');
+  clearTimeout(td); td = setTimeout(() => a.classList.remove('on'), 3600); }
+
+function abrirZap(texto){
+  window.open(`https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+}
+
+const api = (caminho) => fetch(`${CONFIG.SUPABASE_URL}/rest/v1/${caminho}`, {
+  headers: { apikey: CONFIG.SUPABASE_ANON_KEY, Authorization: `Bearer ${CONFIG.SUPABASE_ANON_KEY}` }
+}).then(r => { if(!r.ok) throw new Error(r.status); return r.json(); });
+
+/* ===================== vitrine ===================== */
+
+/* Se o Supabase não responder, a vitrine cai nesta lista em vez de sumir. */
+const RESERVA = [
+  {slug:'precificacao-autonomo', nome:'Precificação do Vet Autônomo', cor:'#2f4f3f', tipo:'kit',
+   subtitulo:'Quanto cobrar por serviço e quanto cobrar pela distância',
+   descricao:'Calcula o seu custo por hora ocupada e por quilômetro rodado, devolve a taxa de deslocamento de cada região e monta a sua tabela de preço por zona.',
+   bullets:['Planilha em Excel com 6 abas','Taxa de deslocamento calculada por zona','Simulador que diz se o chamado compensa','Manual em PDF de 11 páginas']},
+  {slug:'rota-do-dia', nome:'Rota do Dia', cor:'#1f6e3f', tipo:'kit',
+   subtitulo:'Saiba se o chamado do outro lado da cidade vale a viagem',
+   descricao:'Aplicativo de arquivo único que roda offline. Monta o seu dia por região e responde, com número, se o chamado avulso compensa.',
+   bullets:['O dia montado por zona, com deslocamento','Alerta quando o horário não fecha','Preço mínimo que faz o chamado valer','Manual em PDF de 8 páginas']},
+  {slug:'agenda-de-retorno', nome:'Agenda de Retorno', cor:'#3d4541', tipo:'kit',
+   subtitulo:'Mostra todo dia quem precisa de mensagem, com o texto pronto',
+   descricao:'Você anota o atendimento em trinta segundos e ele avisa, no dia certo, quem precisa de retorno, com a mensagem já escrita e o nome do animal no lugar.',
+   bullets:['Roda offline, sem conta e sem mensalidade','Mensagens prontas com o nome do animal','Prazos que você configura uma vez','Backup em um clique']},
+  {slug:'orcamento-30s', nome:'Orçamento em 30 Segundos', cor:'#c9822f', tipo:'kit',
+   subtitulo:'Responda quanto custa sem parar o atendimento',
+   descricao:'Cadastre os seus serviços uma vez e monte o orçamento em trinta segundos, com texto pronto para o WhatsApp e PDF com o seu logo.',
+   bullets:['Catálogo de serviços cadastrado uma vez','Texto para WhatsApp e PDF com o seu logo','Validade automática em cada orçamento','Histórico e taxa de aceite']},
+  {slug:'kit-prompts-vet', nome:'30 Prompts para a Rotina Vet', cor:'#30a560', tipo:'kit',
+   subtitulo:'Pedidos prontos que fazem a IA falar como você',
+   descricao:'Trinta prompts em seis blocos, mais a ficha da clínica que faz a resposta sair com a sua voz em vez da voz de um assistente virtual.',
+   bullets:['30 prompts em 6 blocos de tarefa','Arquivo .txt para copiar e colar','A ficha da clínica que personaliza tudo','Funciona em qualquer IA de texto']},
+  {slug:'scripts-recepcao', nome:'Scripts de Atendimento para Recepção', cor:'#292827', tipo:'kit',
+   subtitulo:'As quinze conversas que mais aparecem no balcão',
+   descricao:'Quinze conversas escritas palavra por palavra, do "quanto custa?" no WhatsApp até a conversa mais difícil, para a pessoa nova atender bem na primeira semana.',
+   bullets:['15 scripts completos, palavra por palavra','Bloco de triagem, sem dar conduta','Simulador de treino com 6 perfis','Ficha de avaliação da ligação']},
+  {slug:'80-mensagens-tutores', nome:'80 Mensagens Prontas para Tutores', cor:'#30a560', tipo:'kit',
+   subtitulo:'Da confirmação de consulta ao comunicado difícil',
+   descricao:'Oitenta mensagens em doze blocos. Você copia, troca o nome do animal e manda, em vez de travar na tela e deixar para depois.',
+   bullets:['80 mensagens em 12 blocos','Duas ou três versões de cada','Marcação clara do que trocar','As mensagens difíceis também']},
+];
+
+const sigla = nome => String(nome || '?').split(/\s+/).filter(p => p.length > 2)
+  .slice(0, 2).map(p => p[0]).join('').toUpperCase() || '?';
+
+const rotuloTipo = p => ({curso:'Curso', kit:'Material', mentoria:'Mentoria', workshop:'Workshop'}[p.tipo] ?? 'Material');
+
+/* Produto de vitrine é sempre "A consultar": ele existe para virar conversa.
+   O de pagamento só mostra valor se MOSTRAR_PRECO estiver ligado.          */
+const eVitrine = p => p.modo === 'vitrine';
+const precoDe = p => eVitrine(p)
+  ? '<b style="font-size:13.5px;color:var(--ink-3);font-weight:700">A consultar</b>'
+  : ((CONFIG.MOSTRAR_PRECO && p.preco_centavos)
+      ? `<b style="font-size:15px">R$ ${(p.preco_centavos/100).toFixed(2).replace('.',',')}</b>` : '');
+
+const listaBullets = p => {
+  if(Array.isArray(p.bullets)) return p.bullets;
+  try{ const x = JSON.parse(p.bullets || '[]'); return Array.isArray(x) ? x : []; }catch(e){ return []; }
+};
+
+let PRODUTOS = [];
+
+function cartao(p, i){
+  const capa = p.capa_url
+    ? `<img src="${esc(p.capa_url)}" alt="" loading="lazy">`
+    : `<div class="fundo" style="background:${esc(p.cor || '#292827')}"><span class="sigla">${esc(sigla(p.nome))}</span></div>`;
+  const preco = precoDe(p);
+  return `<button class="prod rev" style="--i:${i % 4}" data-i="${i}">
+    <div class="capa">${capa}<span class="brilho-capa"></span>
+      <span class="abrir"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#lupa"/></svg>Ver aplicações</span>
+    </div>
+    <div class="prod-corpo">
+      <h3>${esc(p.nome)}</h3>
+      <p class="desc">${esc(p.subtitulo ?? '')}</p>
+      <div class="pe">
+        <span class="etq">${esc(rotuloTipo(p))}</span>
+        ${preco}
+        <span class="ver">Abrir <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#seta"/></svg></span>
+      </div>
+    </div>
+  </button>`;
+}
+
+function pintarVitrine(lista){
+  PRODUTOS = lista;
+  const g = $('#grade');
+  if(!lista.length){
+    g.innerHTML = '<div class="carregando">A vitrine está sendo montada. Me chama no WhatsApp que eu te conto o que já tenho.</div>';
+    return;
+  }
+  g.innerHTML = lista.map(cartao).join('');
+  g.querySelectorAll('[data-i]').forEach(b => b.onclick = () => abrirProduto(+b.dataset.i));
+  observarRevelacao(g.querySelectorAll('.rev'));
+}
+
+async function carregarVitrine(){
+  if(!CONFIG.SUPABASE_URL || !CONFIG.SUPABASE_ANON_KEY) return pintarVitrine(RESERVA);
+  try{
+    const campos = 'id,slug,nome,subtitulo,descricao,tipo,cor,capa_url,bullets,preco_centavos,modo,ordem';
+    const dados = await api(`produtos?select=${campos}&publicado=eq.true&order=ordem.asc`);
+    pintarVitrine(Array.isArray(dados) && dados.length ? dados : RESERVA);
+  }catch(e){
+    pintarVitrine(RESERVA);
+  }
+}
+
+/* ===================== modal com galeria ===================== */
+const veu = $('#veu');
+let iFoto = 0, nFotos = 0, ultimoFoco = null;
+
+function molduraFoto(url, legenda){
+  return `<figure><img src="${esc(url)}" alt="${esc(legenda || '')}" loading="lazy">
+    ${legenda ? `<figcaption>${esc(legenda)}</figcaption>` : ''}</figure>`;
+}
+
+function pintarPontos(){
+  $('#m-pontos').innerHTML = nFotos > 1
+    ? Array.from({length:nFotos}, (_,k) => `<b class="${k===iFoto?'on':''}" data-p="${k}"></b>`).join('') : '';
+  $('#m-pontos').querySelectorAll('[data-p]').forEach(b => b.onclick = () => irFoto(+b.dataset.p));
+  const mostrar = nFotos > 1;
+  $('#m-esq').style.display = mostrar ? '' : 'none';
+  $('#m-dir').style.display = mostrar ? '' : 'none';
+}
+
+function irFoto(k){
+  if(!nFotos) return;
+  iFoto = (k + nFotos) % nFotos;
+  const t = $('#m-tela');
+  t.scrollTo({ left: iFoto * t.clientWidth, behavior: 'smooth' });
+  pintarPontos();
+}
+
+async function abrirProduto(i){
+  const p = PRODUTOS[i]; if(!p) return;
+  ultimoFoco = document.activeElement;
+  registrar('abriu_produto', p.nome);
+
+  $('#m-etq').textContent   = rotuloTipo(p);
+  $('#m-titulo').textContent = p.nome;
+  $('#m-sub').textContent    = p.subtitulo ?? '';
+  $('#m-desc').textContent   = p.descricao ?? '';
+  const bs = listaBullets(p);
+  $('#m-bullets').innerHTML = bs.map(b => `<li><span class="v">✓</span><span>${esc(b)}</span></li>`).join('');
+  $('#m-zap').textContent = '';
+  $('#m-zap').insertAdjacentHTML('afterbegin',
+    `<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>` +
+    (eVitrine(p) ? 'Pedir um orçamento' : 'Perguntar sobre isto'));
+  $('#m-zap').nextElementSibling.textContent = eVitrine(p)
+    ? 'Abre o WhatsApp com o que você quer orçar já escrito.'
+    : 'Abre o WhatsApp com o nome deste material já escrito.';
+  $('#m-zap').onclick = () => {
+    registrar(eVitrine(p) ? 'pediu_orcamento' : 'perguntou_produto', p.nome);
+    const eu = LEAD?.nome ? `Oi! Sou ${LEAD.nome}. ` : 'Oi! ';
+    abrirZap(eVitrine(p)
+      ? `${eu}Vi o ${p.nome} no site da EstudeVet e queria um orçamento. Posso te contar o meu caso?`
+      : `${eu}Vi o ${p.nome} no site da EstudeVet e queria entender melhor se ele serve para o meu caso.`);
+  };
+
+  /* a capa entra primeiro, para a pessoa ver algo na hora */
+  const inicio = p.capa_url
+    ? [molduraFoto(p.capa_url, null)]
+    : [`<div class="vazio-galeria"><div><div class="sigla-g" style="color:${esc(p.cor||'#fff')}">${esc(sigla(p.nome))}</div>
+        As fotos de aplicação deste material estão sendo preparadas.<br>Me pergunte no WhatsApp que eu te mostro na hora.</div></div>`];
+  $('#m-tela').innerHTML = inicio.join('');
+  iFoto = 0; nFotos = p.capa_url ? 1 : 0; pintarPontos();
+
+  veu.classList.add('on');
+  document.body.classList.add('travado');
+  $('#m-fechar').focus();
+
+  /* as fotos extras só são buscadas agora, para a vitrine carregar leve */
+  if(p.id && CONFIG.SUPABASE_URL){
+    try{
+      const fotos = await api(`produto_fotos?select=url,legenda,ordem&produto_id=eq.${p.id}&order=ordem.asc`);
+      if(Array.isArray(fotos) && fotos.length){
+        const todas = (p.capa_url ? [molduraFoto(p.capa_url, null)] : [])
+          .concat(fotos.map(f => molduraFoto(f.url, f.legenda)));
+        $('#m-tela').innerHTML = todas.join('');
+        nFotos = todas.length; iFoto = 0; pintarPontos();
+      }
+    }catch(e){
+      /* sem galeria a capa sozinha já resolve, não vale travar o modal */
+    }
+  }
+}
+
+function fecharProduto(){
+  veu.classList.remove('on');
+  document.body.classList.remove('travado');
+  ultimoFoco?.focus();
+}
+
+$('#m-fechar').onclick = fecharProduto;
+veu.onclick = e => { if(e.target === veu) fecharProduto(); };
+$('#m-esq').onclick = () => irFoto(iFoto - 1);
+$('#m-dir').onclick = () => irFoto(iFoto + 1);
+$('#m-tela').onscroll = () => {
+  const t = $('#m-tela');
+  const k = Math.round(t.scrollLeft / Math.max(1, t.clientWidth));
+  if(k !== iFoto){ iFoto = k; pintarPontos(); }
+};
+document.onkeydown = e => {
+  if(!veu.classList.contains('on')) return;
+  if(e.key === 'Escape') fecharProduto();
+  if(e.key === 'ArrowRight') irFoto(iFoto + 1);
+  if(e.key === 'ArrowLeft')  irFoto(iFoto - 1);
+};
+
+/* ===================== o lead ===================== */
+/* Quem é a pessoa fica aqui e no aparelho dela, para ela não se apresentar de
+   novo na próxima visita e para as mensagens do WhatsApp saírem assinadas.  */
+const CHAVE = 'estudevet_lead';
+let LEAD = null;
+
+function lerLead(){
+  try{ const x = JSON.parse(localStorage.getItem(CHAVE) || 'null');
+       return (x && x.id && x.nome) ? x : null; }catch(e){ return null; }
+}
+function gravarLead(l){
+  try{ localStorage.setItem(CHAVE, JSON.stringify(l)); }catch(e){ /* aba anônima */ }
+}
+
+const mascaraZap = e => {
+  const d = so(e.target.value).slice(0, 11);
+  e.target.value = d.length > 10 ? d.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2 $3').trim()
+                 : d.length > 6  ? d.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2 $3').trim()
+                 : d.length > 2  ? d.replace(/(\d{2})(\d{0,5})/, '($1) $2').trim() : d;
+};
+
+async function enviarAoBanco(caminho, corpo){
+  if(!CONFIG.SALVAR_LEAD || !CONFIG.SUPABASE_URL) return false;
+  try{
+    const r = await fetch(`${CONFIG.SUPABASE_URL}/rest/v1/${caminho}`, {
+      method: 'POST',
+      headers: { apikey: CONFIG.SUPABASE_ANON_KEY, Authorization: `Bearer ${CONFIG.SUPABASE_ANON_KEY}`,
+                 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+      body: JSON.stringify(corpo) });
+    return r.ok;
+  }catch(e){ return false; }   /* falhar aqui nunca pode travar a conversa */
+}
+
+/* Cada coisa que a pessoa faz no site vira uma linha na timeline dela. */
+function registrar(tipo, detalhe, prazo){
+  if(!LEAD?.id) return;
+  enviarAoBanco('lead_eventos', { lead_id: LEAD.id, tipo, detalhe: detalhe ?? null, prazo: prazo ?? null });
+}
+
+/* ===================== portão de entrada ===================== */
+const portao = $('#portao');
+const abertoEm = Date.now();
+
+function saudar(){
+  if(!LEAD?.nome) return;
+  const primeiro = LEAD.nome.split(/\s+/)[0];
+  $('#ola').innerHTML = `Olá, <b>${esc(primeiro)}</b>`;
+  $('#ola').classList.remove('hide');
+  $('#sub-falar').textContent =
+    `${primeiro}, escreva do seu jeito. Ao enviar, o WhatsApp abre com a mensagem pronta e você só confere e manda.`;
+}
+
+function mostrarSite(){
+  portao.classList.add('saiu');
+  setTimeout(() => portao.remove(), 480);
+  document.body.classList.remove('travado');
+  saudar();
+  observarRevelacao(document.querySelectorAll('.rev'));
+}
+
+$('#pt_zap').oninput = mascaraZap;
+
+$('#pt-entrar').onclick = async () => {
+  if($('#pt_site').value) return;                          /* campo isca */
+  if(Date.now() - abertoEm < 2000) return aviso('Só um instante, termine de preencher.');
+
+  const nome  = $('#pt_nome').value.trim();
+  const zap   = $('#pt_zap').value.trim();
+  const email = $('#pt_email').value.trim();
+  const perfil = document.querySelector('input[name="ptpf"]:checked')?.value ?? 'Outro';
+
+  if(nome.length < 2)     return aviso('Escreva o seu nome.');
+  if(so(zap).length < 10) return aviso('Coloque o WhatsApp com DDD.');
+  if(email && !/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return aviso('Confira o e-mail.');
+
+  const btn = $('#pt-entrar'); btn.disabled = true;
+
+  LEAD = {
+    id: (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2)),
+    nome, whatsapp: so(zap), email: email || null, perfil,
+    origem: new URLSearchParams(location.search).get('src') || 'site',
+  };
+  gravarLead(LEAD);
+  await enviarAoBanco('leads', { ...LEAD, status: 'novo' });
+
+  btn.disabled = false;
+  mostrarSite();
+};
+
+/* ===================== formulário do caso ===================== */
+$('#btn-enviar').onclick = async () => {
+  const caso  = $('#f_caso').value.trim();
+  const prazo = $('#f_prazo').value;
+  if(caso.length < 15) return aviso('Escreva um pouco mais sobre o que você precisa.');
+
+  const btn = $('#btn-enviar'); btn.disabled = true;
+  registrar('descreveu_caso', caso, prazo);
+  await new Promise(r => setTimeout(r, 120));
+
+  const nome = LEAD?.nome ?? '';
+  abrirZap(
+    (nome ? `Oi! Sou ${nome}.\n\n` : 'Oi!\n\n') +
+    (LEAD?.perfil ? `Sou: ${LEAD.perfil}\n` : '') +
+    `Prazo: ${prazo}\n\n` +
+    `O que eu preciso resolver:\n${caso}`);
+
+  aviso('Pronto. A conversa abriu numa aba nova.');
+  btn.disabled = false;
+};
+
+/* ===================== revelação e trilho ===================== */
+function observarRevelacao(nos){
+  if(!('IntersectionObserver' in window)){ nos.forEach(n => n.classList.add('vi')); return; }
+  const ob = new IntersectionObserver((es, o) => es.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('vi'); o.unobserve(e.target); }
+  }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+  nos.forEach(n => ob.observe(n));
+}
+
+const elos = [...document.querySelectorAll('#trilho a')];
+if('IntersectionObserver' in window){
+  const ob = new IntersectionObserver(es => es.forEach(e => {
+    if(e.isIntersecting) elos.forEach(a => a.classList.toggle('on', a.dataset.s === e.target.id));
+  }), { rootMargin: '-25% 0px -60% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => ob.observe(s));
+}
+
+$('#link-zap-rodape').onclick = e => {
+  e.preventDefault();
+  abrirZap((LEAD?.nome ? `Oi! Sou ${LEAD.nome}. ` : 'Oi! ') + 'Vim pelo site da EstudeVet e queria conversar.');
+};
+const textoPrivacidade = CONFIG.SALVAR_LEAD
+  ? 'Usamos o seu nome e WhatsApp apenas para responder você. Nada é compartilhado com terceiros e você pode pedir a exclusão a qualquer momento pelo próprio WhatsApp.'
+  : 'Nada do que você escreve aqui é gravado. O texto é montado no seu aparelho e vai direto para o WhatsApp.';
+$('#pt-nota').textContent = textoPrivacidade;
+$('#nota-privacidade').textContent = CONFIG.SALVAR_LEAD
+  ? 'Usamos o seu nome e WhatsApp apenas para responder esta mensagem. Nada é compartilhado com terceiros e você pode pedir a exclusão a qualquer momento pelo próprio WhatsApp.'
+  : 'Nada do que você escreve aqui é gravado. O texto é montado no seu aparelho e vai direto para o WhatsApp.';
+
+/* Quem já passou pelo portão entra direto. Quem não passou vê o portão, e a
+   página de trás fica travada para não rolar por baixo dele.              */
+LEAD = lerLead();
+if(LEAD || !CONFIG.PORTAO){
+  portao.remove();
+  document.body.classList.remove('travado');
+  saudar();
+  observarRevelacao(document.querySelectorAll('.rev'));
+}else{
+  document.body.classList.add('travado');
+}
+
+carregarVitrine();
+</script>
+</body>
+</html>

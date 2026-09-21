@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diagnóstico de IA na sua rotina</title>
+<meta name="description" content="Seis frentes, dezoito perguntas. Descubra onde a IA entra no seu trabalho hoje, e onde não vale a pena.">
+<meta name="theme-color" content="#292827">
+<link rel="icon" href="/assets/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Identidade EstudeVet */
+  --grafite:#292827;
+  --grafite-2:#33312f;
+  --grafite-3:#403d3a;
+  --verde:#30a560;
+  --verde-2:#26874e;
+  --verde-3:#7ad9a3;
+  --verde-claro:#e7f5ec;
+  --ambar:#c9822f;
+  --papel:#faf9f7;
+  --papel-2:#efece8;
+  --tinta:#292827;
+  --tinta-2:#4a4744;
+  --apoio:#7f7a74;
+  --linha:rgba(41,40,39,.13);
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:var(--grafite);color:var(--tinta);font-family:var(--sans);
+  font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;min-height:100vh;background:var(--papel);
+  background-image:radial-gradient(120% 55% at 62% 18%, #eef6f0 0%, rgba(238,246,240,0) 60%);
+  box-shadow:0 0 60px rgba(0,0,0,.45);display:flex;flex-direction:column}
+.pad{padding:26px 22px}
+@media(min-width:520px){.pad{padding:34px 34px}}
+
+.escuro{color:var(--papel);background:var(--grafite);
+  background-image:radial-gradient(118% 72% at 50% 26%, var(--grafite-3) 0%, var(--grafite-2) 40%, var(--grafite) 80%)}
+
+.eyebrow{font-size:11.5px;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--verde-3);font-weight:700;margin:0 0 14px}
+.eyebrow.dk{color:var(--verde-2)}
+.eyebrow.pale{color:rgba(250,249,247,.42)}
+
+.marca{display:flex;align-items:center;gap:11px;margin:0 0 20px}
+.marca svg{width:34px;height:26px;flex:0 0 auto}
+.marca b{font-size:16px;font-weight:800;letter-spacing:-.01em;color:var(--papel)}
+.marca b i{font-style:normal;color:var(--verde)}
+.marca span{font-size:12px;color:rgba(250,249,247,.45);border-left:1px solid rgba(250,249,247,.2);
+  padding-left:11px;line-height:1.25}
+
+/* ---------- capa ---------- */
+#capa{flex:1;display:flex;flex-direction:column;justify-content:center}
+#capa h1{font-size:40px;line-height:1.05;margin:0 0 15px;font-weight:800;letter-spacing:-.028em}
+#capa h1 em{font-style:normal;color:var(--verde);display:block}
+@media(max-width:380px){#capa h1{font-size:35px}}
+#capa p.lead{color:rgba(250,249,247,.76);font-size:15.5px;margin:0 0 22px}
+.meta{display:flex;border-top:1px solid rgba(48,165,96,.32);
+  border-bottom:1px solid rgba(48,165,96,.32);margin:4px 0 26px}
+.meta div{flex:1;padding:14px 8px 14px 0}
+.meta div+div{padding-left:16px;border-left:1px solid rgba(48,165,96,.32)}
+.meta b{display:block;font-size:30px;color:var(--verde);font-weight:800;line-height:1;letter-spacing:-.02em}
+.meta span{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(250,249,247,.48);font-weight:600}
+.nota-pe{font-size:12.5px;color:rgba(250,249,247,.5);margin:20px 0 0;line-height:1.5}
+.nota-pe a{color:rgba(250,249,247,.72)}
+
+/* ---------- botões ---------- */
+.btn{display:block;width:100%;border:0;cursor:pointer;font-family:var(--sans);
+  font-size:16px;font-weight:700;letter-spacing:.02em;
+  padding:18px;border-radius:12px;text-align:center;text-decoration:none;line-height:1.26;
+  transition:transform .12s ease,background .12s ease}
+.btn:active{transform:scale(.985)}
+.btn-v{background:var(--verde);color:#0e2417}
+.btn-v:hover{background:var(--verde-3)}
+.btn:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
+.btn-zap{display:flex;align-items:center;justify-content:center;gap:12px;
+  font-size:17.5px;padding:20px 18px;
+  box-shadow:0 10px 26px rgba(0,0,0,.4), 0 0 22px rgba(48,165,96,.24);
+  animation:pulso 2.8s ease-out infinite}
+.btn-zap svg{width:22px;height:22px;flex:0 0 auto}
+@media(max-width:380px){.btn-zap{font-size:16px;gap:10px}}
+@keyframes pulso{
+  0%  {box-shadow:0 10px 26px rgba(0,0,0,.4), 0 0 22px rgba(48,165,96,.24), 0 0 0 0 rgba(48,165,96,.45)}
+  70% {box-shadow:0 10px 26px rgba(0,0,0,.4), 0 0 22px rgba(48,165,96,.24), 0 0 0 15px rgba(48,165,96,0)}
+  100%{box-shadow:0 10px 26px rgba(0,0,0,.4), 0 0 22px rgba(48,165,96,.24), 0 0 0 0 rgba(48,165,96,0)}
+}
+
+/* ---------- formulário ---------- */
+#form{display:none;flex:1;flex-direction:column;justify-content:center}
+#form h2{font-size:31px;line-height:1.08;margin:0 0 11px;font-weight:800;letter-spacing:-.025em}
+#form h2 em{font-style:normal;color:var(--verde);display:block}
+#form .sub{color:rgba(250,249,247,.74);font-size:15px;margin:0 0 24px}
+@media(max-width:380px){#form h2{font-size:27px}}
+.campo{margin:0 0 13px}
+.campo label{display:block;font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:rgba(250,249,247,.5);margin:0 0 8px;font-weight:700}
+.campo label i{font-style:normal;color:rgba(250,249,247,.32);letter-spacing:.06em;text-transform:none}
+.campo input,.campo select{width:100%;background:rgba(250,249,247,.06);
+  border:1px solid rgba(48,165,96,.34);border-radius:10px;padding:15px;
+  color:var(--papel);font-family:var(--sans);font-size:16px;line-height:1.2}
+.campo input::placeholder{color:rgba(250,249,247,.32)}
+.campo input:focus,.campo select:focus{outline:none;border-color:var(--verde);
+  background:rgba(250,249,247,.1)}
+.campo select{-webkit-appearance:none;appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path fill='none' stroke='%2330a560' stroke-width='1.8' d='M1 1.5l5 5 5-5'/></svg>");
+  background-repeat:no-repeat;background-position:right 15px center;background-size:12px}
+.campo select option{color:#292827;background:#fff}
+.campo input.bad,.campo select.bad{border-color:#e39a9a}
+.err{display:block;font-size:13px;color:#e39a9a;margin-top:7px}
+
+/* ---------- quiz ---------- */
+#quiz{display:none;flex:1;flex-direction:column}
+.topbar{padding:16px 22px 0}
+.progress{height:4px;background:var(--papel-2);border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--verde);
+  transition:width .3s cubic-bezier(.4,0,.2,1)}
+.counter{display:flex;justify-content:space-between;align-items:baseline;margin-top:11px}
+.counter .n{font-weight:700;font-size:14px;letter-spacing:.04em;color:var(--verde-2);
+  font-variant-numeric:tabular-nums}
+.counter .ax{font-size:11px;letter-spacing:.19em;text-transform:uppercase;
+  color:var(--tinta-2);font-weight:700}
+.qbody{flex:1;display:flex;flex-direction:column;justify-content:center;padding:22px}
+.q{font-size:27px;line-height:1.2;margin:0 0 24px;font-weight:700;letter-spacing:-.022em}
+@media(max-width:380px){.q{font-size:24px}}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{display:flex;align-items:center;gap:13px;width:100%;background:#fff;
+  border:1px solid var(--linha);border-radius:11px;padding:15px;font-size:15.5px;
+  font-family:var(--sans);color:var(--tinta);cursor:pointer;text-align:left;
+  transition:border-color .12s,background .12s}
+.opt:hover{border-color:var(--verde-2)}
+.opt:active{background:var(--papel-2)}
+.opt:focus-visible{outline:3px solid var(--verde);outline-offset:2px}
+.opt .dot{width:12px;height:12px;border-radius:50%;border:1.5px solid var(--linha);flex:0 0 auto}
+.opt.sel{border-color:var(--verde)}
+.opt.sel .dot{background:var(--verde);border-color:var(--verde)}
+.navrow{padding:0 22px 26px}
+.back{background:none;border:0;color:var(--apoio);font-size:14px;cursor:pointer;
+  padding:8px 0;font-family:var(--sans)}
+.back:disabled{opacity:.3;cursor:default}
+
+/* ---------- laudo ---------- */
+#laudo{display:none;flex:1}
+.score{padding:32px 22px 28px;text-align:center}
+.score-num{font-size:82px;line-height:.86;color:var(--verde);font-weight:800;letter-spacing:-.04em}
+.score-num small{font-size:25px;color:rgba(250,249,247,.4);font-weight:600}
+.faixa{font-size:12px;letter-spacing:.19em;text-transform:uppercase;font-weight:700;
+  margin-top:16px;display:inline-block;padding:9px 15px;border:1px solid var(--verde);
+  border-radius:8px;color:var(--verde)}
+.faixa-desc{color:rgba(250,249,247,.8);font-size:15px;margin:16px auto 0;max-width:410px}
+
+.exam-head{display:flex;justify-content:space-between;font-size:11px;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--apoio);padding-bottom:9px;
+  border-bottom:1px solid var(--linha);font-weight:700}
+.row{padding:15px 0;border-bottom:1px solid var(--linha)}
+.row-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.row-name{font-weight:700;font-size:16px;letter-spacing:-.01em}
+.row-val{font-weight:800;font-size:20px;white-space:nowrap;color:var(--verde-2);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.row-val.alt{color:var(--ambar)}
+.bar{position:relative;height:8px;background:var(--papel-2);border-radius:4px;margin-top:10px}
+.bar i{position:absolute;left:0;top:0;height:100%;background:var(--verde);border-radius:4px;
+  width:0;transition:width .7s cubic-bezier(.22,1,.36,1)}
+.bar i.alt{background:var(--ambar)}
+.bar .ref{position:absolute;top:-4px;bottom:-4px;left:70%;width:1px;background:var(--grafite);opacity:.45}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:700;color:var(--ambar);border:1px solid var(--ambar);border-radius:6px;
+  padding:3px 8px;margin-top:9px}
+.refnote{font-size:12.5px;color:var(--apoio);margin-top:12px;line-height:1.5}
+
+.foco{background:#fff;border-left:3px solid var(--verde);padding:20px;border-radius:0 12px 12px 0}
+.foco .lbl{font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--verde-2)}
+.foco h3{font-size:21px;margin:4px 0 0;font-weight:800;letter-spacing:-.022em}
+.foco p{margin:9px 0 0;font-size:15px;color:var(--tinta-2)}
+.foco .passo{margin-top:13px;padding-top:13px;border-top:1px solid var(--linha);
+  font-size:14.5px;color:var(--tinta)}
+.foco .passo b{color:var(--verde-2)}
+.foco+.foco{margin-top:12px}
+
+.cta{padding:32px 22px 34px}
+.cta h2{font-size:28px;line-height:1.1;margin:0 0 14px;font-weight:800;letter-spacing:-.026em}
+.cta h2 em{font-style:normal;color:var(--verde);display:block}
+.cta p{color:rgba(250,249,247,.78);font-size:15px;margin:0 0 14px}
+.when{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-weight:800;
+  font-size:21px;color:var(--verde);border-top:1px solid rgba(48,165,96,.32);
+  border-bottom:1px solid rgba(48,165,96,.32);padding:15px 0;margin:0 0 20px;letter-spacing:-.02em}
+.when span{font-weight:700;font-size:11px;letter-spacing:.17em;text-transform:uppercase;
+  color:rgba(250,249,247,.48)}
+.small{font-size:12.5px;color:rgba(250,249,247,.5);margin-top:16px;line-height:1.55}
+.link-sec{display:block;width:100%;margin:15px auto 0;padding:8px;background:none;border:0;
+  cursor:pointer;font-family:var(--sans);font-size:14.5px;color:rgba(250,249,247,.6);
+  text-align:center;text-decoration:underline;text-underline-offset:3px}
+.link-sec:hover{color:var(--papel)}
+.copiado{display:block;text-align:center;font-size:13px;color:var(--verde-3);
+  margin-top:11px;min-height:16px}
+.foot{letter-spacing:.19em;text-transform:uppercase;padding:22px 22px 30px;
+  text-align:center;font-size:10.5px;color:var(--apoio);font-weight:600}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ CAPA ============ -->
+  <section id="capa" class="pad escuro">
+    <div class="marca">
+      <svg style="--mk-verde:#30a560" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 440" role="img" aria-label="EstudeVet"><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="none"><path d="M5139 4276 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1634 -566 -1794 -623 -3320 -1199 l-279 -106 -63 -62 -63 -62 62 -64
+c35 -35 132 -116 215 -179 84 -64 151 -118 149 -122 -10 -16 -296 -673 -296
+-679 0 -4 30 -37 68 -74 50 -49 82 -71 126 -87 164 -60 562 -224 568 -234 13
+-20 9 -90 -8 -146 -10 -36 -30 -69 -59 -100 l-44 -47 67 -67 c65 -64 72 -68
+247 -138 364 -144 747 -278 1086 -380 l141 -42 70 69 c38 38 94 99 123 135
+176 218 387 398 761 650 132 90 222 137 410 217 328 141 752 261 1194 341 235
+42 287 49 549 70 l234 19 68 68 69 68 -67 69 c-116 117 -162 135 -528 202
+-308 56 -570 97 -1200 185 -281 39 -516 73 -523 75 -11 4 298 297 723 685 775
+706 1156 1081 1424 1403 13 16 9 23 -49 82 -36 36 -67 65 -71 65 -3 0 -170
+-56 -370 -124z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="#faf9f7"><path d="M5139 4156 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1432 -496 -1807 -629 -2619 -935 -806 -304 -979 -369 -983 -374 -3 -3
+381 -296 434 -331 1 0 -67 -160 -153 -355 -85 -194 -153 -358 -151 -364 3 -6
+22 -17 43 -25 156 -55 644 -257 663 -274 85 -78 78 -237 -15 -337 -25 -27 -41
+-51 -36 -54 19 -12 376 -151 557 -218 213 -78 503 -175 716 -239 l142 -42 31
+35 c17 19 63 72 101 118 93 110 258 274 375 372 177 149 499 374 636 445 347
+180 873 345 1414 442 235 42 287 49 549 70 128 11 238 24 243 29 16 16 -57 59
+-145 87 -85 27 -333 75 -667 130 -202 32 -1184 174 -1460 210 -69 9 -132 19
+-140 21 -11 4 -3 17 31 47 25 23 201 186 390 362 189 176 425 394 524 485 674
+614 992 922 1198 1159 112 129 128 151 109 151 -5 0 -173 -56 -373 -124z
+m-2881 -1317 c65 -13 150 -65 179 -108 27 -39 30 -89 8 -131 -14 -28 -80 -79
+-119 -94 -16 -5 -12 -11 28 -38 97 -64 169 -196 169 -313 1 -211 -179 -385
+-400 -387 -120 -1 -215 37 -296 119 -176 177 -143 455 71 594 l44 28 -29 14
+c-70 37 -108 109 -91 173 15 58 100 123 185 143 54 13 193 13 251 0z m549
+-1163 c30 -54 53 -99 51 -101 -6 -5 -496 -274 -605 -333 -62 -33 -115 -57
+-117 -54 -23 38 -107 204 -105 206 2 2 121 68 264 146 143 79 298 165 345 192
+47 26 91 47 98 45 8 -1 38 -46 69 -101z"/><path d="M2035 2361 c-147 -66 -152 -281 -10 -355 54 -28 147 -29 194 -1 56
+33 93 87 99 144 7 72 -5 117 -41 158 -61 69 -160 92 -242 54z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-verde,#30a560)"><path d="M2040 2846 c-82 -15 -154 -51 -191 -95 -74 -91 -38 -179 101 -245 62
+-29 71 -31 185 -31 145 1 215 23 283 90 38 39 42 47 42 94 0 44 -5 56 -36 91
+-47 51 -126 88 -216 100 -87 11 -86 11 -168 -4z"/><path d="M2575 1698 c-88 -49 -247 -137 -352 -195 -106 -58 -193 -109 -193
+-113 0 -8 70 -145 97 -188 l14 -23 77 42 c214 115 628 343 636 350 8 7 -100
+220 -112 218 -4 -1 -79 -41 -167 -91z"/></g></svg>
+      <b>Estude<i>Vet</i></b>
+      <span>Ferramentas para<br>a rotina veterinária</span>
+    </div>
+    <h1>Onde a IA entra <em>no seu trabalho</em></h1>
+    <p class="lead">Seis frentes, dezoito perguntas. No final você recebe um laudo com as duas frentes onde mais tem coisa parada hoje, e o primeiro passo de cada uma.</p>
+    <div class="meta">
+      <div><b>18</b><span>perguntas</span></div>
+      <div><b>3</b><span>minutos</span></div>
+      <div><b>6</b><span>frentes</span></div>
+    </div>
+    <button class="btn btn-v" id="start">Começar o diagnóstico</button>
+    <p class="nota-pe">Responda com honestidade, porque o laudo só serve se as notas forem reais. O resultado aparece na hora, nesta mesma tela, sem esperar e-mail.</p>
+  </section>
+
+  <!-- ============ FORMULÁRIO ============ -->
+  <section id="form" class="pad escuro">
+    <p class="eyebrow">Antes de começar</p>
+    <h2>Só preciso saber <em>com quem estou falando</em></h2>
+    <p class="sub">A leitura do seu laudo acontece no WhatsApp, comigo. Por isso o contato vem antes das perguntas.</p>
+
+    <div class="campo">
+      <label for="fNome">Seu nome</label>
+      <input type="text" id="fNome" placeholder="Nome e sobrenome"
+             autocomplete="name" autocapitalize="words" maxlength="60">
+      <span class="err" id="eNome"></span>
+    </div>
+
+    <div class="campo">
+      <label for="fZap">Seu WhatsApp</label>
+      <input type="tel" id="fZap" placeholder="(79) 99999-9999"
+             autocomplete="tel" inputmode="numeric" maxlength="24">
+      <span class="err" id="eZap"></span>
+    </div>
+
+    <div class="campo">
+      <label for="fMail">Seu e-mail <i>(opcional)</i></label>
+      <input type="email" id="fMail" placeholder="voce@email.com"
+             autocomplete="email" autocapitalize="off" autocorrect="off"
+             spellcheck="false" inputmode="email" maxlength="80">
+      <span class="err" id="eMail"></span>
+    </div>
+
+    <div class="campo">
+      <label for="fPerfil">O que você faz hoje</label>
+      <select id="fPerfil">
+        <option value="">Selecione</option>
+        <option>Veterinário autônomo</option>
+        <option>Consultor ou assessor</option>
+        <option>Dono ou gestor de clínica</option>
+        <option>Recém-formado</option>
+        <option>Prestador de serviço</option>
+      </select>
+      <span class="err" id="ePerfil"></span>
+    </div>
+
+    <button class="btn btn-v" id="goQuiz" style="margin-top:6px">Começar as 18 perguntas</button>
+    <p class="nota-pe">Seus dados chegam só para mim, para a leitura do seu laudo. Sem disparo em massa e sem repasse para terceiros. <a id="linkPol" href="#" style="display:none">Política de privacidade</a></p>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="quiz">
+    <div class="topbar">
+      <div class="progress"><i id="bar"></i></div>
+      <div class="counter">
+        <span class="n" id="cnt">01 / 18</span>
+        <span class="ax" id="axname">Repetição</span>
+      </div>
+    </div>
+    <div class="qbody">
+      <p class="q" id="qtext"></p>
+      <div class="opts" id="opts"></div>
+    </div>
+    <div class="navrow"><button class="back" id="back" disabled>Voltar</button></div>
+  </section>
+
+  <!-- ============ LAUDO ============ -->
+  <section id="laudo">
+    <div class="score escuro">
+      <p class="eyebrow pale">Resultado geral</p>
+      <div class="score-num"><span id="total">0</span><small>/60</small></div>
+      <div class="faixa" id="faixa"></div>
+      <p class="faixa-desc" id="faixaDesc"></p>
+    </div>
+
+    <div class="pad">
+      <p class="eyebrow dk">Laudo por frente</p>
+      <div class="exam-head"><span>Frente</span><span>Nota · referência 7,0</span></div>
+      <div id="rows"></div>
+      <p class="refnote">A referência de 7,0 é o ponto em que a frente para de depender de você lembrar. Abaixo disso, ela está sendo sustentada por esforço seu toda semana.</p>
+    </div>
+
+    <div class="pad" style="padding-top:0">
+      <p class="eyebrow dk">Suas duas primeiras frentes</p>
+      <div id="focos"></div>
+    </div>
+
+    <div class="cta escuro">
+      <p class="eyebrow pale">Leitura do laudo</p>
+      <h2>O laudo mostra o que está parado. <em>A conversa mostra por onde começar.</em></h2>
+      <p>Dezoito perguntas apontam a direção e param aí. O que muda alguma coisa é olhar as suas duas frentes mais fracas junto com alguém, ver como o seu trabalho funciona de verdade e decidir qual é o primeiro passo no seu caso, que quase sempre é menor do que parece.</p>
+      <div class="when">Conversa direta comigo, no WhatsApp <span>gratuita · sem compromisso</span></div>
+      <p style="font-size:14.5px">Eu faço ferramentas para a parte não clínica da rotina veterinária. Nessa conversa eu te digo o que dá para resolver com coisa que já existe e é de graça, o que dá para resolver com algo pronto, e o que só faz sentido sob medida. Se nada disso for o seu caso, eu falo isso também.</p>
+
+      <a class="btn btn-v btn-zap" id="ctaWhats" href="#" target="_blank" rel="noopener" style="margin-top:22px">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        <span>Quero a leitura do meu laudo no WhatsApp</span>
+      </a>
+      <button class="link-sec" id="copy">prefiro só copiar o meu resultado por agora</button>
+      <span class="copiado" id="copiado"></span>
+      <p class="small">O botão abre o WhatsApp com o seu laudo já escrito na mensagem: você confere e aperta enviar. Esta tela não fica salva depois que você fechar.</p>
+    </div>
+
+    <div class="foot">EstudeVet · Ferramentas para a rotina veterinária</div>
+  </section>
+
+</div>
+
+<script>
+/* =========================================================
+   CONFIGURAÇÃO
+   ========================================================= */
+var CONFIG = {
+  /* Seu WhatsApp: 55 + DDD + número */
+  WHATSAPP: "5574999991455",
+
+  /* O mesmo Supabase da plataforma e do site.
+     O lead cai em public.leads e o laudo em public.lead_eventos,
+     então ele aparece direto na tela Entrada do seu CRM.
+     Deixe SALVAR_LEAD como false para testar sem gravar nada. */
+  SUPABASE_URL: "https://opuaaoccuzkbahuvwamf.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9wdWFhb2NjdXprYmFodXZ3YW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2MDQ0MjQsImV4cCI6MjEwNDE4MDQyNH0.egbaw_TfReccQCWyp_uwcN-mjzwjkDfIewZXj6R1jNA",
+  SALVAR_LEAD: true,
+
+  /* ID do pixel do Meta. Vazio deixa o pixel desligado. */
+  PIXEL: "",
+
+  /* Endereço da sua política de privacidade. Vazio esconde o link.
+     Preencha antes de subir anúncio: o Meta revisa a página de destino. */
+  POLITICA: "/privacidade/"
+};
+/* ========================================================= */
+
+var FRENTES = [
+  {n:"Repetição", q:[
+    "Quando chega uma pergunta que eu já respondi antes, eu tenho a resposta pronta em algum lugar.",
+    "Eu reaproveito o que já escrevi em vez de começar do zero.",
+    "Tenho modelos salvos das mensagens que eu mais mando."
+  ],
+  diag:"Texto que se repete e é reescrito toda vez é o gasto mais invisível que existe, porque cada ocorrência parece pequena. É também o mais fácil de resolver, e por isso costuma ser o melhor lugar para começar.",
+  passo:"Liste as cinco perguntas que mais chegam para você e escreva uma resposta boa para cada uma, uma única vez. Só isso já resolve a maior parte."},
+
+  {n:"Registro", q:[
+    "O que eu combino com um cliente fica registrado fora da minha cabeça.",
+    "O registro do atendimento ou da reunião sai no mesmo dia.",
+    "Acho em menos de um minuto o que foi combinado com alguém há dois meses."
+  ],
+  diag:"Registro que depende de memória não existe de verdade. O custo não aparece hoje, aparece na hora de cobrar, de retomar um cliente antigo ou de provar o que tinha sido combinado.",
+  passo:"Escolha um lugar único para registrar o combinado e grave um áudio seu no fim de cada atendimento, em vez de tentar escrever depois. Transformar áudio em texto é a parte fácil."},
+
+  {n:"Conteúdo", q:[
+    "Tenho um jeito definido de produzir o conteúdo da semana.",
+    "Consigo publicar sem depender de estar inspirado.",
+    "Uma ideia minha vira mais de um formato, não só um post."
+  ],
+  diag:"Conteúdo feito por impulso para justamente quando o mês aperta, que é quando ele faria mais falta. O que resolve isso não é criatividade, é ter um caminho fixo da ideia até o texto pronto.",
+  passo:"Escolha dois formatos fixos por semana e mantenha os mesmos por um mês. Caminho fixo cansa muito menos que ideia nova toda vez."},
+
+  {n:"Rotina", q:[
+    "Começo o dia sabendo a ordem do que vou fazer.",
+    "O que eu preciso lembrar está num sistema, não na minha memória.",
+    "Consigo dizer hoje o que vou estar fazendo daqui a sete dias."
+  ],
+  diag:"Dia montado na ordem em que as coisas chegam é o que faz a semana passar inteira sem avançar no que importa. Aqui a IA entra pouco e a organização entra muito, e é honesto dizer isso.",
+  passo:"Monte a semana uma vez, no domingo, por blocos de tipo de tarefa em vez de horário exato. Bloco aguenta imprevisto, horário exato não."},
+
+  {n:"Acompanhamento", q:[
+    "Sei quem eu preciso procurar essa semana sem depender de lembrar.",
+    "Acompanho o que foi orçado ou proposto e não fechou.",
+    "Tenho um jeito definido de retomar contato com quem sumiu."
+  ],
+  diag:"Cliente que não volta quase nunca foi embora por insatisfação. Ele só não foi lembrado. É receita que já era sua e some sem reclamação nenhuma, o que faz dela a perda mais difícil de enxergar.",
+  passo:"Uma lista única de quem precisa ser procurado, com data ao lado de cada nome. Sem data, a lista vira decoração em duas semanas."},
+
+  {n:"Uso de IA", q:[
+    "Uso alguma ferramenta de IA pelo menos algumas vezes por semana.",
+    "Quando peço algo para a IA, eu dou contexto em vez de só a pergunta.",
+    "Sei o que não pode ser colocado numa IA."
+  ],
+  diag:"Sem contexto, a IA devolve texto genérico e a pessoa conclui que a ferramenta não presta. E sem saber o que não pode entrar, o risco deixa de ser perder tempo e passa a ser expor dado que não é seu.",
+  passo:"Escreva cinco linhas dizendo quem você é, onde atua, o que atende, o que não atende e o seu tom. Cole essas cinco linhas no começo de todo pedido."}
+];
+
+var ESCALA = [
+  {t:"Nunca", v:0},
+  {t:"Raramente", v:2.5},
+  {t:"Às vezes", v:5},
+  {t:"Quase sempre", v:7.5},
+  {t:"Sempre", v:10}
+];
+
+var FAIXAS = [
+  {min:0,  max:20, nome:"Tudo na mão",
+   desc:"Praticamente tudo hoje depende de você lembrar e refazer. Não é desorganização, é que nunca foi montada estrutura nenhuma. O lado bom é que o primeiro ajuste aqui é o que mais muda o dia."},
+  {min:20.1, max:35, nome:"Na memória",
+   desc:"Funciona, e funciona porque você segura. É o estágio mais comum de quem trabalha sozinho ou com equipe pequena, e é o mais cansativo, porque o resultado é do tamanho do seu esforço naquela semana."},
+  {min:35.1, max:47, nome:"Meio caminho",
+   desc:"Você já tirou parte do peso de cima. O que falta é constância: algumas coisas têm processo e outras não, e é por isso que o resultado oscila de um mês para o outro."},
+  {min:47.1, max:60, nome:"Estrutura montada",
+   desc:"A base existe e se sustenta sem você empurrar. Daqui o ganho não vem mais de organizar, vem de afinar e de automatizar o que já está mapeado."}
+];
+
+var flat = [];
+FRENTES.forEach(function(e, ei){ e.q.forEach(function(q, qi){ flat.push({ax:ei, txt:q, key:ei+"-"+qi}); }); });
+var TOTALQ = flat.length;
+
+var idx = 0, resp = {};
+var $ = function(id){ return document.getElementById(id); };
+
+function show(el){
+  ["capa","form","quiz","laudo"].forEach(function(s){ $(s).style.display = "none"; });
+  $(el).style.display = (el === "laudo") ? "block" : "flex";
+  window.scrollTo(0,0);
+}
+
+/* ---------- pixel do Meta, só se configurado ---------- */
+(function(){
+  if (!CONFIG.PIXEL) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,
+  'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.PIXEL); fbq('track', 'PageView');
+})();
+
+if (CONFIG.POLITICA){ $("linkPol").href = CONFIG.POLITICA; $("linkPol").style.display = "inline"; }
+
+$("start").addEventListener("click", function(){ show("form"); });
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+var lead = null;
+
+/* Devolve só os dígitos, sem código de país. O preenchimento automático
+   às vezes entrega "+55 79 99999-9999" e às vezes "(79) 99999-9999".
+   O corte é pelo comprimento porque DDD 55 existe, em Santa Maria: número
+   com 11 dígitos ou menos nunca tem código de país junto. */
+function soDigitos(v){
+  var d = String(v || "").replace(/\D/g, "");
+  if (d.length > 11 && d.slice(0,2) === "55") d = d.slice(2);
+  if (d.length > 10 && d.charAt(0) === "0")   d = d.slice(1);
+  return d.slice(0,11);
+}
+function mascara(v){
+  var d = soDigitos(v);
+  if (!d) return "";
+  if (d.length <= 2)  return "(" + d;
+  if (d.length <= 6)  return "(" + d.slice(0,2) + ") " + d.slice(2);
+  if (d.length <= 10) return "(" + d.slice(0,2) + ") " + d.slice(2,6) + "-" + d.slice(6);
+  return "(" + d.slice(0,2) + ") " + d.slice(2,7) + "-" + d.slice(7);
+}
+/* "input" sozinho não basta: parte dos preenchimentos automáticos só
+   dispara "change", e alguns nenhum dos dois até o campo perder o foco. */
+["input","change","blur"].forEach(function(ev){
+  $("fZap").addEventListener(ev, function(){ this.value = mascara(this.value); });
+});
+
+function marcar(campo, alvo, ok, msg){
+  $(campo).className = ok ? "" : "bad";
+  $(alvo).textContent = ok ? "" : msg;
+  return !ok;
+}
+
+function uuid(){
+  if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c){
+    var r = Math.random()*16|0, v = c === "x" ? r : (r&0x3|0x8);
+    return v.toString(16);
+  });
+}
+
+$("goQuiz").addEventListener("click", function(){
+  var nome   = $("fNome").value.trim();
+  var zap    = soDigitos($("fZap").value);
+  var mail   = $("fMail").value.trim().toLowerCase();
+  var perfil = $("fPerfil").value;
+
+  var erro = false;
+  erro = marcar("fNome", "eNome", nome.length >= 2, "Como posso te chamar?") || erro;
+  erro = marcar("fZap",  "eZap",  zap.length === 10 || zap.length === 11,
+                "Coloque DDD e número, com o 9 na frente.") || erro;
+  erro = marcar("fMail", "eMail", mail === "" || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail),
+                "Confira o e-mail, falta algo nele.") || erro;
+  erro = marcar("fPerfil","ePerfil", !!perfil, "Escolha uma opção.") || erro;
+  if (erro) return;
+
+  var src = new URLSearchParams(location.search).get("src") || "diagnostico";
+  lead = { id:uuid(), nome:nome, whatsapp:zap, email:mail || null,
+           perfil:perfil, origem:src };
+
+  gravar("leads", { id:lead.id, nome:lead.nome, whatsapp:lead.whatsapp,
+                    email:lead.email, perfil:lead.perfil, origem:lead.origem,
+                    status:"novo" });
+  if (window.fbq) fbq('track','Lead',{content_name:'Diagnostico IA'});
+
+  show("quiz"); render();
+});
+
+/* =========================================================
+   GRAVAÇÃO NO SUPABASE, com fila de reenvio
+   ---------------------------------------------------------
+   leads e lead_eventos só aceitam INSERT do visitante, nunca leitura.
+   Por isso a chave anônima pode ficar aqui: quem copiar ela não
+   consegue baixar nada, só inserir uma linha, e as políticas
+   validam o formato do que entra.
+   ========================================================= */
+var FILA = "ev_diag_fila";
+
+function ligado(){ return CONFIG.SALVAR_LEAD && /^https:\/\//.test(CONFIG.SUPABASE_URL)
+                          && CONFIG.SUPABASE_ANON_KEY.length > 20; }
+function fila(){ try { return JSON.parse(localStorage.getItem(FILA)) || []; } catch(e){ return []; } }
+function salvarFila(f){ try { localStorage.setItem(FILA, JSON.stringify(f)); } catch(e){} }
+
+/* guarda antes de mandar: se a rede falhar, tenta de novo no próximo evento */
+function gravar(tabela, linha){
+  if (!ligado()) return;
+  var p = { _k: tabela + ":" + (linha.id || linha.lead_id) + ":" + (linha.tipo||""),
+            tabela: tabela, linha: linha };
+  var f = fila().filter(function(x){ return x._k !== p._k; });
+  f.push(p); salvarFila(f);
+  descarregar();
+}
+
+var voando = {};
+
+function descarregar(keepalive){
+  if (!ligado()) return;
+  fila().forEach(function(p){
+    if (voando[p._k]) return;
+    voando[p._k] = true;
+    fetch(CONFIG.SUPABASE_URL + "/rest/v1/" + p.tabela, {
+      method: "POST",
+      keepalive: !!keepalive,
+      headers: {
+        "apikey": CONFIG.SUPABASE_ANON_KEY,
+        "Authorization": "Bearer " + CONFIG.SUPABASE_ANON_KEY,
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal"
+      },
+      body: JSON.stringify(p.linha)
+    }).then(function(r){
+      delete voando[p._k];
+      /* 4xx é linha recusada pela política: não adianta insistir para sempre */
+      if (r.ok || (r.status >= 400 && r.status < 500)){
+        salvarFila(fila().filter(function(x){ return x._k !== p._k; }));
+      }
+    })["catch"](function(){ delete voando[p._k]; });
+  });
+}
+
+window.addEventListener("pagehide", function(){ descarregar(true); });
+descarregar();   /* reenvia o que ficou preso numa visita anterior */
+
+/* =========================================================
+   QUIZ
+   ========================================================= */
+function render(){
+  var item = flat[idx];
+  $("qtext").textContent = item.txt;
+  $("axname").textContent = FRENTES[item.ax].n;
+  $("cnt").textContent = ("0"+(idx+1)).slice(-2) + " / " + TOTALQ;
+  $("bar").style.width = (idx / TOTALQ * 100) + "%";
+  $("back").disabled = (idx === 0);
+  var box = $("opts"); box.innerHTML = "";
+  ESCALA.forEach(function(o){
+    var b = document.createElement("button");
+    b.className = "opt" + (resp[item.key] === o.v ? " sel" : "");
+    b.type = "button";
+    b.innerHTML = '<span class="dot"></span><span></span>';
+    b.lastChild.textContent = o.t;
+    b.addEventListener("click", function(){
+      resp[item.key] = o.v;
+      if (idx < TOTALQ - 1){ idx++; render(); }
+      else { $("bar").style.width = "100%"; finish(); }
+    });
+    box.appendChild(b);
+  });
+}
+
+$("back").addEventListener("click", function(){ if (idx > 0){ idx--; render(); } });
+
+/* =========================================================
+   LAUDO
+   ========================================================= */
+var resultado = null;
+function fmt(n){ return n.toFixed(1).replace(".", ","); }
+
+function finish(){
+  var frentes = FRENTES.map(function(e, ei){
+    var s = 0; for (var i=0;i<3;i++){ s += (resp[ei+"-"+i] || 0); }
+    return { nome:e.n, nota: s/3, diag:e.diag, passo:e.passo };
+  });
+  var total = frentes.reduce(function(a,b){ return a + b.nota; }, 0);
+  var ordenados = frentes.slice().sort(function(a,b){ return a.nota - b.nota; });
+  var fracas = [ordenados[0].nome, ordenados[1].nome];
+  var faixa = FAIXAS.filter(function(f){ return total >= f.min && total <= f.max; })[0] || FAIXAS[0];
+  resultado = { total:total, faixa:faixa, frentes:frentes, fracas:fracas };
+
+  $("total").textContent = fmt(total);
+  $("faixa").textContent = faixa.nome;
+  $("faixaDesc").textContent = faixa.desc;
+
+  var rows = $("rows"); rows.innerHTML = "";
+  frentes.forEach(function(e){
+    var alt = e.nota < 7;
+    var d = document.createElement("div");
+    d.className = "row";
+    d.innerHTML =
+      '<div class="row-top"><span class="row-name"></span>' +
+      '<span class="row-val ' + (alt ? "alt" : "") + '"></span></div>' +
+      '<div class="bar"><i class="' + (alt ? "alt" : "") + '"></i><span class="ref"></span></div>' +
+      (alt ? '<span class="tag">Ponto aberto</span>' : '');
+    d.querySelector(".row-name").textContent = e.nome;
+    d.querySelector(".row-val").textContent = fmt(e.nota);
+    rows.appendChild(d);
+    var fill = d.querySelector(".bar i");
+    setTimeout(function(){ fill.style.width = (e.nota*10) + "%"; }, 90);
+  });
+
+  var fc = $("focos"); fc.innerHTML = "";
+  ordenados.slice(0,2).forEach(function(e, i){
+    var c = document.createElement("div");
+    c.className = "foco";
+    c.innerHTML = '<span class="lbl">Frente ' + (i+1) + '</span><h3></h3><p></p>' +
+                  '<p class="passo"><b>Primeiro passo:</b> <span></span></p>';
+    c.querySelector("h3").textContent = e.nome + " · " + fmt(e.nota);
+    c.querySelectorAll("p")[0].textContent = e.diag;
+    c.querySelector(".passo span").textContent = e.passo;
+    fc.appendChild(c);
+  });
+
+  atualizaLink();
+
+  gravar("lead_eventos", {
+    lead_id: lead ? lead.id : null,
+    tipo: "descreveu_caso",
+    detalhe: textoLaudo(),
+    prazo: faixa.nome
+  });
+  if (window.fbq) fbq('trackCustom','DiagnosticoConcluido',{
+    valor: total, faixa: faixa.nome, frentes: fracas.join(" + ")
+  });
+
+  show("laudo");
+}
+
+function textoLaudo(){
+  var nome = lead ? lead.nome : "";
+  var linhas = resultado.frentes.map(function(e){
+    return "• " + e.nome + ": " + fmt(e.nota) + (e.nota < 7 ? "  (ponto aberto)" : "");
+  }).join("\n");
+  return "*Diagnóstico de IA na rotina*\n\n" +
+    (nome ? "Meu nome é " + nome + ".\n" : "") +
+    (lead && lead.perfil ? "Sou: " + lead.perfil + "\n" : "") +
+    "Resultado geral: *" + fmt(resultado.total) + "/60* · " + resultado.faixa.nome + "\n\n" +
+    linhas + "\n\n" +
+    "Minhas duas primeiras frentes: *" + resultado.fracas[0] + "* e *" +
+    resultado.fracas[1] + "*.\n\n" +
+    "Quero entender o que dá para resolver primeiro.";
+}
+
+function numeroOk(){
+  var n = String(CONFIG.WHATSAPP).replace(/\D/g, "");
+  return n.length >= 12 ? n : null;
+}
+
+function atualizaLink(){
+  if (!resultado) return;
+  var n = numeroOk();
+  $("ctaWhats").href = n
+    ? "https://wa.me/" + n + "?text=" + encodeURIComponent(textoLaudo())
+    : "#";
+}
+
+$("ctaWhats").addEventListener("click", function(ev){
+  if (!numeroOk()){
+    ev.preventDefault();
+    $("copiado").textContent = "WhatsApp ainda não configurado nesta página.";
+    return;
+  }
+  if (window.fbq) fbq('track','Contact');
+});
+
+$("copy").addEventListener("click", function(){
+  if (!resultado) return;
+  var txt = textoLaudo();
+  var pronto = function(){ $("copiado").textContent = "Laudo copiado. É só colar na conversa."; };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(pronto, function(){ reserva(txt, pronto); });
+  } else { reserva(txt, pronto); }
+});
+
+function reserva(txt, pronto){
+  var ta = document.createElement("textarea");
+  ta.value = txt; ta.setAttribute("readonly","");
+  ta.style.position = "fixed"; ta.style.top = "-1000px";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); pronto(); }
+  catch(e){ $("copiado").textContent = "Não deu para copiar. Tire um print da tela."; }
+  document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>
