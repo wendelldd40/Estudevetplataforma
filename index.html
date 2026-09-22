@@ -577,7 +577,6 @@ c-70 37 -108 109 -91 173 15 58 100 123 185 143 54 13 193 13 251 0z m549
       <div class="rodape">
         <span>EstudeVet · Ferramentas para a rotina veterinária</span>
         <a href="/diagnostico/">Fazer o diagnóstico</a>
-        <a href="#" id="link-zap-rodape">WhatsApp (74) 99999 1455</a>
         <a href="/privacidade/">Política de privacidade</a>
       </div>
     </section>
@@ -691,12 +690,26 @@ const RESERVA = [
    subtitulo:'Da confirmação de consulta ao comunicado difícil',
    descricao:'Oitenta mensagens em doze blocos. Você copia, troca o nome do animal e manda, em vez de travar na tela e deixar para depois.',
    bullets:['80 mensagens em 12 blocos','Duas ou três versões de cada','Marcação clara do que trocar','As mensagens difíceis também']},
+  /* Os dois abaixo são de vitrine: sem preço, existem para virar conversa. */
+  {slug:'crm-sob-medida', nome:'CRM para quem atende e vende', cor:'#30a560', tipo:'projeto', modo:'vitrine',
+   subtitulo:'Seus contatos, o funil e o dinheiro num lugar só',
+   descricao:'Um CRM montado em cima da sua rotina, não um sistema genérico que você tenta encaixar. Cada pessoa que te procura entra numa lista, anda pelas etapas da conversa e não some no meio do WhatsApp. Não é prontuário, não é ficha de paciente e não é faturamento de clínica: é a parte comercial, de quem chega até virar cliente.',
+   bullets:['Funil que você arrasta, do contato ao fechado','Histórico da conversa junto da ficha','Lembrete do próximo passo, com data','Quanto entrou no mês, separado da previsão']},
+  {slug:'site-da-clinica', nome:'Site da clínica', cor:'#26874e', tipo:'projeto', modo:'vitrine',
+   subtitulo:'Carrega rápido, explica o que você faz e leva o tutor para o WhatsApp',
+   descricao:'Uma página direta, pensada para o tutor que está com o celular na mão procurando atendimento agora. Ele entende em dez segundos o que você faz, onde fica, que horas abre e como falar com você.',
+   bullets:['Rápido no celular, que é de onde vem quase todo mundo','Serviços, endereço, horário e WhatsApp em destaque','Preparado para o Google achar na sua cidade','Você pede alteração e eu mexo, sem mensalidade']},
 ];
 
-const sigla = nome => String(nome || '?').split(/\s+/).filter(p => p.length > 2)
-  .slice(0, 2).map(p => p[0]).join('').toUpperCase() || '?';
+/* Se o nome já começa com uma sigla escrita em caixa alta, ela vale sozinha:
+   "CRM para quem atende" vira CRM, e não CP.                              */
+const sigla = nome => {
+  const partes = String(nome || '?').split(/\s+/).filter(p => p.length > 2);
+  if(partes[0] && /^[A-ZÀ-Þ]{2,4}$/.test(partes[0])) return partes[0];
+  return partes.slice(0, 2).map(p => p[0]).join('').toUpperCase() || '?';
+};
 
-const rotuloTipo = p => ({curso:'Curso', kit:'Material', mentoria:'Mentoria', workshop:'Workshop'}[p.tipo] ?? 'Material');
+const rotuloTipo = p => ({curso:'Curso', kit:'Material', mentoria:'Mentoria', workshop:'Workshop', projeto:'Sob medida'}[p.tipo] ?? 'Material');
 
 /* Produto de vitrine é sempre "A consultar": ele existe para virar conversa.
    O de pagamento só mostra valor se MOSTRAR_PRECO estiver ligado.          */
@@ -986,10 +999,6 @@ if('IntersectionObserver' in window){
   document.querySelectorAll('section[id]').forEach(s => ob.observe(s));
 }
 
-$('#link-zap-rodape').onclick = e => {
-  e.preventDefault();
-  abrirZap((LEAD?.nome ? `Oi! Sou ${LEAD.nome}. ` : 'Oi! ') + 'Vim pelo site da EstudeVet e queria conversar.');
-};
 const textoPrivacidade = CONFIG.SALVAR_LEAD
   ? 'Usamos o seu nome e WhatsApp apenas para responder você. Nada é compartilhado com terceiros e você pode pedir a exclusão a qualquer momento pelo próprio WhatsApp.'
   : 'Nada do que você escreve aqui é gravado. O texto é montado no seu aparelho e vai direto para o WhatsApp.';
