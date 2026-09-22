@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>EstudeVet · Plataforma do Aluno</title>
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAJX0lEQVR42u2ae1BU1x3Hz+Pu3b0XFlwWKO6iiFoXtXUAGxE1pmTSpBnQTBqZTJKZKGam6sSJ00zrTM34V43ttJ2JMeYh5GEbYyZq6wN8BJDXAgKpVRALLhkUxJWg+7y7y+7ex+kfRzab5SEgaJzZ899ezp77/fzO7/weZ4GEEPAoDwQe8REFiAJEAaIAUYAoQBRgegchZIx658cLoCiKJEkAAAghhPCRAVAURZZlAABCiGEYAMC1a91Wq5VuxfD5zI/HTxRFwRgjhOjH9vb2lpbmstJSg9G4a9fbiqKMuA/w4ZbTVDdCKCSus7Ozvt5cUV7e0dHR09OTk5Pz1eHDOl0CIeRHBDBcd19fX11t7enTpy5evOhyuTiOCwQC2dnZJR9/kpSURCePuNQDBaC6AQAYY/rkxo3exobGquqqpvPnHQ4HQojjOI1G43DYMzOziks+Tk5OHkP9gwNQFIUQEtLt9/vN5roTx080NNTb7XYAAMdxKpWKzrHZbLm5uR/tL9br9WOrn3YARVEURaHBBAAQCASamprqamvr681dXV2SJPE8zzAMhJASMgzjcNhXrFi5v7hkxowZ91Q/XQChkBJ6cunSpfKvz1ZWVnZ3dw8ODnIcp1arEUJU992AyDB2uz3vySf37Xs/Pj5+POqnGCDiaBIArly+3NzcXFVd9d8LF9xu95BurChyxHsxxg67vWDN2nf27OE4bpzqpwaA6oYQhl7Z29NTU1t7+lRZa2urIAgMw/A8jzEOt3ekeoejsLDwr3/7u0qlGr/6+wIgQyPkKk6ns6qq6vTpU9+0tDgcDowQx/MY41DwGeH1EEIInU7nq6+uf3v3brrs+NVPEmB4SGk431B6srSludlqvUkI4DmOYZgxdIerd7mcv920ZefOndQcE1I/MYAIF5dluen8+YqKCrO5rrvDAiDk+RgiK1CNAbr3snQRr9e7devW3/9hO3XCMYq2yQOEqtmQba5e7Tx79mxtTU17e7tHELTaON3qeey8RACIeNMtXej32F2QQWD0hWn88Xq9O956a9OmzZNWfw+AiGgoCEJNdXVp6cnGxkan08myLMdpGIJnrPt5IFcfHAwQAlgNy/T6XB99owQkgOAo6rEkiZIk/WnXrpdeelmW5fCAO9HBjObl1CQYY0mS2tpa/3X0qNls7u3tJYTwPK/T6QghClEIUYgK2Z0OxSdCCIkP6eNiIINAgAAARww4gYAfY+bdve/l5+dHpIspA6De0nfjxtfl5SeOH7NYLB6Ph+f52NhYCKEsy6GS3RvwxVf2bn5qS7/aSxQCfVLT3uMOh1fFq4kSubcMwwiCkJycvPe9fTk5Ofdp+7Fc6MyZM0cOf9Xa2jowMKBSqTQazfAoTvM/y7LF+0tycpeXnz0LIfrVM09Xl1du3rpluDKMsSAI8+fP3/f+BxkZGVOifoSOjEqMj49rv9Le39+v1+t5nqcxJwIVISQIwtrnnsvJXb5nzztFGzcUbdyw5909eU8/VVBQIAhCuD6EkN1uX7x48YF//DMjI0OSJITQlBQBaHh0I4SsWLHy1KkzBQUFNptttFhOU0F2drYsyy3NzQyjwgxuMNcrsvzYY8vCxSGEBgcHf/3ss2Vlp1JTU6kv0TNGG19Zlun2TgIJjRihZVlOSkraX1yyffv20QAQQpIk2e7YMMbrCgu1Wq02VvvKKy8jjG/fuQ3A9w0URU3UJ3524MCRI4cbGhp6e3t9Pp8sy7TxpZ1kKJJGUE0yjEqiyKhU1dXVr20s4jhu+DRq14yMjINfHNLpdLduWRWFGI3G27dvF6574abVyjIMgYBmAwih2+2WJEmtVqvVao1GExsbm5KSkp6evsBkSkmZOXNmitFgTNDrNRrNiIk/vH0bFwB9vmH9+pqa6ri4OBp2hjN4PJ7MzKw3tm1bvXo1IKS6pubDDz/4T1NzvDYe8irR54dD6Q9jTH0mNCRJEkVRlmWKpFarExIS5s2fb5hpSEzUL1y4aO68eUajUa1WT3gHaMnQ1tb2YmEhRGMlSLoPEAKDwQgR6rl+HQaV2Qvn4idmS7N436eXPN85sIqJeAu1JRwalIeeAVEUg8GgKIocxyGEExP1mVlZS7OzC9asNRgMw1t7ZrQkDAA4duzfgkfQ6XQjmj+ESh3MarUqfjHpJ8mpzywRMrUDyMPGqWJ/Mct7zAZYEFFWUB6qBkIIIQKAbkhQlmWej4mNjWVZNj09Xa3RYIy/Gxjo6uoyGAzj2gG6rs1mW1OQb7PZaF15z3pJo2J1S9Px40ZngjIoB+JENX/Fc6eiI+jyAgQjAO42DwSIkuj3+yVJ0mq1Mw2GRQsXmUymBaYFJlNGcnIyjeATzsQ0vR/8/HOLxWI0GkP7O6p6ADCBKS8utWfGeAM+XlQlfisJlZ2u6zYZA6TC4eqpdFEUBUGAECQk6JctW7Zy5arluctNpozhJzjUWCOERqy0mdHqiJ8uWLBixcqOjv/5/X6e51mWHQ0DIij5g8ING/wZl3BNDtZ23+nol4CMOBUid70xdI6DwaDX601OTsrLy3vil3mrVq2imeH78lGWwVBzR919NOnjqkbr6mrLSstqa2tu3bql0WhYlh1xPlEUlVrNzU7wfTsgBkWoYSCA4Ie5jBDidrtTU1NfWFdYWFiYlpYW+qssy6EDPWXldHhjarVajx8/fvTI4b6+Pnp7M3LbIMqQZSCCQIls2L1eL8Z4Q9GGoqLX6Fkcfjk3lcVcSJQS1sr09fX95vnnXS7nqMca/sDq4YZfsmTJH3fsWLXqcWrv+9c9vttpCNFQbieEpKamauO0Dod9DOAIwweDQVmW39i27fXXt/I8T9uMKSlCJ3y9jjEuKz3ZZbHEx8dTK95z/uDgYExMzO4//yU/P59+ZWqlT+AHDrrdvkH/nDlzvF6vy+Wi9dlowQFj7PF4jEbjwS8O5efn01J8OtRP+FolGAxWVlaUlZaazWaH3a5iWY7jIm5+aONiMmUUl5SkpaVNk+EnAxAel652dp6rOldTXX358mW3201rTIZhEEJut9tkMn3y6WdGo3G61U94ByJin0KUtta2c5WV9fXmLovF5XYrijJ37txDX345a9bsB6B+8leLEZdzsiRdtVjq6mobGxp+9+abWVnZD0b9FFzuRpCEl4MP5lefqbleD130htcwjxLAQxzR/5WIAkQBogBRgChAFOBhjv8DqX297ScmOaQAAAAASUVORK5CYII=">
+<style>
+/* ===================== TOKENS — identidade EstudeVet =====================
+   A paleta sai da logo: grafite #292827 e verde #30a560.
+   Os nomes antigos (navy, teal, mint) continuam existindo como apelido,
+   para nenhuma regra de estilo antiga quebrar.                              */
+:root{
+  /* núcleo da marca */
+  --grafite:#292827; --grafite-2:#1b1a19; --grafite-3:#3a3937;
+  --verde:#30a560; --verde-2:#26874e; --verde-3:#1f6e3f; --verde-claro:#e4f4ea;
+
+  --bg:#f3f5f3; --surface:#fff; --surface-2:#eef1ee;
+  --ink:#1a1c1b; --ink-2:#565c58; --ink-3:#8a918c;
+  --side:#1c1e1d; --side-2:#2c302d; --side-ink:#b6bdb8;
+  --brand:var(--verde); --brand-2:var(--verde-2); --brand-soft:var(--verde-claro);
+  --accent:#c9822f; --accent-soft:#fbf0e1;
+  --line:#e1e6e2; --line-2:#eef1ee;
+  --ok:#30a560; --warn:#c9822f; --danger:#c04a3d;
+  --r:14px; --r-lg:18px;
+  --sh:0 1px 2px rgba(26,28,27,.05);
+  --sh-md:0 10px 24px -14px rgba(26,28,27,.35);
+  --sh-lg:0 26px 60px -28px rgba(26,28,27,.45);
+  --grad-escuro:linear-gradient(155deg,#292827 0%,#243a2c 62%,#1d5236 100%);
+  --mk-escuro:var(--ink); --mk-verde:var(--verde);
+
+  /* apelidos da identidade anterior */
+  --navy:var(--grafite); --navy-2:var(--grafite-3);
+  --teal:var(--verde); --teal-claro:var(--verde); --mint:var(--verde-claro);
+}
+/* ===================== TEMA ESCURO ===================== */
+:root[data-tema="escuro"]{
+  --bg:#121413; --side:#0d0f0e; --side-2:#232724; --surface:#1a1d1b; --surface-2:#232725;
+  --ink:#e9ece9; --ink-2:#a6ada8; --ink-3:#79817b;
+  --verde:#45bd78; --verde-2:#5bcd8b; --verde-3:#7ad9a3; --verde-claro:#16301f;
+  --brand:var(--verde); --brand-2:var(--verde-2); --brand-soft:var(--verde-claro);
+  --accent:#d9963f; --accent-soft:#2e2517;
+  --line:#2a2f2b; --line-2:#212622;
+  --side-ink:#a8b0aa;
+  --sh-md:0 10px 24px -14px rgba(0,0,0,.6);
+  --sh-lg:0 26px 60px -28px rgba(0,0,0,.75);
+  --grad-escuro:linear-gradient(155deg,#161817 0%,#1b2b21 62%,#163d28 100%);
+  --mk-escuro:var(--ink);
+}
+:root[data-tema="escuro"] .btn-primary{color:#07230f}
+:root[data-tema="escuro"] .pcap{filter:saturate(.9)}
+
+/* ===================== MARCA ===================== */
+.mk-svg{flex:none;display:block}
+.side-brand .mk-svg,.auth-brand .mk-svg{width:40px;height:auto}
+.auth-brand .mk-svg{width:52px}
+/* Sobre a sidebar grafite o pássaro continua escuro, como na logo, e quem
+   garante a leitura é o contorno branco. O corpo sobe um degrau só para não
+   encostar no fundo. */
+.side-brand .mk-svg,.auth-left .mk-svg{--mk-escuro:#3d3b39;--mk-contorno:#fff}
+.mk-lockup{width:min(300px,68%);height:auto}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input,select,textarea{font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+.hide{display:none !important}
+h1,h2,h3,h4{letter-spacing:-.032em;margin:0;font-weight:800;text-wrap:balance}
+
+/* ===================== BOTÕES / FORM ===================== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:10px 17px;border-radius:11px;font-weight:700;font-size:13.5px;letter-spacing:-.01em;transition:.16s;white-space:nowrap}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 18px -10px var(--brand)}
+.btn-primary:hover{background:var(--brand-2);transform:translateY(-1px)}
+.btn-primary:active{transform:none}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{filter:brightness(.94)}
+.btn-ghost{border:1.5px solid var(--line);background:var(--surface);font-weight:600}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.btn-sm{padding:7px 13px;font-size:12.5px;border-radius:10px}
+.btn-block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12.5px;font-weight:700;margin-bottom:6px;color:var(--ink-2);letter-spacing:-.005em}
+.field input,.field select,.field textarea{width:100%;padding:12px 14px;border-radius:11px;border:1.5px solid var(--line);background:var(--surface);outline:none;transition:.15s}
+.field textarea{min-height:96px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand);box-shadow:0 0 0 3.5px var(--brand-soft)}
+.check{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--ink-2);margin-bottom:16px}
+.check input{width:16px;height:16px;margin-top:2px;accent-color:var(--brand)}
+
+/* ===================== AUTH ===================== */
+#auth{position:fixed;inset:0;z-index:100;display:grid;grid-template-columns:1fr 1fr;background:var(--bg);overflow:auto}
+.auth-left{background:var(--grad-escuro);color:#fff;padding:44px;display:flex;flex-direction:column;justify-content:space-between}
+.auth-brand{display:flex;gap:11px;align-items:center}
+.auth-brand .mk{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),#3ab96f);display:grid;place-items:center;font-size:16px}
+.auth-brand b{display:block;font-size:20px;letter-spacing:-.03em;color:#fff;font-weight:700}
+.auth-brand .sub{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#93a398;margin-top:2px}
+.hl{color:var(--teal-claro)}
+.mock{background:linear-gradient(120deg,#eaf2ec,#cbd6cd);border-radius:12px;padding:14px;color:var(--navy);box-shadow:0 30px 60px -30px rgba(0,0,0,.8);display:flex;gap:12px;align-items:center;max-width:420px}
+.mock .play{width:38px;height:38px;border-radius:9px;background:var(--navy);color:#fff;display:grid;place-items:center;flex:none}
+.mock .lbl{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6b736d}
+.mock b{display:block;font-size:13.5px;letter-spacing:-.01em}
+.mock small{color:#6b736d;font-size:11.5px}
+.mock .pill{display:inline-block;margin-top:7px;background:var(--brand);color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:7px}
+.auth-left .eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#93a398;margin-bottom:6px}
+.auth-left h2{font-size:29px;line-height:1.12}
+.auth-left p{color:#a9b5ac;margin:9px 0 18px;max-width:44ch}
+.auth-list{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.auth-list li{position:relative;padding-left:18px;color:#d9e0da;font-size:14px}
+.auth-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#45bd78}
+.auth-right{background:var(--surface);padding:44px min(56px,6vw);display:flex;flex-direction:column;justify-content:center;overflow:auto}
+.auth-form{width:min(400px,100%);margin:auto}
+.tabs{display:flex;gap:6px;margin-bottom:26px}
+.tab{padding:9px 18px;border-radius:10px;font-weight:600;font-size:14px;color:var(--ink-2)}
+.tab[aria-selected="true"]{background:var(--surface-2);color:var(--ink)}
+.auth-note{font-size:12.5px;color:var(--ink-3);text-align:center;margin-top:14px}
+@media (max-width:900px){ #auth{grid-template-columns:1fr} .auth-left{display:none} }
+
+/* ===================== APP SHELL ===================== */
+.app{display:grid;grid-template-columns:248px 1fr;min-height:100vh}
+.side{background:var(--side);border-right:1px solid rgba(255,255,255,.05);color:var(--side-ink);padding:22px 14px;display:flex;flex-direction:column;gap:6px;position:sticky;top:0;height:100vh}
+.side-brand{display:flex;gap:11px;align-items:center;padding:2px 8px 24px}
+.side-brand .mk{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--brand),#3ab96f);display:grid;place-items:center;color:#fff;font-size:15px;flex:none}
+.side-brand b{display:block;color:#fff;font-size:17px;letter-spacing:-.03em;line-height:1.15;font-weight:700}
+.side-brand .sub{display:block;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;color:#8b968e;margin-top:3px;white-space:nowrap}
+.nav{display:flex;flex-direction:column;gap:3px}
+.nav a{display:flex;align-items:center;gap:11px;padding:11px 13px;border-radius:12px;font-weight:500;font-size:14px;color:var(--side-ink);transition:.14s}
+.nav a:hover{background:var(--side-2);color:#fff}
+.nav a.on{background:var(--side-2);color:#fff;font-weight:650;box-shadow:inset 3px 0 0 var(--brand)}
+.nav a.on .ic{color:var(--brand);opacity:1}
+.nav .ic{width:18px;text-align:center;opacity:.9}
+.side-foot{margin-top:auto}
+.me{display:flex;align-items:center;gap:10px;background:var(--side-2);padding:11px;border-radius:13px;width:100%;text-align:left;transition:.14s}
+.me:hover{background:#343a36}
+.me .av{width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700;flex:none}
+.me b{display:block;color:#fff;font-size:13.5px;line-height:1.2}
+.me span{font-size:11.5px;color:#8b968e}
+
+.main{display:flex;flex-direction:column;min-width:0}
+.top{background:var(--surface);border-bottom:1px solid var(--line);padding:16px 30px;display:flex;align-items:center;gap:16px;position:sticky;top:0;z-index:20}
+.top .crumb{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+.top h1{font-size:21px}
+.top .sp{flex:1}
+.bell{position:relative;width:38px;height:38px;border-radius:12px;border:1.5px solid var(--line);display:grid;place-items:center;transition:.14s}
+.bell:hover{border-color:var(--brand);color:var(--brand)}
+.bell .dot{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:9px;background:var(--danger);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.content{padding:26px 30px 60px;max-width:1240px;width:100%}
+
+/* ===================== BLOCOS ===================== */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:26px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--sh)}
+.stat span{color:var(--ink-2);font-size:13px}
+.stat b{display:block;font-size:28px;letter-spacing:-.04em;margin-top:6px}
+.sec-label{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);font-weight:700;margin:0 0 12px}
+.quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-bottom:28px}
+.qa{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;text-align:left;transition:.16s;box-shadow:var(--sh)}
+.qa:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:var(--sh-md)}
+.qa .ic{width:40px;height:40px;border-radius:11px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;font-size:19px;margin-bottom:12px}
+.qa b{display:block;font-size:15px}
+.qa span{color:var(--ink-2);font-size:12.5px}
+.cols{display:grid;grid-template-columns:1.6fr 1fr;gap:20px;align-items:start}
+@media (max-width:1000px){ .cols{grid-template-columns:1fr} }
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;box-shadow:var(--sh)}
+.panel h2{font-size:17px;margin-bottom:3px}
+.panel .hint{color:var(--ink-2);font-size:13px;margin:0 0 16px}
+.panel-hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.row{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line-2)}
+.row:last-child{border-bottom:0}
+.row .emo{width:38px;height:38px;border-radius:11px;background:var(--surface-2);display:grid;place-items:center;font-size:18px;flex:none}
+.row .txt{flex:1;min-width:0}
+.row .txt b{display:block;font-size:13.5px}
+.row .txt span{color:var(--ink-3);font-size:12px}
+.pill{font-size:11px;font-weight:700;padding:5px 11px;border-radius:99px;background:var(--brand-soft);color:var(--brand-2);white-space:nowrap}
+.pill-warn{background:var(--accent-soft);color:#a3641f}
+.pill-mute{background:var(--surface-2);color:var(--ink-3)}
+/* interruptor de visibilidade na lista do admin */
+.escolha{display:block;width:100%;text-align:left;border:1.5px solid var(--line);
+  border-radius:var(--r);padding:16px 17px;margin-bottom:11px;background:var(--surface);transition:.16s}
+.escolha:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:var(--sh-md)}
+.escolha b{display:block;font-size:15.5px;margin-bottom:5px}
+.escolha span{display:block;color:var(--ink-2);font-size:13.5px;line-height:1.5}
+.escolha i{display:block;font-style:normal;color:var(--ink-3);font-size:12px;margin-top:8px}
+.etq-modo{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+  padding:3px 8px;border-radius:99px;background:var(--surface-2);color:var(--ink-3);white-space:nowrap}
+.etq-modo.vit{background:var(--accent-soft);color:#a3641f}
+.chave{display:inline-flex;align-items:center;gap:9px;cursor:pointer;user-select:none;white-space:nowrap}
+.chave input{position:absolute;opacity:0;width:0;height:0}
+.chave .trilha{width:42px;height:24px;border-radius:99px;background:var(--surface-2);
+  border:1.5px solid var(--line);position:relative;transition:.18s;flex:none}
+.chave .trilha::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;
+  border-radius:50%;background:var(--ink-3);transition:.18s}
+.chave input:checked + .trilha{background:var(--brand-soft);border-color:var(--brand)}
+.chave input:checked + .trilha::after{transform:translateX(18px);background:var(--brand)}
+.chave input:focus-visible + .trilha{box-shadow:0 0 0 3.5px var(--brand-soft)}
+.chave input:disabled + .trilha{opacity:.5;cursor:wait}
+.chave .txt-chave{font-size:12.5px;font-weight:700;color:var(--ink-3);min-width:46px}
+.chave input:checked ~ .txt-chave{color:var(--brand-2)}
+tr.oculto td{opacity:.52}
+tr.oculto td:last-child{opacity:1}
+.empty{text-align:center;padding:34px 18px;color:var(--ink-3)}
+.empty .big{font-size:34px;margin-bottom:8px}
+
+/* cards de produto */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:.18s;box-shadow:var(--sh)}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-md);border-color:var(--brand)}
+.pcap{height:132px;display:grid;place-items:center;font-size:38px;color:#fff;flex:none}
+.pcap-img{display:block;padding:0;overflow:hidden;background:var(--surface-2)}
+.pcap-img img{width:100%;height:100%;object-fit:cover;display:block}
+.pbody{padding:18px;display:flex;flex-direction:column;flex:1}
+.pbody h3{font-size:16px;margin-bottom:4px}
+.pbody p{color:var(--ink-2);font-size:13px;margin:0 0 14px}
+.pfoot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.bar{height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden;margin-bottom:8px}
+.bar i{display:block;height:100%;background:var(--brand);border-radius:99px}
+.bar-lbl{font-size:11.5px;color:var(--ink-3);margin-bottom:12px}
+.preco b{font-size:19px;letter-spacing:-.02em}
+.preco s{color:var(--ink-3);font-size:12px;display:block}
+
+/* aula */
+.aula-wrap{display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:start}
+@media (max-width:1000px){ .aula-wrap{grid-template-columns:1fr} }
+.player{background:var(--navy);border-radius:var(--r-lg);aspect-ratio:16/9;display:grid;place-items:center;color:#93a398;overflow:hidden}
+.player iframe{width:100%;height:100%;border:0}
+.aula-txt{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:24px;margin-top:18px;white-space:pre-wrap;line-height:1.7}
+.lista-aula{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;transition:.14s;cursor:pointer;width:100%;text-align:left}
+.lista-aula:hover{background:var(--surface-2)}
+.lista-aula.on{background:var(--brand-soft)}
+.lista-aula .n{width:24px;height:24px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;color:var(--ink-3)}
+.lista-aula .n.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.lista-aula b{font-size:13px;font-weight:600;display:block;line-height:1.3}
+.lista-aula span{font-size:11.5px;color:var(--ink-3)}
+.mod-tit{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin:16px 0 6px;padding:0 12px}
+
+/* tabela admin */
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:0 10px 10px;font-weight:700}
+td{padding:12px 10px;border-top:1px solid var(--line-2);font-size:13.5px;vertical-align:middle}
+.adm-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}
+.adm-tabs button{padding:9px 15px;border-radius:10px;font-weight:600;font-size:13.5px;color:var(--ink-2);border:1.5px solid transparent}
+.adm-tabs button.on{background:var(--surface);border-color:var(--line);color:var(--ink)}
+
+/* comunidade */
+.post{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;margin-bottom:14px}
+.post-hd{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.av-sm{width:32px;height:32px;border-radius:50%;background:var(--brand-soft);color:var(--brand-2);display:grid;place-items:center;font-weight:700;font-size:12.5px;flex:none}
+.post h3{font-size:15.5px}
+.post .corpo{color:var(--ink-2);margin:8px 0 12px;white-space:pre-wrap}
+.resp{border-left:2px solid var(--line);padding:10px 0 10px 14px;margin-top:10px}
+.resp b{font-size:12.5px}
+.resp p{margin:3px 0 0;font-size:13px;color:var(--ink-2)}
+
+/* modal + toast */
+.ov{position:fixed;inset:0;background:rgba(11,22,20,.45);backdrop-filter:blur(3px);z-index:80;display:grid;place-items:center;padding:20px;opacity:0;pointer-events:none;transition:.18s}
+.ov.on{opacity:1;pointer-events:auto}
+.mcard{background:var(--surface);border-radius:var(--r-lg);width:min(520px,100%);max-height:88vh;overflow:auto;box-shadow:var(--sh-lg);transform:translateY(10px);transition:.18s}
+.ov.on .mcard{transform:none}
+.mhd{padding:22px 24px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.mhd h3{font-size:18px}
+.mbd{padding:16px 24px 24px}
+.bump{border:2px dashed var(--accent);background:var(--accent-soft);border-radius:var(--r);padding:13px;margin-bottom:12px;display:flex;gap:11px;align-items:flex-start;cursor:pointer}
+.bump input{width:17px;height:17px;margin-top:2px;accent-color:var(--accent);flex:none}
+.capa-prev{height:150px;border-radius:var(--r);border:1.5px dashed var(--line);background:var(--surface-2);display:grid;place-items:center;overflow:hidden;text-align:center;color:var(--ink-3);font-size:12.5px;padding:10px}
+.capa-prev img{width:100%;height:100%;object-fit:cover}
+.bump b{font-size:13.5px;color:#8a4318;display:block}
+.bump span{font-size:12.5px;color:#8a5a3a}
+#toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,16px);background:var(--navy);color:#fff;padding:12px 20px;border-radius:11px;font-size:13.5px;z-index:120;opacity:0;pointer-events:none;transition:.2s;max-width:calc(100% - 40px);text-align:center}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.demo-bar{background:var(--accent);color:#fff;text-align:center;padding:6px 16px;font-size:12.5px;font-weight:600}
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .side{position:relative;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px;padding:12px}
+  .side-brand{padding:0 8px 0 0}
+  .nav{flex-direction:row;flex-wrap:wrap;flex:1}
+  .nav a{padding:8px 11px;font-size:13px}
+  .side-foot{margin:0}
+  .me{padding:7px 10px}
+  .content,.top{padding-inline:16px}
+}
+</style>
+</head>
+<body>
+<!-- marca EstudeVet, vetor, herda cor do CSS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mk" viewBox="0 0 580 440"><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-contorno,#fff)"><path d="M5139 4276 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1634 -566 -1794 -623 -3320 -1199 l-279 -106 -63 -62 -63 -62 62 -64
+c35 -35 132 -116 215 -179 84 -64 151 -118 149 -122 -10 -16 -296 -673 -296
+-679 0 -4 30 -37 68 -74 50 -49 82 -71 126 -87 164 -60 562 -224 568 -234 13
+-20 9 -90 -8 -146 -10 -36 -30 -69 -59 -100 l-44 -47 67 -67 c65 -64 72 -68
+247 -138 364 -144 747 -278 1086 -380 l141 -42 70 69 c38 38 94 99 123 135
+176 218 387 398 761 650 132 90 222 137 410 217 328 141 752 261 1194 341 235
+42 287 49 549 70 l234 19 68 68 69 68 -67 69 c-116 117 -162 135 -528 202
+-308 56 -570 97 -1200 185 -281 39 -516 73 -523 75 -11 4 298 297 723 685 775
+706 1156 1081 1424 1403 13 16 9 23 -49 82 -36 36 -67 65 -71 65 -3 0 -170
+-56 -370 -124z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-escuro,#292827)"><path d="M5139 4156 c-200 -68 -449 -154 -554 -191 -206 -73 -439 -154 -860
+-300 -1432 -496 -1807 -629 -2619 -935 -806 -304 -979 -369 -983 -374 -3 -3
+381 -296 434 -331 1 0 -67 -160 -153 -355 -85 -194 -153 -358 -151 -364 3 -6
+22 -17 43 -25 156 -55 644 -257 663 -274 85 -78 78 -237 -15 -337 -25 -27 -41
+-51 -36 -54 19 -12 376 -151 557 -218 213 -78 503 -175 716 -239 l142 -42 31
+35 c17 19 63 72 101 118 93 110 258 274 375 372 177 149 499 374 636 445 347
+180 873 345 1414 442 235 42 287 49 549 70 128 11 238 24 243 29 16 16 -57 59
+-145 87 -85 27 -333 75 -667 130 -202 32 -1184 174 -1460 210 -69 9 -132 19
+-140 21 -11 4 -3 17 31 47 25 23 201 186 390 362 189 176 425 394 524 485 674
+614 992 922 1198 1159 112 129 128 151 109 151 -5 0 -173 -56 -373 -124z
+m-2881 -1317 c65 -13 150 -65 179 -108 27 -39 30 -89 8 -131 -14 -28 -80 -79
+-119 -94 -16 -5 -12 -11 28 -38 97 -64 169 -196 169 -313 1 -211 -179 -385
+-400 -387 -120 -1 -215 37 -296 119 -176 177 -143 455 71 594 l44 28 -29 14
+c-70 37 -108 109 -91 173 15 58 100 123 185 143 54 13 193 13 251 0z m549
+-1163 c30 -54 53 -99 51 -101 -6 -5 -496 -274 -605 -333 -62 -33 -115 -57
+-117 -54 -23 38 -107 204 -105 206 2 2 121 68 264 146 143 79 298 165 345 192
+47 26 91 47 98 45 8 -1 38 -46 69 -101z"/><path d="M2035 2361 c-147 -66 -152 -281 -10 -355 54 -28 147 -29 194 -1 56
+33 93 87 99 144 7 72 -5 117 -41 158 -61 69 -160 92 -242 54z"/></g><g transform="translate(0,440.0) scale(0.1,-0.1)" fill="var(--mk-verde,#30a560)"><path d="M2040 2846 c-82 -15 -154 -51 -191 -95 -74 -91 -38 -179 101 -245 62
+-29 71 -31 185 -31 145 1 215 23 283 90 38 39 42 47 42 94 0 44 -5 56 -36 91
+-47 51 -126 88 -216 100 -87 11 -86 11 -168 -4z"/><path d="M2575 1698 c-88 -49 -247 -137 -352 -195 -106 -58 -193 -109 -193
+-113 0 -8 70 -145 97 -188 l14 -23 77 42 c214 115 628 343 636 350 8 7 -100
+220 -112 218 -4 -1 -79 -41 -167 -91z"/></g></symbol></svg>
+
+
+<!-- ================= CONFIG ================= -->
+<script>
+const CONFIG = {
+  MARCA: "EstudeVet",
+  MARCA_DESTAQUE: "Vet",      // parte do nome que fica em verde
+  SUBTITULO: "Formação e capacitação",
+  PROMESSA: "Entre na plataforma do aluno",
+  SUB_PROMESSA: "Formação e capacitação para profissionais veterinários. Aprenda, baixe os materiais e troque com quem vive a mesma rotina.",
+  BULLETS: ["Cursos práticos com material anexo", "Planilhas prontas para usar na clínica", "Comunidade e encontros ao vivo"],
+  WHATSAPP: "5574999991455",
+
+  // Supabase — vazio = MODO DEMO (dados locais, nada é salvo de verdade)
+  // Projeto Supabase: AprendeVettapp / opuaaoccuzkbahuvwamf (o nome do projeto no
+  // painel continua o antigo; só a marca da plataforma virou EstudeVet)
+  SUPABASE_URL: "https://opuaaoccuzkbahuvwamf.supabase.co",
+  SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9wdWFhb2NjdXprYmFodXZ3YW1mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2MDQ0MjQsImV4cCI6MjEwNDE4MDQyNH0.egbaw_TfReccQCWyp_uwcN-mjzwjkDfIewZXj6R1jNA",
+  FN_CAKTO: "",           // .../functions/v1/cakto-pagamento  (provedor padrão)
+  FN_CHECKOUT: "",        // .../functions/v1/asaas-criar-cobranca (alternativa)
+  FN_ADMIN_ALUNO: "",     // .../functions/v1/admin-criar-aluno
+  CAKTO_CHECKOUT_URL: "", // link padrão da oferta na Cakto (fallback do cartão)
+
+  // Quais formas de pagamento aparecem no checkout.
+  // Pix exige a Cakto Banking ativa. Enquanto não estiver, deixe pix: false,
+  // senão o aluno clica, o Pix não gera e você perde a venda.
+  METODOS: { cartao: true, pix: false },
+};
+</script>
+
+<div id="demoBar" class="demo-bar hide">
+  MODO DEMO. Dados locais, nada é gravado. Entre com <b>admin@demo.com</b> (admin) ou <b>aluno@demo.com</b> (aluno), senha qualquer.
+</div>
+
+<!-- ================= AUTH ================= -->
+<div id="auth">
+  <div class="auth-left">
+    <div class="auth-brand">
+      <svg class="mk-svg" viewBox="0 0 580 440" role="img" aria-label="EstudeVet"><use href="#mk"/></svg>
+      <span><b id="abMarca">EstudeVet</b><span class="sub" id="abSub">Formação e capacitação</span></span>
+    </div>
+    <div class="mock">
+      <div class="play">▶</div>
+      <div>
+        <div class="lbl">Continue de onde parou</div>
+        <b>Planilha de Precificação de Serviços</b>
+        <small>Manual em PDF e planilha em Excel</small>
+        <span class="pill">Retomar: baixe os arquivos e comece</span>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Acesso</div>
+      <h2 id="alTitulo">Entre na plataforma do aluno</h2>
+      <p id="alSub"></p>
+      <ul class="auth-list" id="alBullets"></ul>
+    </div>
+  </div>
+
+  <div class="auth-right">
+    <div class="auth-form">
+      <div class="tabs" role="tablist">
+        <button class="tab" id="tabLogin" role="tab" aria-selected="true">Login</button>
+        <button class="tab" id="tabCadastro" role="tab" aria-selected="false">Cadastro</button>
+      </div>
+
+      <!-- login -->
+      <div id="formLogin">
+        <div class="field"><label for="liEmail">E-mail</label><input id="liEmail" type="email" autocomplete="email" placeholder="voce@email.com"></div>
+        <div class="field"><label for="liSenha">Senha</label><input id="liSenha" type="password" autocomplete="current-password" placeholder="••••••••"></div>
+        <button class="btn btn-primary btn-block" id="btnLogin">Entrar</button>
+        <p class="auth-note">Comprou e não sabe a senha? Ela chegou no e-mail da compra.</p>
+      </div>
+
+      <!-- cadastro -->
+      <div id="formCadastro" class="hide">
+        <div class="field"><label for="cdNome">Nome</label><input id="cdNome" placeholder="Seu nome completo"></div>
+        <div class="field"><label for="cdZap">WhatsApp / Telefone</label><input id="cdZap" placeholder="(00) 00000-0000"></div>
+        <div class="field"><label for="cdTipo">Você é...</label>
+          <select id="cdTipo">
+            <option value="">Selecione</option>
+            <option value="veterinario_autonomo">Veterinário(a) autônomo(a)</option>
+            <option value="gestor_clinica">Gestor(a) de clínica / pet shop</option>
+            <option value="estudante">Estudante de veterinária</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="field"><label for="cdEmail">E-mail</label><input id="cdEmail" type="email" autocomplete="email" placeholder="voce@email.com"></div>
+        <div class="field"><label for="cdSenha">Senha</label><input id="cdSenha" type="password" autocomplete="new-password" placeholder="mínimo 6 caracteres"></div>
+        <label class="check"><input type="checkbox" id="cdOk"><span>Concordo em ser contatado(a) sobre os produtos e li a política de privacidade.</span></label>
+        <button class="btn btn-primary btn-block" id="btnCadastrar">Criar conta</button>
+        <p class="auth-note">A conta é grátis. Você já entra com o material de boas-vindas liberado.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= APP ================= -->
+<div class="app hide" id="app">
+  <aside class="side">
+    <div class="side-brand">
+      <svg class="mk-svg" viewBox="0 0 580 440" role="img" aria-label="EstudeVet"><use href="#mk"/></svg>
+      <span><b id="sbMarca">EstudeVet</b><span class="sub" id="sbSub">Formação e capacitação</span></span>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <button class="me" id="btnConta">
+        <span class="av" id="meAv">W</span>
+        <span><b id="meNome">—</b><span id="mePapel">—</span></span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="top">
+      <div>
+        <div class="crumb" id="crumb">Início</div>
+        <h1 id="titulo">Bem-vindo</h1>
+      </div>
+      <div class="sp"></div>
+      <button class="bell" id="tema" title="Alternar tema">🌙</button>
+      <button class="bell" id="bell">🔔<span class="dot hide" id="bellDot">0</span></button>
+    </header>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+
+<div class="ov" id="ov"><div class="mcard" id="mcard"></div></div>
+<div id="toast"></div>
+
+<script type="module">
+/* =====================================================================
+   PLATAFORMA — arquivo único. Camada de dados troca sozinha entre
+   MODO DEMO (arrays em memória) e Supabase, sem mudar as telas.
+   ===================================================================== */
+const DEMO = !CONFIG.SUPABASE_URL || !CONFIG.SUPABASE_ANON_KEY;
+let sb = null, EU = null;
+
+const BRL = c => (c/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const $ = s => document.querySelector(s);
+const uid = () => 'id-' + Math.random().toString(36).slice(2,10);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const dataBR = d => new Date(d).toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
+const horaBR = d => new Date(d).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+const iniciais = n => (n||'?').trim().split(/\s+/).slice(0,2).map(p=>p[0]).join('').toUpperCase();
+
+/* ---------------------- BANCO DEMO ---------------------- */
+const D = {
+  perfis:[
+    {id:'u1',nome:'Wendell Dourado',email:'admin@demo.com',papel:'admin',perfil_tipo:'outro',criado_em:'2026-06-01',senha_provisoria:false},
+    {id:'u2',nome:'Ana Beatriz Lima',email:'aluno@demo.com',papel:'aluno',perfil_tipo:'veterinario_autonomo',criado_em:'2026-07-02',senha_provisoria:false},
+    {id:'u3',nome:'Carlos Meneses',email:'carlos@demo.com',papel:'aluno',perfil_tipo:'gestor_clinica',criado_em:'2026-07-18',senha_provisoria:true},
+    {id:'u4',nome:'Juliana Prado',email:'juliana@demo.com',papel:'aluno',perfil_tipo:'estudante',criado_em:'2026-08-11',senha_provisoria:false},
+  ],
+  produtos:[
+    {id:'p0',slug:'primeiros-passos',nome:'Primeiros Passos com IA na Rotina Vet',subtitulo:'Comece por aqui, é de graça',descricao:'Três aulas curtas com os usos mais simples e seguros de IA no dia a dia da clínica.',tipo:'curso',preco_centavos:0,preco_de_centavos:null,gratuito:true,emoji:'🎁',cor:'#1f6e3f',publicado:true,ordem:0},
+    {id:'p1',assentos:1,slug:'planilha-precificacao',nome:'Planilha de Precificação de Serviços Veterinários',subtitulo:'Descubra quanto sobra de verdade em cada serviço',descricao:'Planilha em Excel com quatro abas e manual em PDF de 12 páginas. Preencha o custo fixo uma vez e veja o lucro real de cada serviço.',tipo:'kit',preco_centavos:9700,preco_de_centavos:19700,gratuito:false,emoji:'📊',cor:'#292827',publicado:true,ordem:1},
+    {id:'p6',assentos:1,slug:'kit-prompts-vet',nome:'30 Prompts para a Rotina Vet',subtitulo:'Os pedidos prontos que resolvem comunicação, recepção, gestão e conteúdo',descricao:'PDF de 24 páginas com 30 prompts em 6 blocos, mais o arquivo de texto para copiar e colar. Com a ficha da clínica e o bloco de voz.',tipo:'kit',preco_centavos:4700,preco_de_centavos:9700,gratuito:false,emoji:'🧠',cor:'#30a560',publicado:true,ordem:2},
+    {id:'p10',assentos:1,slug:'precificacao-autonomo',nome:'Precificação do Vet Autônomo',subtitulo:'Quanto cobrar por serviço e quanto cobrar pela distância',descricao:'A planilha de preço de quem atende em domicílio. Custo por hora ocupada e por km, taxa de deslocamento por zona e tabela pronta, com simulador de chamado.',tipo:'kit',preco_centavos:7700,preco_de_centavos:14700,gratuito:false,emoji:'🚗',cor:'#2f4f3f',publicado:true,ordem:1},
+    {id:'p8',assentos:1,slug:'orcamento-30s',nome:'Orçamento em 30 Segundos',subtitulo:'Monte, envie e acompanhe os seus orçamentos sem parar o atendimento',descricao:'Aplicativo de arquivo único que roda offline. Serviços cadastrados uma vez, texto pronto para o WhatsApp, PDF com o seu logo e a sua taxa de aceite.',tipo:'kit',preco_centavos:4700,preco_de_centavos:9700,gratuito:false,emoji:'🧾',cor:'#c9822f',publicado:true,ordem:2},
+    {id:'p9',assentos:1,slug:'rota-do-dia',nome:'Rota do Dia',subtitulo:'Saiba se aquele chamado do outro lado da cidade vale a viagem',descricao:'Aplicativo de arquivo único que roda offline. Monta o dia por região, avisa quando o horário não fecha e diz o preço mínimo do chamado avulso.',tipo:'kit',preco_centavos:6700,preco_de_centavos:12700,gratuito:false,emoji:'🗺',cor:'#1f6e3f',publicado:true,ordem:3},
+    {id:'p7',assentos:1,slug:'agenda-de-retorno',nome:'Agenda de Retorno',subtitulo:'O aplicativo que lembra você de falar com o tutor na hora certa',descricao:'Aplicativo de arquivo único que roda offline. Anote o atendimento em trinta segundos e receba todo dia a lista de quem precisa de mensagem, com o texto pronto.',tipo:'kit',preco_centavos:6700,preco_de_centavos:12700,gratuito:false,emoji:'🔔',cor:'#3d4541',publicado:true,ordem:2},
+    {id:'p5',assentos:1,slug:'planilha-balanco',nome:'Balanço Mensal da Clínica',subtitulo:'Feche o mês em vinte minutos e saiba para onde o lucro foi',descricao:'A planilha mãe do fechamento mensal, com manual em PDF de 10 páginas. Lucro gerencial, ponto de equilíbrio e destinação do lucro.',tipo:'kit',preco_centavos:3700,preco_de_centavos:6700,gratuito:false,emoji:'📈',cor:'#26874e',publicado:true,ordem:3},
+    {id:'p2',assentos:4,slug:'prontuario-comunicacao',nome:'Prontuário e Comunicação com Tutor',subtitulo:'Menos tempo escrevendo, tutor entendendo mais',descricao:'Organize o prontuário e transforme explicação técnica em mensagem que o tutor entende.',tipo:'curso',preco_centavos:14700,preco_de_centavos:24700,gratuito:false,emoji:'💬',cor:'#3d4541',publicado:false,ordem:2},
+    {id:'p3',slug:'kit-marketing',nome:'Kit Marketing para Clínica',subtitulo:'Um mês de conteúdo pronto',descricao:'Calendário editorial, 30 legendas e 10 roteiros de Reels, com aula de adaptação.',tipo:'kit',preco_centavos:9700,preco_de_centavos:14700,gratuito:false,emoji:'📣',cor:'#c9822f',publicado:false,ordem:3},
+    {id:'v1',slug:'implantacao-na-clinica',nome:'Implantação na sua clínica',subtitulo:'Eu adapto o material que você já tem para a sua realidade',descricao:'Os scripts reescritos com o nome da sua clínica, a planilha preenchida com os seus números e uma chamada de 45 minutos para entregar e ajustar.',tipo:'mentoria',preco_centavos:0,preco_de_centavos:null,gratuito:false,emoji:'📦',cor:'#292827',modo:'vitrine',publicado:true,ordem:20,bullets:['Scripts com o nome e os serviços da sua clínica','Planilha preenchida com os seus números','Chamada de 45 minutos para entregar e ajustar']},
+    {id:'v2',slug:'treinamento-da-equipe',nome:'Treinamento da equipe',subtitulo:'Um encontro ao vivo com quem atende, usando o seu material',descricao:'Uma hora com a recepção, no horário que não atrapalha a agenda, treinando as situações que mais acontecem na sua clínica.',tipo:'workshop',preco_centavos:0,preco_de_centavos:null,gratuito:false,emoji:'📦',cor:'#2f4f3f',modo:'vitrine',publicado:true,ordem:21,bullets:['Uma hora com a recepção','Treino com as situações da sua clínica','Ficha de avaliação para acompanhar depois']},
+  ],
+  modulos:[
+    {id:'m1',produto_id:'p0',titulo:'Começando',ordem:1},
+    {id:'m2',produto_id:'p1',titulo:'A planilha e o manual',ordem:1},
+    {id:'m3',produto_id:'p5',titulo:'A planilha e o manual',ordem:1},
+    {id:'m5',produto_id:'p6',titulo:'Os arquivos do kit',ordem:1},
+    {id:'m6',produto_id:'p7',titulo:'O aplicativo e o manual',ordem:1},
+    {id:'m7',produto_id:'p8',titulo:'O aplicativo e o manual',ordem:1},
+    {id:'m8',produto_id:'p9',titulo:'O aplicativo e o manual',ordem:1},
+    {id:'m9',produto_id:'p10',titulo:'A planilha e o manual',ordem:1},
+    {id:'m4',produto_id:'p2',titulo:'Prontuário sem sofrimento',ordem:1},
+  ],
+  aulas:[
+    {id:'a1',modulo_id:'m1',titulo:'O que a IA resolve e o que não resolve',descricao:'O mapa do que vale delegar',tipo:'texto',duracao_min:7,ordem:1,conteudo:'A regra é uma só: delegue redação, organização e repetição. Nunca delegue decisão clínica.\n\nA ferramenta escreve com confiança mesmo quando está errada, e ela não responde por nada. Quem assina é você, com o seu registro.\n\nVALE DELEGAR\nReescrever explicação técnica para o tutor entender.\nMontar a mensagem de acompanhamento do dia seguinte.\nTransformar anotação solta em documento organizado.\nEscrever anúncio de vaga e roteiro de entrevista.\nLer os números do fechamento e apontar hipóteses.\n\nNÃO DELEGUE\nDecidir o que o animal tem.\nEscolher tratamento, dose ou protocolo.\nInterpretar exame para tomar decisão.\nOrientar o tutor sobre saúde sem passar por você.\n\nO TESTE DE TRINTA SEGUNDOS\nSe essa resposta sair errada, quem paga? Se for o animal, não delegue. Se for o seu tempo, delegue e confira antes de usar.'},
+    {id:'a2',modulo_id:'m1',titulo:'O que nunca colocar na ferramenta',descricao:'Dado de tutor, dado de paciente e LGPD',tipo:'texto',duracao_min:8,ordem:2,conteudo:'Nome do tutor, telefone, endereço, documento e identificação do paciente ficam fora. Sempre.\n\nERRADO\n"A Dona Marlene trouxe o Thor, cachorro dela de 7 anos, o telefone dela é 79 9..."\n\nCERTO\n"Tutora trouxe cão macho de 7 anos."\n\nA resposta sai igual e o risco desaparece. O que a ferramenta precisa é do contexto, não da identidade.\n\nOS QUATRO ERROS\nPedir tudo de uma vez.\nAceitar a primeira resposta.\nNão dizer o tamanho.\nConfiar sem conferir.'},
+    {id:'a3',modulo_id:'m1',titulo:'O seu primeiro pedido bem feito',descricao:'Os dois blocos que mudam tudo',tipo:'texto',duracao_min:10,ordem:3,conteudo:'Um pedido que funciona tem cinco peças: papel, contexto, tarefa, formato e restrição. As duas primeiras você escreve uma vez só.\n\nBLOCO 1: A FICHA DA SUA CLÍNICA\nNome, cidade, estrutura, público, serviços, como vocês falam com o tutor, e coisas que a gente nunca faz. Essa última linha é a que mais melhora a resposta.\n\nBLOCO 2: O BLOCO DE VOZ\nEscreva como uma pessoa falando. Sem travessão. Frases curtas. Sem estatística sem fonte. Use sempre o nome do animal. Termine com um próximo passo concreto.\n\nBaixe o material desta aula: os dois blocos prontos e três prompts para usar hoje. Comece pelo do "quanto custa?", que é a mensagem mais enviada da sua clínica.'},
+    {id:'a4',modulo_id:'m2',titulo:'Baixe os arquivos e comece',descricao:'Planilha em Excel e manual em PDF',tipo:'texto',duracao_min:5,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nAbra o manual primeiro, na Parte 2, e levante os cinco números antes de preencher a planilha. Depois vá para a aba Parâmetros.'},
+    {id:'a14',modulo_id:'m9',titulo:'Baixe os arquivos e comece',descricao:'Planilha em Excel e manual em PDF',tipo:'texto',duracao_min:8,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nComece pelo bloco do carro, na aba Seus custos. É o de dez minutos e o que mais surpreende. A Parte 2 do manual explica campo a campo.'},
+    {id:'a12',modulo_id:'m7',titulo:'Baixe os arquivos e comece',descricao:'Aplicativo em HTML e manual em PDF',tipo:'texto',duracao_min:6,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nComece cadastrando os cinco serviços que você mais vende, na aba Serviços, e os seus dados em Ajustes. A Parte 2 do manual mostra o que ajuda na hora de cadastrar.'},
+    {id:'a13',modulo_id:'m8',titulo:'Baixe os arquivos e comece',descricao:'Aplicativo em HTML e manual em PDF',tipo:'texto',duracao_min:6,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nComece pelas suas zonas e pelos quatro números da Parte 2 do manual. Sem eles o aplicativo não consegue dizer se o dia está bom.'},
+    {id:'a11',modulo_id:'m6',titulo:'Baixe os arquivos e comece',descricao:'Aplicativo em HTML e manual em PDF',tipo:'texto',duracao_min:6,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nAbra o aplicativo com um duplo clique no computador, ou pelo navegador no celular. Leia as Partes 2 e 3 do manual antes de anotar o primeiro atendimento, e configure o seu nome na aba Ajustes.'},
+    {id:'a10',modulo_id:'m5',titulo:'Baixe os arquivos e comece',descricao:'PDF do kit e arquivo de texto',tipo:'texto',duracao_min:6,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nLeia as Partes 1 e 2 do PDF antes de rodar qualquer prompt, preencha a ficha da clínica e guarde os dois blocos numa nota do celular. Depois use o arquivo de texto para copiar sem brigar com o PDF.'},
+    {id:'a9',modulo_id:'m3',titulo:'Baixe os arquivos e comece',descricao:'Planilha em Excel e manual em PDF',tipo:'texto',duracao_min:5,ordem:1,conteudo:'Baixe os dois arquivos nos materiais desta aula.\n\nComece o primeiro fechamento por um mês já encerrado, com os documentos na mão. A Parte 3 do manual mostra onde buscar cada número.'},
+    {id:'a8',modulo_id:'m4',titulo:'Da anotação bagunçada ao prontuário',descricao:'O fluxo em 3 passos',tipo:'texto',duracao_min:14,ordem:1,conteudo:'Anote solto durante a consulta. Depois, estruture em SOAP. A ferramenta faz o meio do caminho; você revisa e assina.'},
+  ],
+  materiais:[
+    {id:'mt1',aula_id:'a3',nome:'Comece Aqui: os dois blocos e os 3 prompts.pdf',formato:'PDF',arquivo_path:'primeiros-passos/AprendeVet-Comece-Aqui-v1.0.pdf',ordem:1},
+    {id:'mt2',aula_id:'a4',nome:'Planilha de Precificação de Serviços v1.0.xlsx',formato:'.xlsx',arquivo_path:'planilha-precificacao/AprendeVet-Precificacao-de-Servicos-v1.0.xlsx',ordem:1},
+    {id:'mt3',aula_id:'a4',nome:'Manual: como usar a planilha.pdf',formato:'PDF',arquivo_path:'planilha-precificacao/AprendeVet-Manual-Precificacao-v1.0.pdf',ordem:2},
+    {id:'mt14',aula_id:'a14',nome:'Precificação do Vet Autônomo v1.0.xlsx',formato:'.xlsx',arquivo_path:'precificacao-autonomo/AprendeVet-Precificacao-Vet-Autonomo-v1.0.xlsx',ordem:1},
+    {id:'mt15',aula_id:'a14',nome:'Manual: como usar a planilha.pdf',formato:'PDF',arquivo_path:'precificacao-autonomo/AprendeVet-Manual-Precificacao-Autonomo-v1.0.pdf',ordem:2},
+    {id:'mt10',aula_id:'a12',nome:'Orçamento em 30 Segundos (aplicativo).html',formato:'HTML',arquivo_path:'orcamento-30s/AprendeVet-Orcamento-em-30-Segundos-v1.0.html',ordem:1},
+    {id:'mt11',aula_id:'a12',nome:'Manual: como usar o aplicativo.pdf',formato:'PDF',arquivo_path:'orcamento-30s/AprendeVet-Manual-Orcamento-30s-v1.0.pdf',ordem:2},
+    {id:'mt12',aula_id:'a13',nome:'Rota do Dia (aplicativo).html',formato:'HTML',arquivo_path:'rota-do-dia/AprendeVet-Rota-do-Dia-v1.0.html',ordem:1},
+    {id:'mt13',aula_id:'a13',nome:'Manual: como usar o aplicativo.pdf',formato:'PDF',arquivo_path:'rota-do-dia/AprendeVet-Manual-Rota-do-Dia-v1.0.pdf',ordem:2},
+    {id:'mt8',aula_id:'a11',nome:'Agenda de Retorno (aplicativo).html',formato:'HTML',arquivo_path:'agenda-de-retorno/AprendeVet-Agenda-de-Retorno-v1.0.html',ordem:1},
+    {id:'mt9',aula_id:'a11',nome:'Manual: como usar o aplicativo.pdf',formato:'PDF',arquivo_path:'agenda-de-retorno/AprendeVet-Manual-Agenda-de-Retorno-v1.0.pdf',ordem:2},
+    {id:'mt6',aula_id:'a10',nome:'30 Prompts para a Rotina Vet.pdf',formato:'PDF',arquivo_path:'kit-prompts-vet/AprendeVet-30-Prompts-Rotina-Vet-v1.0.pdf',ordem:1},
+    {id:'mt7',aula_id:'a10',nome:'Prompts para copiar e colar.txt',formato:'TXT',arquivo_path:'kit-prompts-vet/AprendeVet-30-Prompts-copiar-e-colar.txt',ordem:2},
+    {id:'mt4',aula_id:'a9',nome:'Planilha de Balanço Mensal v1.0.xlsx',formato:'.xlsx',arquivo_path:'planilha-balanco/AprendeVet-Balanco-Mensal-v1.0.xlsx',ordem:1},
+    {id:'mt5',aula_id:'a9',nome:'Manual: como usar a planilha.pdf',formato:'PDF',arquivo_path:'planilha-balanco/AprendeVet-Manual-Balanco-Mensal-v1.0.pdf',ordem:2},
+  ],
+  progresso:[{id:'g1',user_id:'u2',aula_id:'a1',concluida:true},{id:'g2',user_id:'u2',aula_id:'a2',concluida:true},{id:'g3',user_id:'u2',aula_id:'a4',concluida:true}],
+  acessos:[
+    {id:'ac1',user_id:'u2',email:'aluno@demo.com',produto_id:'p1',origem:'compra',criado_em:'2026-07-02'},
+    {id:'ac2',user_id:'u3',email:'carlos@demo.com',produto_id:'p1',origem:'compra',criado_em:'2026-07-18'},
+    {id:'ac3',user_id:'u3',email:'carlos@demo.com',produto_id:'p3',origem:'manual',criado_em:'2026-08-02'},
+    {id:'ac4',user_id:'u4',email:'juliana@demo.com',produto_id:'p2',origem:'compra',criado_em:'2026-08-11'},
+    {id:'ac5',user_id:'u2',email:'aluno@demo.com',produto_id:'p2',origem:'compra',criado_em:'2026-08-20'},
+    {id:'ac6',user_id:null,email:'recepcao@clinica.com',produto_id:'p2',origem:'equipe',criado_em:'2026-08-21'},
+  ],
+  pedidos:[
+    {id:'pd1',codigo:'A1B2C3D4',nome:'Ana Beatriz Lima',email:'aluno@demo.com',total_centavos:19700,status:'pago',criado_em:'2026-07-02',metodo:'PIX'},
+    {id:'pd2',codigo:'E5F6G7H8',nome:'Carlos Meneses',email:'carlos@demo.com',total_centavos:19700,status:'pago',criado_em:'2026-07-18',metodo:'CREDIT_CARD'},
+    {id:'pd3',codigo:'I9J0K1L2',nome:'Juliana Prado',email:'juliana@demo.com',total_centavos:14700,status:'pago',criado_em:'2026-08-11',metodo:'PIX'},
+    {id:'pd4',codigo:'M3N4O5P6',nome:'Rafael Souza',email:'rafael@demo.com',total_centavos:9700,status:'pendente',criado_em:'2026-09-01',metodo:'BOLETO'},
+  ],
+  pedido_itens:[],
+  produto_bumps:[
+    {produto_id:'p1',bump_produto_id:'p5',headline:'Leve junto o Balanço Mensal e feche o mês inteiro, não só o preço'},
+    {produto_id:'p6',bump_produto_id:'p5',headline:'Leve o Balanço Mensal, que produz os números do bloco C'},
+    {produto_id:'p7',bump_produto_id:'p8',headline:'Leve o Orçamento em 30 Segundos e responda o preço na hora'},
+    {produto_id:'p9',bump_produto_id:'p8',headline:'Leve o Orçamento em 30 Segundos e feche o chamado ainda no WhatsApp'},
+    {produto_id:'p8',bump_produto_id:'p5',headline:'Leve o Balanço Mensal e veja se o mês inteiro fecha'},
+    {produto_id:'p10',bump_produto_id:'p9',headline:'Leve a Rota do Dia e aplique a tabela por zona no seu dia a dia'},
+  ],
+
+  encontros:[
+    {id:'e1',titulo:'Workshop ao vivo: IA na Prática para Veterinários',descricao:'Duas horas aplicando IA em prontuário, comunicação com tutor e conteúdo. Turma pequena, com espaço para o seu caso real.',data_hora:new Date(Date.now()+12*864e5).toISOString(),duracao_min:120,vagas:30,produto_id:null,link_sala:'https://meet.google.com/exemplo',ativo:true},
+    {id:'e2',titulo:'Tira-dúvidas de Precificação',descricao:'Encontro mensal para quem está preenchendo a planilha e montando a tabela nova.',data_hora:new Date(Date.now()+26*864e5).toISOString(),duracao_min:60,vagas:20,produto_id:'p1',link_sala:'https://meet.google.com/exemplo2',ativo:true},
+  ],
+  encontro_inscricoes:[{id:'ei1',encontro_id:'e1',user_id:'u2'}],
+  contatos:[],
+  produto_fotos:[],
+  posts:[
+    {id:'po1',user_id:'u2',autor_nome:'Ana Beatriz Lima',titulo:'Consegui reajustar a tabela sem perder cliente',corpo:'Apliquei a aula de reajuste na clínica, avisei com 20 dias de antecedência e só um cliente reclamou. Faturamento subiu 18% no mês.',produto_id:'p1',criado_em:new Date(Date.now()-3*864e5).toISOString(),fixado:false},
+    {id:'po2',user_id:'u4',autor_nome:'Juliana Prado',titulo:'Como vocês organizam a evolução de internado?',corpo:'Estou testando o modelo da aula 1, mas em internação longa fica repetitivo. Alguém achou um jeito melhor?',produto_id:'p2',criado_em:new Date(Date.now()-1*864e5).toISOString(),fixado:false},
+  ],
+  respostas:[{id:'r1',post_id:'po1',user_id:'u1',autor_nome:'Wendell Dourado',corpo:'Boa, Ana! Manda o print do antes e depois na próxima live que a gente comenta.',criado_em:new Date(Date.now()-2*864e5).toISOString()}],
+  certificados:[],
+  licencas:[{id:'l1',produto_id:'p2',titular_email:'aluno@demo.com',titular_id:'u2',assentos:4,criado_em:'2026-08-20'}],
+  licenca_membros:[{id:'lm1',licenca_id:'l1',email:'recepcao@clinica.com',nome:'Marina (recepção)',criado_em:'2026-08-21'}],
+};
+
+/* ---------------------- CAMADA DE DADOS ---------------------- */
+const api = {
+  async sel(tab, filtro = {}){
+    if(DEMO){
+      return (D[tab] ?? []).filter(r => Object.entries(filtro).every(([k,v]) =>
+        Array.isArray(v) ? v.includes(r[k]) : r[k] === v));
+    }
+    let q = sb.from(tab).select('*');
+    for(const [k,v] of Object.entries(filtro)) q = Array.isArray(v) ? q.in(k,v) : q.eq(k,v);
+    const { data, error } = await q;
+    if(error){ console.error(tab, error); return []; }
+    return data ?? [];
+  },
+  async ins(tab, row){
+    if(DEMO){ const r = { id: uid(), criado_em: new Date().toISOString(), ...row }; (D[tab] ??= []).push(r); return r; }
+    const { data, error } = await sb.from(tab).insert(row).select().single();
+    if(error) return api.falhou(tab, 'gravar', error);
+    return data;
+  },
+  async upd(tab, id, patch){
+    if(DEMO){ const r = D[tab].find(x=>x.id===id); Object.assign(r ?? {}, patch); return r; }
+    const { data, error } = await sb.from(tab).update(patch).eq('id', id).select().single();
+    if(error) return api.falhou(tab, 'salvar', error);
+    return data;
+  },
+  async del(tab, id){
+    if(DEMO){ D[tab] = D[tab].filter(x=>x.id!==id); return true; }
+    const { error } = await sb.from(tab).delete().eq('id', id);
+    if(error){ api.falhou(tab, 'apagar', error); return false; }
+    return true;
+  },
+
+  /* Antes daqui o erro do banco ia só para o console e a tela dizia "salvo".
+     Coluna que falta e RLS que barra são silenciosos por natureza, então
+     agora todo erro vira um aviso que diz o que fazer.                     */
+  falhou(tab, acao, error){
+    console.error(`[${tab}] ${acao}:`, error);
+    const cod = error?.code ?? '';
+    const msg = String(error?.message ?? '');
+    let texto;
+    if(cod === '42703' || /column .* does not exist/i.test(msg))
+      texto = `Falta uma coluna na tabela ${tab}. Rode o SQL de atualização no Supabase.`;
+    else if(cod === '42P01' || /relation .* does not exist/i.test(msg))
+      texto = `A tabela ${tab} não existe ainda. Rode o SQL de atualização no Supabase.`;
+    else if(cod === '42501' || /row-level security/i.test(msg))
+      texto = `Sem permissão para ${acao} em ${tab}. Confira se a sua conta está como admin.`;
+    else if(cod === 'PGRST116')
+      texto = `Nada foi ${acao === 'salvar' ? 'salvo' : 'gravado'} em ${tab}. A linha não existe ou o RLS barrou.`;
+    else if(cod === '23505')
+      texto = `Já existe um registro igual em ${tab}.`;
+    else if(/payload|too large|413/i.test(msg))
+      texto = 'A imagem ficou grande demais para o banco. Use uma foto mais simples.';
+    else
+      texto = `Não consegui ${acao} em ${tab}. ${msg.slice(0, 90)}`;
+    toast(texto);
+    return null;
+  },
+};
+
+/* ---------------------- BOOT ---------------------- */
+(async function boot(){
+  const [mBase, mDest] = CONFIG.MARCA_DESTAQUE && CONFIG.MARCA.endsWith(CONFIG.MARCA_DESTAQUE)
+    ? [CONFIG.MARCA.slice(0, -CONFIG.MARCA_DESTAQUE.length), CONFIG.MARCA_DESTAQUE] : [CONFIG.MARCA, ''];
+  ['abMarca','sbMarca'].forEach(i=>$('#'+i).innerHTML = esc(mBase) + (mDest ? `<span class="hl">${esc(mDest)}</span>` : ''));
+  ['abSub','sbSub'].forEach(i=>$('#'+i).textContent = CONFIG.SUBTITULO);
+  $('#alTitulo').textContent = CONFIG.PROMESSA;
+  $('#alSub').textContent = CONFIG.SUB_PROMESSA;
+  $('#alBullets').innerHTML = CONFIG.BULLETS.map(b=>`<li>${esc(b)}</li>`).join('');
+  document.title = `${CONFIG.MARCA} · ${CONFIG.SUBTITULO}`;
+
+  if(DEMO){ $('#demoBar').classList.remove('hide'); }
+  else {
+    try{
+      const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+      sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
+      const { data:{ session } } = await sb.auth.getSession();
+      if(session) await carregarPerfil(session.user);
+    }catch(e){
+      // Sem a biblioteca do Supabase não dá para entrar. Melhor dizer isso do
+      // que deixar a tela de login aceitar a senha e não fazer nada.
+      document.body.innerHTML = `<div style="min-height:100vh;display:grid;place-items:center;padding:24px;
+        font:15px/1.6 'Inter',system-ui,sans-serif;background:#292827;color:#d9e0da;text-align:center">
+        <div style="max-width:420px">
+          <div style="font-size:40px;margin-bottom:12px">📡</div>
+          <h1 style="font-size:20px;color:#fff;margin-bottom:8px">Não consegui carregar a plataforma</h1>
+          <p>A conexão caiu no meio do carregamento, ou a rede está bloqueando o servidor.
+             Confira a internet e recarregue a página.</p>
+          <button onclick="location.reload()" style="margin-top:16px;padding:11px 20px;border-radius:10px;
+            background:#30a560;color:#fff;font-weight:600;border:0;cursor:pointer">Tentar de novo</button>
+        </div></div>`;
+      throw e;
+    }
+  }
+  if(EU) return entrar();
+  if(location.hash.startsWith('#/validar/')) validarPublico(location.hash.split('/')[2] ?? '');
+  if(location.hash.startsWith('#/comprar/')) await contextoCompra(location.hash.split('/')[2] ?? '');
+})();
+
+async function carregarPerfil(user){
+  const [p] = await api.sel('perfis', { id: user.id });
+  EU = p ?? { id:user.id, nome:user.email, email:user.email, papel:'aluno' };
+}
+
+/* ---------------------- AUTH ---------------------- */
+// Chegou por um link de compra da landing: já abre no cadastro e diz o que a pessoa vai liberar.
+async function contextoCompra(slug){
+  const [p] = await api.sel('produtos', { slug });
+  if(!p) return;
+  trocarTab('cadastro');
+  $('#alTitulo').textContent = p.gratuito ? 'Crie sua conta e libere agora' : 'Crie sua conta para continuar';
+  $('#alSub').textContent = `Você está a um passo de ${p.gratuito ? 'liberar' : 'levar'} "${p.nome}". A conta é onde o material fica, com o seu progresso e o seu certificado.`;
+  $('#alBullets').innerHTML = ((typeof p.bullets === 'string' ? JSON.parse(p.bullets) : p.bullets) ?? [])
+    .slice(0,3).map(b=>`<li>${esc(b)}</li>`).join('');
+  const aviso = document.createElement('p');
+  aviso.className = 'auth-note';
+  aviso.style.cssText = 'text-align:left;background:var(--brand-soft);color:var(--brand-2);padding:10px 13px;border-radius:10px;margin:0 0 18px';
+  aviso.textContent = `${p.emoji} ${p.nome}${p.gratuito ? ' · grátis' : ' · ' + BRL(p.preco_centavos)}`;
+  $('#formCadastro').prepend(aviso);
+}
+
+$('#tabLogin').onclick = ()=>trocarTab('login');
+$('#tabCadastro').onclick = ()=>trocarTab('cadastro');
+function trocarTab(qual){
+  const l = qual==='login';
+  $('#tabLogin').setAttribute('aria-selected', l);
+  $('#tabCadastro').setAttribute('aria-selected', !l);
+  $('#formLogin').classList.toggle('hide', !l);
+  $('#formCadastro').classList.toggle('hide', l);
+}
+
+$('#btnLogin').onclick = async ()=>{
+  const email = $('#liEmail').value.trim().toLowerCase(), senha = $('#liSenha').value;
+  if(!email || !senha) return toast('Preencha e-mail e senha.');
+  if(DEMO){
+    const p = D.perfis.find(x=>x.email===email);
+    if(!p) return toast('Nesta demo, use admin@demo.com ou aluno@demo.com.');
+    EU = p; return entrar();
+  }
+  const { data, error } = await sb.auth.signInWithPassword({ email, password: senha });
+  if(error) return toast('E-mail ou senha não conferem.');
+  await carregarPerfil(data.user); entrar();
+};
+
+$('#btnCadastrar').onclick = async ()=>{
+  const nome = $('#cdNome').value.trim(), email = $('#cdEmail').value.trim().toLowerCase();
+  const senha = $('#cdSenha').value, zap = $('#cdZap').value.trim(), tipo = $('#cdTipo').value;
+  if(nome.length<3) return toast('Escreva seu nome.');
+  if(!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return toast('Confira o e-mail.');
+  if(senha.length<6) return toast('A senha precisa de pelo menos 6 caracteres.');
+  if(!$('#cdOk').checked) return toast('Marque o aceite para continuar.');
+
+  if(DEMO){
+    if(D.perfis.some(p=>p.email===email)) return toast('Este e-mail já tem conta.');
+    EU = { id:uid(), nome, email, whatsapp:zap, perfil_tipo:tipo, papel:'aluno', criado_em:new Date().toISOString(), senha_provisoria:false };
+    D.perfis.push(EU); return entrar();
+  }
+  const { data, error } = await sb.auth.signUp({
+    email, password: senha,
+    options:{ data:{ nome, whatsapp: zap, perfil_tipo: tipo, origem:'cadastro' } }
+  });
+  if(error) return toast(error.message.includes('registered') ? 'Este e-mail já tem conta.' : 'Não consegui criar a conta.');
+  if(!data.session) return toast('Conta criada! Confirme o e-mail para entrar.');
+  await carregarPerfil(data.user); entrar();
+};
+
+async function entrar(){
+  $('#auth').classList.add('hide');
+  $('#app').classList.remove('hide');
+  $('#meNome').textContent = EU.nome || EU.email;
+  $('#mePapel').textContent = EU.papel === 'admin' ? 'Admin' : 'Aluno';
+  $('#meAv').textContent = iniciais(EU.nome || EU.email);
+  MINHAS_LICENCAS = await api.sel('licencas', DEMO ? { titular_email: EU.email } : {});
+  renderNav();
+  if(!location.hash) location.hash = '#/inicio';
+  route();
+  if(EU.senha_provisoria) modalTrocarSenha(true);
+}
+
+async function sair(){
+  if(sb) await sb.auth.signOut();
+  EU = null; location.hash = '';
+  $('#app').classList.add('hide'); $('#auth').classList.remove('hide');
+}
+
+/* ---------------------- NAV / ROTAS ---------------------- */
+const MENU = [
+  {rota:'inicio',      ic:'⌂', label:'Início'},
+  {rota:'produtos',    ic:'▤', label:'Meus produtos'},
+  {rota:'materiais',   ic:'📎', label:'Materiais'},
+  {rota:'explorar',    ic:'◎', label:'Explorar'},
+  {rota:'comunidade',  ic:'💬', label:'Comunidade'},
+  {rota:'agenda',      ic:'▦', label:'Agenda'},
+  {rota:'servicos',    ic:'🤝', label:'Fale comigo'},
+  {rota:'equipe',      ic:'👥', label:'Minha equipe', licenca:true},
+  {rota:'admin',       ic:'⚙', label:'Admin', admin:true},
+];
+let MINHAS_LICENCAS = [];
+function renderNav(){
+  $('#nav').innerHTML = MENU
+    .filter(m=>!m.admin || EU.papel==='admin')
+    .filter(m=>!m.licenca || MINHAS_LICENCAS.length > 0)
+    .map(m=>`<a href="#/${m.rota}" data-r="${m.rota}"><span class="ic">${m.ic}</span>${m.label}</a>`).join('');
+}
+window.addEventListener('hashchange', route);
+
+async function route(){
+  if(!EU) return;
+  const [, base, arg] = (location.hash || '#/inicio').split('/');
+  document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on', a.dataset.r === base));
+  $('#content').innerHTML = '<div class="empty">carregando…</div>';
+  const telas = { inicio: telaInicio, produtos: telaProdutos, produto: telaProduto, aula: telaAula,
+                  materiais: telaMateriais, validar: telaValidar, equipe: telaEquipe, comprar: telaComprar,
+                  explorar: telaExplorar, comunidade: telaComunidade, agenda: telaAgenda, servicos: telaServicos,
+                  admin: telaAdmin, conta: telaConta };
+  await (telas[base] ?? telaInicio)(arg);
+  window.scrollTo(0,0);
+}
+function head(crumb, titulo){ $('#crumb').textContent = crumb; $('#titulo').textContent = titulo; }
+
+/* ---------------------- HELPERS DE DADOS ---------------------- */
+async function meusAcessos(){
+  if(EU.papel === 'admin') return (await api.sel('produtos')).map(p=>p.id);   // admin enxerga tudo
+  const gratis = (await api.sel('produtos', { gratuito: true })).map(p=>p.id);
+  const acs = await api.sel('acessos', DEMO ? { user_id: EU.id } : {});
+  return [...new Set([...acs.map(a=>a.produto_id), ...gratis])];
+}
+async function progressoProduto(pid){
+  const mods = await api.sel('modulos', { produto_id: pid });
+  const aulas = (await api.sel('aulas')).filter(a=>mods.some(m=>m.id===a.modulo_id));
+  const feitas = (await api.sel('progresso', DEMO ? { user_id: EU.id } : {})).filter(g=>aulas.some(a=>a.id===g.aula_id));
+  return { total: aulas.length, feitas: feitas.length, pct: aulas.length ? Math.round(feitas.length/aulas.length*100) : 0, aulas, mods };
+}
+const saudacao = ()=>{ const h=new Date().getHours(); return h<12?'Bom dia':h<18?'Boa tarde':'Boa noite'; };
+
+/* ---------------------- TELA: INÍCIO ---------------------- */
+async function telaInicio(){
+  head('Início', `${saudacao()}, ${(EU.nome||'').split(' ')[0] || 'tudo bem'}`);
+  const c = $('#content');
+  if(EU.papel === 'admin') return telaInicioAdmin(c);
+
+  const ids = await meusAcessos();
+  const prods = (await api.sel('produtos')).filter(p=>ids.includes(p.id));
+  const cards = [];
+  for(const p of prods) cards.push({ p, ...(await progressoProduto(p.id)) });
+  const emCurso = cards.filter(x=>x.pct>0 && x.pct<100).sort((a,b)=>b.pct-a.pct)[0] ?? cards[0];
+  const encontros = (await api.sel('encontros')).filter(e=>e.ativo && (!e.produto_id || ids.includes(e.produto_id)))
+    .sort((a,b)=>new Date(a.data_hora)-new Date(b.data_hora));
+  const posts = (await api.sel('posts')).sort((a,b)=>new Date(b.criado_em)-new Date(a.criado_em));
+
+  let proxima = null;
+  if(emCurso){
+    const feitas = (await api.sel('progresso', DEMO ? { user_id: EU.id } : {})).map(g=>g.aula_id);
+    proxima = emCurso.aulas.sort((a,b)=>a.ordem-b.ordem).find(a=>!feitas.includes(a.id)) ?? emCurso.aulas[0];
+  }
+
+  c.innerHTML = `
+    ${emCurso ? `
+    <div class="panel" style="background:var(--grad-escuro);border:0;color:#fff;margin-bottom:24px">
+      <div class="sec-label" style="color:#93a398">Continue de onde parou</div>
+      <h2 style="font-size:22px;color:#fff">${esc(emCurso.p.nome)}</h2>
+      <p style="color:#a9b5ac;margin:6px 0 16px">${emCurso.total - emCurso.feitas > 0
+        ? `Faltam ${emCurso.total - emCurso.feitas} aula(s) para concluir · ${emCurso.pct}%`
+        : 'Você concluiu este produto 🎉'}</p>
+      ${proxima ? `<button class="btn btn-primary" onclick="location.hash='#/aula/${proxima.id}'">▶ Retomar: ${esc(proxima.titulo)}</button>` : ''}
+    </div>` : ''}
+
+    <div class="sec-label">Meus produtos</div>
+    <div class="cards" style="margin-bottom:28px">
+      ${cards.length ? cards.map(({p,pct,total,feitas})=>cardProduto(p,{pct,total,feitas})).join('')
+        : `<div class="empty"><div class="big">📚</div>Você ainda não tem produto liberado.<br><button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="location.hash='#/explorar'">Ver o catálogo</button></div>`}
+    </div>
+
+    <div class="cols">
+      <div class="panel">
+        <div class="panel-hd"><div><h2>Comunidade</h2><p class="hint">O que o pessoal está discutindo.</p></div>
+          <button class="btn btn-ghost btn-sm" onclick="location.hash='#/comunidade'">Ver tudo</button></div>
+        ${posts.slice(0,3).map(p=>`
+          <div class="row"><span class="av-sm">${iniciais(p.autor_nome)}</span>
+            <div class="txt"><b>${esc(p.titulo)}</b><span>${esc(p.autor_nome)} · ${dataBR(p.criado_em)}</span></div></div>`).join('')
+          || '<div class="empty">Ninguém postou ainda. Seja o primeiro.</div>'}
+      </div>
+      <div class="panel">
+        <h2>Próximo encontro</h2>
+        ${encontros[0] ? `
+          <p class="hint">${dataBR(encontros[0].data_hora)} · ${horaBR(encontros[0].data_hora)}</p>
+          <div class="row"><span class="emo">🎥</span><div class="txt"><b>${esc(encontros[0].titulo)}</b><span>${encontros[0].duracao_min} min</span></div></div>
+          <button class="btn btn-primary btn-sm btn-block" style="margin-top:14px" onclick="location.hash='#/agenda'">Ver na agenda</button>`
+          : '<div class="empty">Nenhum encontro agendado.</div>'}
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <span class="emo" style="width:44px;height:44px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center;font-size:20px;flex:none">🤝</span>
+      <div style="flex:1;min-width:240px">
+        <b style="display:block;font-size:15px">Travou em algum ponto da aplicação?</b>
+        <span style="color:var(--ink-2);font-size:13px">Eu adapto o material para a sua clínica, treino a sua equipe ou faço algo do zero.</span>
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="location.hash='#/servicos'">Fale comigo</button>
+    </div>`;
+}
+
+async function telaInicioAdmin(c){
+  const [perfis, prods, acessos, pedidos, encontros, posts, respostas] = await Promise.all([
+    api.sel('perfis'), api.sel('produtos'), api.sel('acessos'), api.sel('pedidos'),
+    api.sel('encontros'), api.sel('posts'), api.sel('respostas')]);
+  const receita = pedidos.filter(p=>p.status==='pago').reduce((s,p)=>s+p.total_centavos,0);
+  const semResposta = posts.filter(p=>!respostas.some(r=>r.post_id===p.id)).length;
+  const prox = encontros.filter(e=>e.ativo && new Date(e.data_hora)>new Date()).sort((a,b)=>new Date(a.data_hora)-new Date(b.data_hora))[0];
+
+  c.innerHTML = `
+    <div class="stats">
+      <div class="stat"><span>Receita (pagas)</span><b>${BRL(receita)}</b></div>
+      <div class="stat"><span>Alunos cadastrados</span><b>${perfis.filter(p=>p.papel!=='admin').length}</b></div>
+      <div class="stat"><span>Produtos publicados</span><b>${prods.filter(p=>p.publicado).length}</b></div>
+      <div class="stat"><span>Acessos ativos</span><b>${acessos.length}</b></div>
+    </div>
+
+    <div class="sec-label">Ações rápidas</div>
+    <div class="quick">
+      <button class="qa" data-qa="produto"><div class="ic">★</div><b>Criar produto</b><span>Cursos, kits, mentorias</span></button>
+      <button class="qa" data-qa="conteudo"><div class="ic">▶</div><b>Editar conteúdo</b><span>Módulos, aulas, materiais</span></button>
+      <button class="qa" data-qa="encontro"><div class="ic">▦</div><b>Criar encontro</b><span>Mentorias e lives</span></button>
+      <button class="qa" data-qa="acesso"><div class="ic">👥</div><b>Liberar acesso</b><span>Gerenciar alunos</span></button>
+    </div>
+
+    <div class="cols">
+      <div class="panel">
+        <div class="panel-hd"><div><h2>Últimos acessos</h2><p class="hint">Quem entrou em qual produto.</p></div>
+          <button class="btn btn-ghost btn-sm" onclick="location.hash='#/admin/alunos'">Ver alunos</button></div>
+        ${acessos.slice().reverse().slice(0,5).map(a=>{
+          const pf = perfis.find(p=>p.id===a.user_id), pr = prods.find(p=>p.id===a.produto_id);
+          return `<div class="row"><span class="emo">${pr?.emoji ?? '📦'}</span>
+            <div class="txt"><b>${esc(pf?.nome ?? a.email)}</b><span>${esc(pr?.nome ?? '—')} · ${dataBR(a.criado_em)}</span></div>
+            <span class="pill ${a.origem==='manual'?'pill-warn':''}">${a.origem}</span></div>`;
+        }).join('') || '<div class="empty">Nenhum acesso ainda.</div>'}
+      </div>
+      <div>
+        <div class="panel" style="margin-bottom:20px">
+          <h2>Próximo encontro</h2>
+          ${prox ? `<p class="hint">${dataBR(prox.data_hora)} · ${horaBR(prox.data_hora)}</p>
+            <div class="row"><span class="emo">🎥</span><div class="txt"><b>${esc(prox.titulo)}</b><span>${prox.duracao_min} min</span></div></div>`
+            : `<p class="hint">Nenhum encontro agendado.</p><button class="btn btn-ghost btn-sm" data-qa="encontro">Criar primeiro encontro</button>`}
+        </div>
+        <div class="panel">
+          <h2>Comunidade</h2>
+          <p class="hint">${posts.length} posts · ${semResposta} sem resposta</p>
+          <button class="btn btn-ghost btn-sm btn-block" onclick="location.hash='#/comunidade'">Ver comunidade</button>
+        </div>
+      </div>
+    </div>`;
+
+  c.querySelectorAll('[data-qa]').forEach(b=>b.onclick = ()=>{
+    const q = b.dataset.qa;
+    if(q==='produto') location.hash='#/admin/produtos', setTimeout(()=>formProduto(),120);
+    if(q==='conteudo') location.hash='#/admin/conteudo';
+    if(q==='encontro') location.hash='#/admin/encontros', setTimeout(()=>formEncontro(),120);
+    if(q==='acesso') location.hash='#/admin/alunos';
+  });
+}
+
+// A capa do produto: imagem se o admin subiu uma, senão o emoji sobre a cor.
+function capaProduto(p){
+  return p.capa_url
+    ? `<div class="pcap pcap-img"><img src="${esc(p.capa_url)}" alt="" loading="lazy"></div>`
+    : `<div class="pcap" style="background:${p.cor ?? '#26874e'}">${p.emoji ?? '📦'}</div>`;
+}
+
+function cardProduto(p, prog){
+  return `<a class="pcard" href="#/produto/${p.slug}">
+    ${capaProduto(p)}
+    <div class="pbody">
+      <h3>${esc(p.nome)}</h3>
+      <p>${esc(p.subtitulo ?? '')}</p>
+      ${prog ? `<div class="bar"><i style="width:${prog.pct}%"></i></div>
+        <div class="bar-lbl">${prog.feitas} de ${prog.total} aulas · ${prog.pct}%</div>` : ''}
+      <div class="pfoot"><span class="pill">${p.gratuito ? 'Grátis' : p.tipo}</span>
+        <span class="btn btn-ghost btn-sm">${prog && prog.pct>0 ? 'Continuar' : 'Começar'}</span></div>
+    </div></a>`;
+}
+
+/* ---------------------- TELA: MEUS PRODUTOS ---------------------- */
+async function telaProdutos(){
+  head('Meus produtos', 'Meus produtos');
+  const ids = await meusAcessos();
+  const prods = (await api.sel('produtos')).filter(p=>ids.includes(p.id)).sort((a,b)=>a.ordem-b.ordem);
+  const cards = [];
+  for(const p of prods) cards.push({ p, prog: await progressoProduto(p.id) });
+  $('#content').innerHTML = cards.length
+    ? `<div class="cards">${cards.map(({p,prog})=>cardProduto(p,prog)).join('')}</div>`
+    : `<div class="empty"><div class="big">📚</div>Nada liberado ainda.<br>
+        <button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="location.hash='#/explorar'">Ver o catálogo</button></div>`;
+}
+
+/* ---------------------- TELA: PRODUTO ---------------------- */
+async function telaProduto(slug){
+  const [p] = await api.sel('produtos', { slug });
+  if(!p) return $('#content').innerHTML = '<div class="empty">Produto não encontrado.</div>';
+  head('Meus produtos', p.nome);
+  const ids = await meusAcessos();
+  if(!ids.includes(p.id)){
+    $('#content').innerHTML = `<div class="panel"><h2>Você ainda não tem acesso</h2>
+      <p class="hint">${esc(p.subtitulo ?? '')}</p>
+      <button class="btn btn-primary" onclick="location.hash='#/explorar'">Ver no catálogo</button></div>`;
+    return;
+  }
+  const { mods, aulas, feitas, total, pct } = await progressoProduto(p.id);
+  const feitasIds = (await api.sel('progresso', DEMO ? { user_id: EU.id } : {})).map(g=>g.aula_id);
+
+  $('#content').innerHTML = `
+    <div class="cols">
+      <div class="panel">
+        <div class="panel-hd"><div><h2>${esc(p.nome)}</h2><p class="hint">${esc(p.descricao ?? '')}</p></div></div>
+        ${mods.sort((a,b)=>a.ordem-b.ordem).map(m=>`
+          <div class="mod-tit">${esc(m.titulo)}</div>
+          ${aulas.filter(a=>a.modulo_id===m.id).sort((a,b)=>a.ordem-b.ordem).map(a=>`
+            <button class="lista-aula" onclick="location.hash='#/aula/${a.id}'">
+              <span class="n ${feitasIds.includes(a.id)?'ok':''}">${feitasIds.includes(a.id)?'✓':a.ordem}</span>
+              <span><b>${esc(a.titulo)}</b><span>${a.duracao_min} min · ${a.tipo==='video'?'vídeo':'leitura'}</span></span>
+            </button>`).join('')}`).join('') || '<div class="empty">Conteúdo em produção.</div>'}
+      </div>
+      <div class="panel">
+        <h2>Seu progresso</h2>
+        <p class="hint">${feitas} de ${total} aulas concluídas</p>
+        <div class="bar"><i style="width:${pct}%"></i></div>
+        <div class="bar-lbl">${pct}% do produto</div>
+        ${aulas.length ? `<button class="btn btn-primary btn-block" onclick="location.hash='#/aula/${(aulas.sort((a,b)=>a.ordem-b.ordem).find(a=>!feitasIds.includes(a.id)) ?? aulas[0]).id}'">
+          ${pct>0?'Continuar':'Começar agora'}</button>` : ''}
+        ${pct === 100 ? `<button class="btn btn-accent btn-block" style="margin-top:10px" id="btnCert">🎓 Emitir certificado</button>` : ''}
+      </div>
+    </div>`;
+  const bc = $('#btnCert'); if(bc) bc.onclick = ()=>emitirCertificado(p.id);
+}
+
+/* ---------------------- TELA: AULA ---------------------- */
+async function telaAula(id){
+  const [aula] = await api.sel('aulas', { id });
+  if(!aula) return $('#content').innerHTML = '<div class="empty">Aula não encontrada.</div>';
+  const [mod] = await api.sel('modulos', { id: aula.modulo_id });
+  const [prod] = await api.sel('produtos', { id: mod.produto_id });
+  head(prod.nome, aula.titulo);
+
+  const { mods, aulas } = await progressoProduto(prod.id);
+  const feitasIds = (await api.sel('progresso', DEMO ? { user_id: EU.id } : {})).map(g=>g.aula_id);
+  const materiais = await api.sel('materiais', { aula_id: aula.id });
+  const ordenadas = aulas.sort((a,b)=> (mods.find(m=>m.id===a.modulo_id).ordem - mods.find(m=>m.id===b.modulo_id).ordem) || (a.ordem-b.ordem));
+  const idx = ordenadas.findIndex(a=>a.id===aula.id);
+  const prox = ordenadas[idx+1];
+  const concluida = feitasIds.includes(aula.id);
+
+  $('#content').innerHTML = `
+    <div class="aula-wrap">
+      <div>
+        ${aula.video_url ? `<div class="player"><iframe src="${esc(aula.video_url)}" allowfullscreen title="${esc(aula.titulo)}"></iframe></div>` : ''}
+        <div class="aula-txt" style="margin-top:${aula.video_url?'18px':'0'}"><h2 style="margin-bottom:10px">${esc(aula.titulo)}</h2><p style="color:var(--ink-2);margin:0 0 16px">${esc(aula.descricao ?? '')}</p>${esc(aula.conteudo ?? '')}</div>
+        <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+          <button class="btn ${concluida?'btn-ghost':'btn-primary'}" id="btnConcluir">${concluida?'✓ Concluída':'Marcar como concluída'}</button>
+          ${prox ? `<button class="btn btn-ghost" onclick="location.hash='#/aula/${prox.id}'">Próxima aula →</button>` : ''}
+          <button class="btn btn-ghost" onclick="location.hash='#/produto/${prod.slug}'">Voltar ao produto</button>
+        </div>
+      </div>
+
+      <div>
+        ${materiais.length ? `<div class="panel" style="margin-bottom:18px">
+          <h2>Materiais desta aula</h2><p class="hint">Baixe e use no seu negócio.</p>
+          ${materiais.map(m=>`<div class="row"><span class="emo">📎</span>
+            <div class="txt"><b>${esc(m.nome)}</b><span>${esc(m.formato ?? '')}</span></div>
+            <button class="btn btn-ghost btn-sm" data-mat="${m.arquivo_path}">Baixar</button></div>`).join('')}
+        </div>` : ''}
+        <div class="panel">
+          <h2>Aulas</h2>
+          ${mods.sort((a,b)=>a.ordem-b.ordem).map(m=>`
+            <div class="mod-tit">${esc(m.titulo)}</div>
+            ${aulas.filter(a=>a.modulo_id===m.id).sort((a,b)=>a.ordem-b.ordem).map(a=>`
+              <button class="lista-aula ${a.id===aula.id?'on':''}" onclick="location.hash='#/aula/${a.id}'">
+                <span class="n ${feitasIds.includes(a.id)?'ok':''}">${feitasIds.includes(a.id)?'✓':a.ordem}</span>
+                <span><b>${esc(a.titulo)}</b><span>${a.duracao_min} min</span></span></button>`).join('')}`).join('')}
+        </div>
+      </div>
+    </div>`;
+
+  $('#btnConcluir').onclick = async ()=>{
+    if(concluida) return;
+    if(DEMO) D.progresso.push({ id:uid(), user_id:EU.id, aula_id:aula.id, concluida:true });
+    else await sb.from('progresso').upsert({ user_id:EU.id, aula_id:aula.id, concluida:true }, { onConflict:'user_id,aula_id' });
+    toast('Aula concluída ✓');
+    prox ? location.hash = `#/aula/${prox.id}` : route();
+  };
+  $('#content').querySelectorAll('[data-mat]').forEach(b=>b.onclick = ()=>baixar(b.dataset.mat));
+}
+
+async function baixar(path){
+  if(DEMO) return toast('DEMO: aqui sai o link assinado do arquivo.');
+  const { data, error } = await sb.storage.from('materiais').createSignedUrl(path, 3600);
+  if(error || !data) return toast('Não consegui gerar o link agora.');
+  window.open(data.signedUrl, '_blank');
+}
+
+/* ---------------------- TELA: EXPLORAR + CHECKOUT ---------------------- */
+async function telaExplorar(){
+  head('Explorar', 'Explorar');
+  const ids = await meusAcessos();
+  // Produto de vitrine não entra aqui: ele não tem checkout nem material para abrir.
+  const prods = (await api.sel('produtos', { publicado: true }))
+    .filter(p => modoDe(p) === 'gateway').sort((a,b)=>a.ordem-b.ordem);
+  $('#content').innerHTML = `
+    <p class="hint" style="margin-bottom:18px;color:var(--ink-2)">Tudo que você comprar abre aqui dentro, na hora.</p>
+    <div class="cards">${prods.map(p=>{
+      const tem = ids.includes(p.id);
+      return `<div class="pcard">
+        ${capaProduto(p)}
+        <div class="pbody">
+          <h3>${esc(p.nome)}</h3><p>${esc(p.subtitulo ?? '')}</p>
+          <div class="pfoot">
+            <span class="preco">${p.gratuito ? '<b>Grátis</b>' :
+              `${p.preco_de_centavos?`<s>${BRL(p.preco_de_centavos)}</s>`:''}<b>${BRL(p.preco_centavos)}</b>`}</span>
+            ${tem ? `<button class="btn btn-ghost btn-sm" onclick="location.hash='#/produto/${p.slug}'">Acessar</button>`
+                  : `<button class="btn btn-primary btn-sm" data-comprar="${p.id}">${p.gratuito?'Liberar':'Comprar'}</button>`}
+          </div>
+        </div></div>`;
+    }).join('')}</div>`;
+
+  $('#content').querySelectorAll('[data-comprar]').forEach(b=>b.onclick = ()=>comprar(b.dataset.comprar));
+}
+
+async function comprar(pid){
+  const [p] = await api.sel('produtos', { id: pid });
+  if(p.gratuito){
+    if(DEMO) D.acessos.push({ id:uid(), user_id:EU.id, email:EU.email, produto_id:p.id, origem:'gratis', criado_em:new Date().toISOString() });
+    else await sb.from('acessos').insert({ user_id:EU.id, email:EU.email, produto_id:p.id, origem:'gratis' });
+    toast('Liberado! Bom estudo.');
+    return location.hash = `#/produto/${p.slug}`;
+  }
+
+  const bumps = await api.sel('produto_bumps', { produto_id: p.id });
+  const bumpProds = (await api.sel('produtos')).filter(x=>bumps.some(b=>b.bump_produto_id===x.id));
+  const escolhidos = new Set();
+  const total = ()=> p.preco_centavos + [...escolhidos].reduce((s,id)=>s+(bumpProds.find(x=>x.id===id)?.preco_centavos ?? 0),0);
+  const slugsBump = ()=> bumpProds.filter(b=>escolhidos.has(b.id)).map(b=>b.slug);
+
+  // Cartão vai para a oferta da Cakto: primeiro a do produto, senão a geral do CONFIG.
+  // Pix depende da Cakto Banking, por isso ele é ligado à parte no CONFIG.METODOS.
+  const linkCakto = (p.cakto_url || CONFIG.CAKTO_CHECKOUT_URL || '').trim();
+  const temCartao = CONFIG.METODOS?.cartao !== false && (!!linkCakto || DEMO);
+  const temPix    = CONFIG.METODOS?.pix === true && (DEMO || !!CONFIG.FN_CAKTO || !!CONFIG.FN_CHECKOUT);
+  const cartaoPrimeiro = temCartao;
+
+  abrirModal(`
+    <div class="mhd"><h3>Finalizar compra</h3><button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+    <div class="mbd" id="ckBody">
+      <div class="row" style="border:0;padding-top:0"><span class="emo">${p.emoji}</span>
+        <div class="txt"><b>${esc(p.nome)}</b><span>${esc(p.subtitulo ?? '')}</span></div>
+        <b>${BRL(p.preco_centavos)}</b></div>
+      <div class="field"><label>Nome</label><input id="ckNome" value="${esc(EU.nome ?? '')}"></div>
+      <div class="field"><label>E-mail</label><input id="ckEmail" type="email" value="${esc(EU.email ?? '')}"></div>
+      <div class="field"><label>WhatsApp</label><input id="ckZap" value="${esc(EU.whatsapp ?? '')}" placeholder="(00) 00000-0000"></div>
+      <div class="field"><label>CPF</label><input id="ckCpf" inputmode="numeric" placeholder="000.000.000-00"></div>
+      ${bumpProds.map(b=>`<label class="bump"><input type="checkbox" data-bump="${b.id}">
+        <span><b>✨ ${esc(bumps.find(x=>x.bump_produto_id===b.id)?.headline ?? b.nome)}</b>
+        <span>${esc(b.subtitulo ?? '')}</span><br><b style="font-size:13px">+ ${BRL(b.preco_centavos)}</b></span></label>`).join('')}
+      <div class="row" style="border-top:1px dashed var(--line);border-bottom:0"><div class="txt"><b>Total</b></div>
+        <b style="font-size:20px" id="ckTotal">${BRL(total())}</b></div>
+      ${temCartao ? `<button class="btn ${cartaoPrimeiro?'btn-accent':'btn-ghost'} btn-block" ${cartaoPrimeiro?'':'style="margin-top:8px"'} id="btnCartao">
+          ${cartaoPrimeiro ? 'Pagar com cartão →' : 'Prefiro pagar com cartão'}</button>` : ''}
+      ${temPix ? `<button class="btn ${cartaoPrimeiro?'btn-ghost':'btn-accent'} btn-block" ${cartaoPrimeiro?'style="margin-top:8px"':''} id="btnPix">
+          ${cartaoPrimeiro ? 'Prefiro pagar com Pix' : 'Pagar com Pix →'}</button>` : ''}
+      ${(!temCartao && !temPix) ? `<div class="empty" style="padding:18px">O pagamento ainda não está ligado neste produto.
+        <br><button class="btn btn-ghost btn-sm" style="margin-top:10px" id="btnFalar">Falar no WhatsApp</button></div>` : ''}
+      <p class="mini-note" style="margin-top:10px;font-size:12.5px;color:var(--ink-3);text-align:center">
+        Pagamento processado pela Cakto · o acesso abre aqui dentro assim que cair</p>
+      <p class="mini-note hide" id="ckAvisoBump" style="margin-top:2px;font-size:12px;color:var(--amber-ink,#c9822f);text-align:center">
+        No cartão, os itens extras são adicionados na página da Cakto.</p>
+    </div>`);
+
+  $('#mcard').querySelectorAll('[data-bump]').forEach(i=>i.onchange = e=>{
+    e.target.checked ? escolhidos.add(e.target.dataset.bump) : escolhidos.delete(e.target.dataset.bump);
+    $('#ckTotal').textContent = BRL(total());
+    $('#ckAvisoBump')?.classList.toggle('hide', !(temCartao && escolhidos.size));
+  });
+  const btnFalar = $('#btnFalar');
+  if(btnFalar) btnFalar.onclick = ()=>{
+    const d = String(CONFIG.WHATSAPP || '').replace(/\D/g,'');
+    window.open(`https://wa.me/${d}?text=${encodeURIComponent('Oi! Quero comprar o ' + p.nome + '.')}`, '_blank', 'noopener');
+  };
+  $('#ckCpf').oninput = e=>{
+    const c = e.target.value.replace(/\D/g,'').slice(0,11);
+    e.target.value = c.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})\.(\d{3})(\d)/,'$1.$2.$3')
+                      .replace(/(\d{3})\.(\d{3})\.(\d{3})(\d)/,'$1.$2.$3-$4');
+  };
+
+  const dados = ()=>{
+    const nome = $('#ckNome').value.trim(), email = $('#ckEmail').value.trim().toLowerCase();
+    const zap = $('#ckZap').value.trim(), cpf = $('#ckCpf').value.trim();
+    if(nome.length < 3) return toast('Escreva seu nome completo.'), null;
+    if(!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return toast('Confira o e-mail.'), null;
+    if(zap.replace(/\D/g,'').length < 10) return toast('Coloque um WhatsApp com DDD.'), null;
+    if(!cpfValido(cpf)) return toast('Confira o CPF, o Pix precisa dele.'), null;
+    return { nome, email, telefone: zap, cpf, slugs:[p.slug], bumps: slugsBump(), origem: 'plataforma' };
+  };
+
+  const btnCartao = $('#btnCartao');
+  if(btnCartao) btnCartao.onclick = ()=>{
+    const d = dados(); if(!d) return;
+    if(!linkCakto) return toast('Falta o link da oferta da Cakto neste produto.');
+    // Os campos já preenchidos poupam o comprador de digitar tudo de novo na Cakto.
+    const q = new URLSearchParams({ name:d.nome, email:d.email, confirmEmail:d.email,
+      phone:'55'+d.telefone.replace(/\D/g,''), cpf:d.cpf.replace(/\D/g,''),
+      src:'plataforma', ref:p.slug });
+    const url = `${linkCakto}${linkCakto.includes('?') ? '&' : '?'}${q}`;
+    if(DEMO) return toast('Em produção isto abre a Cakto: ' + (linkCakto || 'link não configurado'));
+    location.href = url;
+  };
+
+  const btnPixEl = $('#btnPix');
+  if(btnPixEl) btnPixEl.onclick = async ()=>{
+    const d = dados(); if(!d) return;
+    const btn = $('#btnPix'); btn.disabled = true; btn.textContent = 'Gerando o Pix...';
+
+    // provedor antigo (Asaas) continua funcionando se for o que estiver configurado
+    if(!DEMO && !CONFIG.FN_CAKTO && CONFIG.FN_CHECKOUT){
+      try{
+        const r = await fetch(CONFIG.FN_CHECKOUT, { method:'POST',
+          headers:{'Content-Type':'application/json', apikey: CONFIG.SUPABASE_ANON_KEY},
+          body: JSON.stringify({ ...d, whatsapp: d.telefone }) });
+        const data = await r.json();
+        if(!data.invoiceUrl) throw new Error('sem invoice');
+        return location.href = data.invoiceUrl;
+      }catch(e){ btn.disabled=false; btn.textContent='Pagar com Pix →'; return toast('Não consegui gerar a cobrança.'); }
+    }
+
+    if(DEMO || !CONFIG.FN_CAKTO){
+      setTimeout(()=>{ mostrarPix({ pix:{ qrCode:'00020126DEMO...CHAVE-PIX-DE-EXEMPLO...6304ABCD' }, ref:'demo' }, d, p, escolhidos); }, 700);
+      return;
+    }
+    try{
+      const r = await fetch(CONFIG.FN_CAKTO, { method:'POST',
+        headers:{'Content-Type':'application/json', apikey: CONFIG.SUPABASE_ANON_KEY},
+        body: JSON.stringify({ acao:'cobrar', metodo:'pix', ...d }) });
+      const data = await r.json();
+      if(!data.pix) throw new Error(data.erro || 'sem pix');
+      mostrarPix(data, d, p, escolhidos);
+    }catch(e){
+      btn.disabled=false; btn.textContent='Pagar com Pix →';
+      toast('Não consegui gerar o Pix. Tente o cartão ou fale com a gente.');
+    }
+  };
+}
+
+// QR do Pix dentro do próprio modal, com confirmação automática
+function mostrarPix(data, d, p, escolhidos){
+  const valor = BRL(p.preco_centavos + [...escolhidos].reduce((s)=>s,0));
+  $('#ckBody').innerHTML = `
+    <div class="row" style="border:0;padding-top:0"><div class="txt">
+      <span>Pague com Pix</span><b style="font-size:22px">${$('#ckTotal') ? $('#ckTotal').textContent : valor}</b></div></div>
+    <div style="border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff;display:grid;place-items:center;margin-bottom:14px">
+      ${data.pix.qrCodeUrl
+        ? `<img src="${data.pix.qrCodeUrl}" alt="QR Code do Pix" style="width:210px;height:210px">`
+        : `<div style="width:210px;height:210px;display:grid;place-items:center;background:repeating-conic-gradient(#292827 0% 25%,#fff 0% 50%) 50%/15px 15px;border-radius:8px">
+             <span style="background:#292827;color:#fff;padding:8px 12px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.08em">QR CODE DO PIX</span></div>`}
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-2);margin-bottom:8px">Abra o app do banco, escolha Pix e escaneie, ou use o copia e cola:</p>
+    <div style="display:flex;gap:8px;margin-bottom:14px">
+      <input id="pixCodigo" readonly value="${esc(data.pix.qrCode ?? '')}"
+        style="flex:1;min-width:0;padding:11px 13px;border-radius:10px;border:1.5px solid var(--line);font-size:12.5px;font-family:ui-monospace,monospace;background:var(--surface-2);color:var(--ink-2)">
+      <button class="btn btn-ghost" id="btnCopiar">Copiar</button>
+    </div>
+    <div class="row" style="background:var(--brand-soft);border-radius:10px;padding:12px;border:0">
+      <span class="emo" style="background:transparent">⏳</span>
+      <div class="txt"><b>Aguardando o pagamento</b><span>Esta tela vira sozinha quando cair.</span></div>
+    </div>`;
+
+  $('#btnCopiar').onclick = async ()=>{
+    try{ await navigator.clipboard.writeText($('#pixCodigo').value); toast('Código copiado.'); }
+    catch{ $('#pixCodigo').select(); toast('Selecione e copie o código.'); }
+  };
+
+  let n = 0;
+  const timer = setInterval(async ()=>{
+    n++;
+    if(n > 225) return clearInterval(timer);
+    if(DEMO || !CONFIG.FN_CAKTO){
+      if(n === 2){
+        clearInterval(timer);
+        [p.id, ...escolhidos].forEach(id=>{
+          if(!D.acessos.some(a=>a.user_id===EU.id && a.produto_id===id))
+            D.acessos.push({ id:uid(), user_id:EU.id, email:EU.email, produto_id:id, origem:'compra', criado_em:new Date().toISOString() });
+        });
+        D.pedidos.push({ id:uid(), codigo:'DEMO'+Math.floor(Math.random()*9999), nome:d.nome, email:d.email,
+          total_centavos:p.preco_centavos, status:'pago', criado_em:new Date().toISOString(), metodo:'PIX' });
+        fecharModal(true); toast('Pagamento confirmado, acesso liberado 🎉');
+        location.hash = `#/produto/${p.slug}`;
+      }
+      return;
+    }
+    try{
+      const r = await fetch(CONFIG.FN_CAKTO, { method:'POST',
+        headers:{'Content-Type':'application/json', apikey: CONFIG.SUPABASE_ANON_KEY},
+        body: JSON.stringify({ acao:'status', ref: data.ref }) });
+      const st = await r.json();
+      if(st.status === 'pago'){
+        clearInterval(timer);
+        fecharModal(true); toast('Pagamento confirmado, acesso liberado 🎉');
+        location.hash = `#/produto/${p.slug}`;
+      }
+    }catch(e){}
+  }, 4000);
+}
+
+function cpfValido(v){
+  const c = String(v).replace(/\D/g,'');
+  if(c.length !== 11 || /^(\d)\1{10}$/.test(c)) return false;
+  const dig = n => { let s=0; for(let i=0;i<n;i++) s += +c[i]*(n+1-i); const r=(s*10)%11; return (r===10?0:r) === +c[n]; };
+  return dig(9) && dig(10);
+}
+
+/* ---------------------- TELA: COMUNIDADE ---------------------- */
+async function telaComunidade(){
+  head('Comunidade', 'Comunidade');
+  const posts = (await api.sel('posts')).sort((a,b)=> b.fixado - a.fixado || new Date(b.criado_em)-new Date(a.criado_em));
+  const respostas = await api.sel('respostas');
+  $('#content').innerHTML = `
+    <div class="panel" style="margin-bottom:20px">
+      <h2>Abrir uma conversa</h2><p class="hint">Dúvida, resultado, bastidor, tudo vale.</p>
+      <div class="field"><input id="poTitulo" placeholder="Título do post"></div>
+      <div class="field"><textarea id="poCorpo" placeholder="Escreva aqui..."></textarea></div>
+      <button class="btn btn-primary" id="btnPostar">Publicar</button>
+    </div>
+    ${posts.map(p=>{
+      const rs = respostas.filter(r=>r.post_id===p.id).sort((a,b)=>new Date(a.criado_em)-new Date(b.criado_em));
+      return `<div class="post">
+        <div class="post-hd"><span class="av-sm">${iniciais(p.autor_nome)}</span>
+          <div><h3>${esc(p.titulo)}</h3><span style="font-size:12px;color:var(--ink-3)">${esc(p.autor_nome)} · ${dataBR(p.criado_em)}</span></div></div>
+        <div class="corpo">${esc(p.corpo ?? '')}</div>
+        ${rs.map(r=>`<div class="resp"><b>${esc(r.autor_nome)}</b><p>${esc(r.corpo)}</p></div>`).join('')}
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <input class="rp" data-post="${p.id}" placeholder="Responder..." style="flex:1;padding:9px 12px;border-radius:10px;border:1.5px solid var(--line)">
+          <button class="btn btn-ghost btn-sm" data-resp="${p.id}">Enviar</button></div>
+      </div>`;
+    }).join('') || '<div class="empty"><div class="big">💬</div>Ninguém postou ainda. Comece você.</div>'}`;
+
+  $('#btnPostar').onclick = async ()=>{
+    const titulo = $('#poTitulo').value.trim(), corpo = $('#poCorpo').value.trim();
+    if(titulo.length<4) return toast('Escreva um título.');
+    await api.ins('posts', { user_id:EU.id, autor_nome:EU.nome, titulo, corpo, fixado:false });
+    toast('Publicado!'); route();
+  };
+  $('#content').querySelectorAll('[data-resp]').forEach(b=>b.onclick = async ()=>{
+    const inp = $('#content').querySelector(`.rp[data-post="${b.dataset.resp}"]`);
+    if(!inp.value.trim()) return;
+    await api.ins('respostas', { post_id:b.dataset.resp, user_id:EU.id, autor_nome:EU.nome, corpo:inp.value.trim() });
+    route();
+  });
+}
+
+/* ---------------------- TELA: AGENDA ---------------------- */
+/* ---------------------- FALE COMIGO ---------------------- */
+const SERVICOS = [
+  { id:'implantacao', ic:'🧩', nome:'Implantação na sua clínica',
+    resumo:'Eu pego o material que você já tem e deixo pronto para a sua realidade.',
+    itens:['Os scripts reescritos com o nome da sua clínica, os seus serviços e o seu jeito de falar',
+           'A planilha preenchida com os seus números, com a tabela de preço já montada',
+           'Uma chamada de 45 minutos para entregar e ajustar o que ficou estranho'],
+    para:'Para quem comprou, abriu e não teve tempo de adaptar.' },
+  { id:'treinamento', ic:'🎧', nome:'Treinamento da equipe',
+    resumo:'Um encontro ao vivo com quem atende, usando o seu material.',
+    itens:['Uma hora com a recepção, no horário que não atrapalha a agenda',
+           'Treino com as situações que mais acontecem na sua clínica',
+           'Ficha de avaliação para você acompanhar depois'],
+    para:'Para clínica com equipe que muda muito ou que acabou de contratar.' },
+  { id:'sobmedida', ic:'✎', nome:'Material sob medida',
+    resumo:'Algo que não existe na linha e que você precisa.',
+    itens:['Kit de documentos, planilha ou fluxo de mensagens feito para o seu caso',
+           'Conversa de escopo antes, sem compromisso, para ver se faz sentido',
+           'Você recebe os arquivos editáveis, não só o PDF'],
+    para:'Para quem tem uma necessidade específica que o material pronto não cobre.' },
+];
+
+async function telaServicos(){
+  head('Fale comigo', 'Serviço sob medida');
+  const c = $('#content');
+  c.innerHTML = `
+  <div class="panel" style="margin-bottom:22px">
+    <h2>O material pronto resolve quase tudo. Quando não resolve, tem isto.</h2>
+    <p class="hint" style="margin-bottom:0">Os produtos da plataforma foram feitos para você aplicar sozinho, e na maioria das vezes é o que basta. Se faltar tempo, se a sua clínica tiver uma particularidade, ou se você precisar de algo que não existe na linha, me chama.</p>
+  </div>
+
+  <p class="sec-label">O que eu faço sob medida</p>
+  <div class="cards" style="margin-bottom:28px">
+    ${SERVICOS.map(s=>`
+      <div class="pcard" style="cursor:pointer" data-serv="${s.id}">
+        <div class="pcap" style="background:var(--grad-escuro)">${s.ic}</div>
+        <div class="pbody">
+          <h3>${esc(s.nome)}</h3>
+          <p>${esc(s.resumo)}</p>
+          <ul style="margin:0 0 14px;padding-left:17px;font-size:13px;color:var(--ink-2);line-height:1.65">
+            ${s.itens.map(i=>`<li>${esc(i)}</li>`).join('')}
+          </ul>
+          <div class="pfoot"><span class="pill pill-mute" style="white-space:normal;line-height:1.5;text-align:left">${esc(s.para)}</span></div>
+        </div>
+      </div>`).join('')}
+  </div>
+
+  <div class="cols">
+    <div class="panel">
+      <h2>Me conta o seu caso</h2>
+      <p class="hint">Respondo em até dois dias úteis. Se não for para mim, eu falo na hora e indico quem faz.</p>
+
+      <div class="field"><label>O que você precisa</label>
+        <select id="s_tipo">
+          ${SERVICOS.map(s=>`<option value="${s.id}">${esc(s.nome)}</option>`).join('')}
+          <option value="outro">Outra coisa, eu explico abaixo</option>
+        </select></div>
+
+      <div class="field"><label>Seu nome</label><input id="s_nome" value="${esc(EU.nome ?? '')}"></div>
+      <div class="field"><label>WhatsApp</label><input id="s_fone" type="tel" value="${esc(EU.whatsapp ?? '')}" placeholder="79 99999 9999"></div>
+      <div class="field"><label>E-mail</label><input id="s_email" type="email" value="${esc(EU.email ?? '')}"></div>
+
+      <div class="field"><label>Como é a sua realidade hoje</label>
+        <textarea id="s_contexto" placeholder="Ex.: clínica em Aracaju, dois veterinários e uma recepcionista. Comprei os scripts mas não consegui adaptar. A recepção é nova e perde muita ligação de preço."></textarea>
+        <p class="bar-lbl" style="margin:6px 0 0">Quanto mais concreto, mais rápido eu consigo dizer se ajudo e quanto custa.</p></div>
+
+      <div class="field"><label>Quando você precisa disso</label>
+        <select id="s_prazo">
+          <option>Sem pressa, quero entender primeiro</option>
+          <option>Este mês</option>
+          <option>Nas próximas duas semanas</option>
+          <option>É urgente</option>
+        </select></div>
+
+      <button class="btn btn-primary btn-block" id="s_enviar">Enviar e abrir o WhatsApp</button>
+      <p class="bar-lbl" style="text-align:center;margin:10px 0 0">O envio guarda o seu pedido aqui e abre a conversa com a mensagem já escrita.</p>
+    </div>
+
+    <div>
+      <div class="panel" style="margin-bottom:18px">
+        <h2>Como funciona</h2>
+        <p class="hint" style="margin-bottom:12px">Sem proposta de dez páginas.</p>
+        <div class="row"><div class="emo">1</div><div class="txt"><b>Você escreve o caso</b><span>Pelo formulário ao lado, em dois minutos</span></div></div>
+        <div class="row"><div class="emo">2</div><div class="txt"><b>Conversamos no WhatsApp</b><span>Faço as perguntas que faltam</span></div></div>
+        <div class="row"><div class="emo">3</div><div class="txt"><b>Mando escopo e preço</b><span>Por escrito, com prazo e o que está incluído</span></div></div>
+        <div class="row"><div class="emo">4</div><div class="txt"><b>Você decide sem pressa</b><span>Se não fizer sentido, não tem custo nenhum</span></div></div>
+      </div>
+
+      <div class="panel">
+        <h2>O que fica de fora</h2>
+        <p class="hint">Prefiro dizer antes de você perder tempo.</p>
+        <div style="font-size:13.5px;color:var(--ink-2);line-height:1.7">
+          <p style="margin:0 0 12px"><b style="color:var(--ink)">Conduta clínica.</b> Diagnóstico, protocolo, dose e escolha de tratamento não entram em nada que eu faço. Meu trabalho é comunicação, organização e gestão.</p>
+          <p style="margin:0 0 12px"><b style="color:var(--ink)">Sistema de gestão de clínica.</b> Prontuário, ficha de paciente e faturamento são outro tipo de produto. Se for isso que você precisa, me chama do mesmo jeito, que eu indico quem faz bem.</p>
+          <p style="margin:0"><b style="color:var(--ink)">Parecer contábil ou jurídico.</b> As planilhas são ferramentas de gestão e os modelos de documento são base para o seu contador ou advogado revisar.</p>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  c.querySelectorAll('[data-serv]').forEach(el => el.onclick = () => {
+    $('#s_tipo').value = el.dataset.serv;
+    $('#s_contexto').focus({ preventScroll:true });
+    $('#s_contexto').scrollIntoView({ behavior:'smooth', block:'center' });
+  });
+
+  $('#s_enviar').onclick = async () => {
+    const tipo = $('#s_tipo').value;
+    const nome = $('#s_nome').value.trim();
+    const fone = $('#s_fone').value.trim();
+    const email = $('#s_email').value.trim();
+    const contexto = $('#s_contexto').value.trim();
+    const prazo = $('#s_prazo').value;
+    if(!nome)     return toast('Coloque o seu nome.');
+    if(!contexto) return toast('Escreva um pouco sobre o seu caso.');
+
+    const rotulo = (SERVICOS.find(s=>s.id===tipo)?.nome) ?? 'Outra coisa';
+    try{
+      await api.ins('contatos', { user_id: EU.id, nome, email, whatsapp: fone,
+                                  tipo: rotulo, contexto, prazo, status:'novo' });
+    }catch(e){ /* mesmo sem banco, o WhatsApp continua sendo a entrega */ }
+
+    const msg =
+      `Oi! Sou ${nome}, da plataforma ${CONFIG.MARCA}.\n\n` +
+      `Quero falar sobre: ${rotulo}\n` +
+      `Prazo: ${prazo}\n\n` +
+      `Minha situação:\n${contexto}`;
+    const d = String(CONFIG.WHATSAPP || '').replace(/\D/g,'');
+    window.open(d ? `https://wa.me/${d}?text=${encodeURIComponent(msg)}`
+                  : `https://wa.me/?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    toast('Pedido registrado. A conversa abriu numa aba nova.');
+    $('#s_contexto').value = '';
+  };
+}
+
+async function admServicos(b){
+  const l = (await api.sel('contatos')).sort((x,y)=>String(y.criado_em ?? '').localeCompare(String(x.criado_em ?? '')));
+  b.innerHTML = `<div class="panel">
+    <div class="panel-hd"><div><h2>Pedidos de serviço</h2>
+      <p class="hint">Quem pediu orçamento pela tela Fale comigo.</p></div></div>
+    ${l.length ? `<table><thead><tr><th>Quem</th><th>O que quer</th><th>Prazo</th><th>Status</th><th></th></tr></thead><tbody>
+    ${l.map(x=>`<tr>
+      <td><b>${esc(x.nome ?? '')}</b><br><span style="color:var(--ink-3);font-size:12px">${esc(x.email ?? '')} · ${esc(x.whatsapp ?? 'sem telefone')}</span></td>
+      <td>${esc(x.tipo ?? '')}<br><span style="color:var(--ink-3);font-size:12px">${esc(String(x.contexto ?? '').slice(0,110))}${String(x.contexto ?? '').length>110?'...':''}</span></td>
+      <td>${esc(x.prazo ?? '')}</td>
+      <td><span class="pill ${x.status==='novo'?'':'pill-mute'}">${esc(x.status ?? 'novo')}</span></td>
+      <td style="text-align:right;white-space:nowrap">
+        <button class="btn btn-ghost btn-sm" data-wa="${x.id}">WhatsApp</button>
+        <button class="btn btn-ghost btn-sm" data-fech="${x.id}">Encerrar</button></td></tr>`).join('')}
+    </tbody></table>` : '<div class="empty">Nenhum pedido ainda.</div>'}
+  </div>`;
+  b.querySelectorAll('[data-wa]').forEach(el => el.onclick = () => {
+    const x = l.find(i=>i.id===el.dataset.wa); if(!x) return;
+    const d = String(x.whatsapp || '').replace(/\D/g,'');
+    const num = d ? (d.length<=11 ? '55'+d : d) : '';
+    window.open(`https://wa.me/${num}?text=${encodeURIComponent('Oi ' + (x.nome||'') + '! Vi o seu pedido sobre ' + (x.tipo||'') + '.')}`, '_blank', 'noopener');
+  });
+  b.querySelectorAll('[data-fech]').forEach(el => el.onclick = async () => {
+    await api.upd('contatos', el.dataset.fech, { status:'encerrado' });
+    admServicos(b);
+  });
+}
+
+async function telaAgenda(){
+  head('Agenda', 'Agenda');
+  const ids = await meusAcessos();
+  const encontros = (await api.sel('encontros')).filter(e=>e.ativo && (!e.produto_id || ids.includes(e.produto_id) || EU.papel==='admin'))
+    .sort((a,b)=>new Date(a.data_hora)-new Date(b.data_hora));
+  const inscr = await api.sel('encontro_inscricoes', DEMO ? { user_id: EU.id } : {});
+  const prods = await api.sel('produtos');
+
+  $('#content').innerHTML = encontros.length ? encontros.map(e=>{
+    const eu = inscr.some(i=>i.encontro_id===e.id);
+    const prod = prods.find(p=>p.id===e.produto_id);
+    return `<div class="panel" style="margin-bottom:16px">
+      <div class="panel-hd">
+        <div><h2>${esc(e.titulo)}</h2>
+          <p class="hint">${dataBR(e.data_hora)} · ${horaBR(e.data_hora)} · ${e.duracao_min} min${prod?` · ${esc(prod.nome)}`:' · aberto a todos'}</p></div>
+        <span class="pill ${eu?'':'pill-mute'}">${eu?'Inscrito':`${e.vagas} vagas`}</span>
+      </div>
+      <p style="color:var(--ink-2);margin:0 0 16px">${esc(e.descricao ?? '')}</p>
+      ${eu ? `<div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn btn-primary" href="${esc(e.link_sala ?? '#')}" target="_blank">Entrar na sala</a>
+                <button class="btn btn-ghost" data-sair="${e.id}">Cancelar inscrição</button></div>`
+           : `<button class="btn btn-primary" data-inscrever="${e.id}">Garantir minha vaga</button>`}
+    </div>`;
+  }).join('') : '<div class="empty"><div class="big">📅</div>Nenhum encontro agendado.</div>';
+
+  $('#content').querySelectorAll('[data-inscrever]').forEach(b=>b.onclick = async ()=>{
+    await api.ins('encontro_inscricoes', { encontro_id:b.dataset.inscrever, user_id:EU.id });
+    toast('Vaga garantida! O link da sala já está aí.'); route();
+  });
+  $('#content').querySelectorAll('[data-sair]').forEach(b=>b.onclick = async ()=>{
+    const i = (await api.sel('encontro_inscricoes', DEMO ? { user_id: EU.id } : {})).find(x=>x.encontro_id===b.dataset.sair);
+    if(i) await api.del('encontro_inscricoes', i.id);
+    route();
+  });
+}
+
+/* ---------------------- TELA: ADMIN ---------------------- */
+const ABAS = [['produtos','Produtos'],['conteudo','Conteúdo'],['encontros','Encontros'],['alunos','Alunos'],['vendas','Vendas'],['pedidosservico','Pedidos de serviço']];
+async function telaAdmin(aba='produtos'){
+  if(EU.papel !== 'admin') return $('#content').innerHTML = '<div class="empty">Área restrita.</div>';
+  head('Admin', 'Administração');
+  const c = $('#content');
+  c.innerHTML = `<div class="adm-tabs">${ABAS.map(([id,l])=>`<button class="${id===aba?'on':''}" onclick="location.hash='#/admin/${id}'">${l}</button>`).join('')}</div><div id="admBody"></div>`;
+  const b = $('#admBody');
+  ({ produtos: admProdutos, conteudo: admConteudo, encontros: admEncontros, alunos: admAlunos, vendas: admVendas, pedidosservico: admServicos }[aba] ?? admProdutos)(b);
+}
+
+async function admProdutos(b){
+  const prods = (await api.sel('produtos')).sort((a,b)=>a.ordem-b.ordem);
+  b.innerHTML = `<div class="panel">
+    <div class="panel-hd"><div><h2>Produtos</h2><p class="hint">Cursos, kits e mentorias da plataforma.</p></div>
+      <button class="btn btn-primary btn-sm" id="novoProduto">+ Novo produto</button></div>
+    <table><thead><tr><th>Produto</th><th>Onde vive</th><th>Preço</th><th></th><th style="text-align:right">Aparece para o cliente</th></tr></thead><tbody>
+    ${prods.map(p=>`<tr class="${p.publicado?'':'oculto'}" data-linha="${p.id}">
+      <td><div style="display:flex;gap:10px;align-items:center">
+        ${p.capa_url ? `<img src="${esc(p.capa_url)}" alt="" loading="lazy" style="width:56px;height:36px;object-fit:cover;border-radius:7px;flex:none">`
+                     : `<span style="width:56px;height:36px;border-radius:7px;background:${esc(p.cor ?? '#26874e')};display:grid;place-items:center;flex:none">${p.emoji ?? '📦'}</span>`}
+        <span><b>${esc(p.nome)}</b><br><span style="color:var(--ink-3);font-size:12px">${esc(p.subtitulo ?? '')}</span>
+        ${modoDe(p)==='gateway' && !p.gratuito && !p.cakto_url && !CONFIG.CAKTO_CHECKOUT_URL
+            ? '<br><span class="pill pill-warn" style="font-size:10px">sem link da Cakto</span>' : ''}</span>
+      </div></td>
+      <td><span class="etq-modo ${modoDe(p)==='vitrine'?'vit':''}">${MODOS[modoDe(p)].curto}</span>
+        <br><span style="font-size:12px;color:var(--ink-3)">${p.gratuito?'grátis':esc(p.tipo)}</span>
+        ${(p.assentos??1)>1?`<br><span class="pill" style="font-size:10px">${p.assentos} assentos</span>`:''}</td>
+      <td style="white-space:nowrap">${modoDe(p)==='vitrine' ? '<span style="color:var(--ink-3)">A consultar</span>'
+            : (p.gratuito?'—':BRL(p.preco_centavos))}</td>
+      <td style="white-space:nowrap">
+        <button class="btn btn-ghost btn-sm" data-edit="${p.id}">Editar</button>
+        <button class="btn btn-ghost btn-sm" data-fotos="${p.id}">Fotos</button>
+        ${modoDe(p)==='gateway' ? `<button class="btn btn-ghost btn-sm" data-cont="${p.id}">Conteúdo</button>` : ''}</td>
+      <td style="text-align:right">
+        <label class="chave" title="Ligado: aparece na Explorar e na vitrine do site. Desligado: só você vê.">
+          <input type="checkbox" data-ver="${p.id}" ${p.publicado?'checked':''}>
+          <span class="trilha"></span>
+          <span class="txt-chave">${p.publicado?'Visível':'Oculto'}</span>
+        </label></td></tr>`).join('')}
+    </tbody></table></div>`;
+  $('#novoProduto').onclick = async ()=>{ const m = await escolherModo(); if(m) formProduto(null, m); };
+  b.querySelectorAll('[data-edit]').forEach(x=>x.onclick=()=>formProduto(x.dataset.edit));
+  b.querySelectorAll('[data-fotos]').forEach(x=>x.onclick=()=>modalFotos(x.dataset.fotos));
+  b.querySelectorAll('[data-cont]').forEach(x=>x.onclick=()=>{ ADM_PROD = x.dataset.cont; location.hash='#/admin/conteudo'; });
+
+  /* Liga e desliga o produto na hora, sem abrir o formulário.
+     A tela muda primeiro e volta atrás se o banco recusar, para você nunca
+     ficar olhando para um "Visível" que não é verdade.                     */
+  b.querySelectorAll('[data-ver]').forEach(el => el.onchange = async () => {
+    const id = el.dataset.ver;
+    const querVer = el.checked;
+    const linha = b.querySelector(`[data-linha="${id}"]`);
+    const rotulo = el.parentElement.querySelector('.txt-chave');
+
+    el.disabled = true;
+    rotulo.textContent = querVer ? 'Visível' : 'Oculto';
+    linha?.classList.toggle('oculto', !querVer);
+
+    const ok = await api.upd('produtos', id, { publicado: querVer });
+    el.disabled = false;
+
+    if(!ok){                                   // o aviso do erro já apareceu
+      el.checked = !querVer;
+      rotulo.textContent = el.checked ? 'Visível' : 'Oculto';
+      linha?.classList.toggle('oculto', !el.checked);
+      return;
+    }
+    toast(querVer ? 'Produto visível para os clientes.' : 'Produto oculto. Só você enxerga.');
+  });
+}
+
+/* ---------------------- FOTOS DE APLICAÇÃO DO PRODUTO ----------------------
+   A capa é o cartão. Estas são as telas que o visitante vê quando abre o
+   produto no site: a planilha preenchida, o orçamento no WhatsApp, a agenda
+   do dia. Cada uma é reduzida no navegador antes de ir para o banco.        */
+async function modalFotos(pid){
+  const [p] = await api.sel('produtos', { id: pid });
+  if(!p) return;
+
+  const desenhar = async () => {
+    const fotos = (await api.sel('produto_fotos', { produto_id: pid }))
+      .sort((a,b)=>(a.ordem ?? 0) - (b.ordem ?? 0));
+    abrirModal(`
+      <div class="mhd"><div><h3>Fotos de ${esc(p.nome)}</h3>
+        <p class="hint" style="margin:4px 0 0">As telas que mostram o material funcionando. A capa entra sozinha como primeira.</p></div>
+        <button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+      <div class="mbd">
+        ${fotos.length ? fotos.map((f,i)=>`
+          <div class="row" style="gap:12px">
+            <img src="${esc(f.url)}" alt="" style="width:88px;height:58px;object-fit:cover;border-radius:9px;flex:none">
+            <div class="txt">
+              <input value="${esc(f.legenda ?? '')}" data-leg="${f.id}" placeholder="Legenda, por exemplo: a aba de zonas preenchida"
+                     style="width:100%;padding:8px 11px;border-radius:9px;border:1.5px solid var(--line);background:var(--surface)">
+            </div>
+            <div style="display:flex;gap:5px;flex:none">
+              <button class="btn btn-ghost btn-sm" data-sobe="${f.id}" ${i===0?'disabled':''}>↑</button>
+              <button class="btn btn-ghost btn-sm" data-desce="${f.id}" ${i===fotos.length-1?'disabled':''}>↓</button>
+              <button class="btn btn-ghost btn-sm" data-tira="${f.id}">Remover</button>
+            </div>
+          </div>`).join('')
+        : '<div class="empty">Nenhuma foto ainda. O site vai mostrar só a capa.</div>'}
+
+        <div class="field" style="margin-top:16px">
+          <label class="btn btn-primary btn-block" style="cursor:pointer">Adicionar fotos
+            <input type="file" accept="image/*" multiple data-novas hidden></label>
+          <p class="bar-lbl" style="margin:8px 0 0">Pode escolher várias de uma vez. Cada uma é reduzida para 800px antes de salvar.</p>
+        </div>
+      </div>`);
+
+    $('#mcard').querySelectorAll('[data-leg]').forEach(i => i.onchange = async () => {
+      if(await api.upd('produto_fotos', i.dataset.leg, { legenda: i.value.trim() || null }))
+        toast('Legenda salva.');
+    });
+    $('#mcard').querySelectorAll('[data-tira]').forEach(b => b.onclick = async () => {
+      await api.del('produto_fotos', b.dataset.tira); desenhar();
+    });
+    const trocar = async (id, passo) => {
+      const i = fotos.findIndex(f => f.id === id), j = i + passo;
+      if(i < 0 || j < 0 || j >= fotos.length) return;
+      await api.upd('produto_fotos', fotos[i].id, { ordem: j + 1 });
+      await api.upd('produto_fotos', fotos[j].id, { ordem: i + 1 });
+      desenhar();
+    };
+    $('#mcard').querySelectorAll('[data-sobe]').forEach(b => b.onclick = () => trocar(b.dataset.sobe, -1));
+    $('#mcard').querySelectorAll('[data-desce]').forEach(b => b.onclick = () => trocar(b.dataset.desce, 1));
+
+    $('#mcard').querySelector('[data-novas]').onchange = async e => {
+      const arquivos = [...(e.target.files ?? [])];
+      if(!arquivos.length) return;
+      let n = fotos.length, erros = 0;
+      for(const f of arquivos){
+        if(!f.type.startsWith('image/')){ erros++; continue; }
+        try{
+          const url = await reduzirImagem(f);
+          if(!await api.ins('produto_fotos', { produto_id: pid, url, ordem: ++n })) erros++;
+        }catch(err){ erros++; }
+      }
+      if(!erros) toast('Fotos adicionadas.');
+      else if(erros < arquivos.length) toast(`${arquivos.length - erros} enviada(s), ${erros} falhou.`);
+      desenhar();
+    };
+  };
+
+  desenhar();
+}
+
+/* ---------------------- CRIAR PRODUTO ----------------------
+   Dois caminhos, porque são dois negócios diferentes:
+
+   gateway  produto que se vende sozinho. Tem preço, link da Cakto, material
+            entregue dentro da plataforma e aparece na Explorar.
+   vitrine  produto de conversa. Aparece só na landing, com preço a consultar
+            e as fotos de aplicação. Não tem checkout nem entrega automática.  */
+const MODOS = {
+  gateway: { rotulo:'Com pagamento',  curto:'Pagamento',
+             linha:'Vende sozinho pela Cakto e entrega dentro da plataforma' },
+  vitrine: { rotulo:'Vitrine da landing', curto:'A consultar',
+             linha:'Aparece só na landing, com preço a consultar e as fotos' },
+};
+const modoDe = p => (p?.modo === 'vitrine' ? 'vitrine' : 'gateway');
+
+function escolherModo(){
+  return new Promise(resolve => {
+    abrirModal(`
+      <div class="mhd"><div><h3>Que tipo de produto?</h3>
+        <p class="hint" style="margin:4px 0 0">Dá para mudar depois, no próprio produto.</p></div>
+        <button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+      <div class="mbd">
+        <button class="escolha" data-modo="gateway">
+          <b>Com pagamento</b>
+          <span>Tem preço e link da Cakto. Aparece na Explorar e na landing, e o
+                aluno abre o material aqui dentro depois de comprar.</span>
+          <i>Planilha, kit, curso, qualquer coisa que você já vende pronta</i>
+        </button>
+        <button class="escolha" data-modo="vitrine">
+          <b>Vitrine da landing</b>
+          <span>Sem preço e sem checkout. Aparece só na landing, com as fotos de
+                aplicação e o botão que abre o WhatsApp.</span>
+          <i>Serviço sob medida, implantação, treinamento, projeto por orçamento</i>
+        </button>
+      </div>`);
+    $('#mcard').querySelectorAll('[data-modo]').forEach(b => b.onclick = () => {
+      fecharModal(true); resolve(b.dataset.modo);
+    });
+    $('#mcard').querySelectorAll('[data-fechar]').forEach(b => b.onclick = () => {
+      fecharModal(true); resolve(null);
+    });
+  });
+}
+
+async function formProduto(id, modoNovo){
+  const [p] = id ? await api.sel('produtos', { id }) : [{}];
+  const modo = id ? modoDe(p) : (modoNovo ?? 'gateway');
+  const eVitrine = modo === 'vitrine';
+
+  const titulo = id ? `Editar produto · ${MODOS[modo].rotulo}` : `Novo produto · ${MODOS[modo].rotulo}`;
+  const bullets = Array.isArray(p.bullets) ? p.bullets
+                : (() => { try{ const x = JSON.parse(p.bullets || '[]'); return Array.isArray(x) ? x : []; }catch(e){ return []; } })();
+
+  const campos = [
+    {k:'nome', l:'Nome', v:p.nome},
+    {k:'subtitulo', l:'Subtítulo', v:p.subtitulo},
+    {k:'descricao', l:'Descrição', t:'textarea', v:p.descricao},
+    {k:'bullets', l:'O que está incluído (um item por linha)', t:'textarea', v:bullets.join('\n')},
+    {k:'tipo', l:'Tipo', t:'select', opts:[['curso','Curso'],['kit','Kit'],['mentoria','Mentoria'],['workshop','Workshop'],['projeto','Sob medida']], v:p.tipo},
+  ];
+
+  if(!eVitrine) campos.push(
+    {k:'preco', l:'Preço (R$)', v:p.preco_centavos!=null?(p.preco_centavos/100).toFixed(2):''},
+    {k:'preco_de', l:'Preço "de" (R$, opcional)', v:p.preco_de_centavos?(p.preco_de_centavos/100).toFixed(2):''},
+  );
+
+  campos.push(
+    {k:'capa_url', l:'Capa do produto (imagem)', t:'imagem', v:p.capa_url ?? ''},
+    {k:'emoji', l:'Emoji (usado quando não tem capa)', v:p.emoji ?? '📦'},
+    {k:'cor', l:'Cor de fundo (usada quando não tem capa)', v:p.cor ?? '#26874e'},
+  );
+
+  if(!eVitrine) campos.push(
+    {k:'cakto_url', l:'Link da oferta na Cakto (cartão)', v:p.cakto_url ?? ''},
+    {k:'assentos', l:'Assentos por compra (1 = uso individual)', v:String(p.assentos ?? 1)},
+    {k:'gratuito', l:'Gratuito', t:'select', opts:[['nao','Não'],['sim','Sim']], v:p.gratuito?'sim':'nao'},
+  );
+
+  campos.push(
+    {k:'modo', l:'Onde este produto vive', t:'select',
+     opts:[['gateway', MODOS.gateway.rotulo + ': ' + MODOS.gateway.linha],
+           ['vitrine', MODOS.vitrine.rotulo + ': ' + MODOS.vitrine.linha]], v:modo},
+    {k:'publicado', l:'Aparece para o cliente', t:'select', opts:[['nao','Não'],['sim','Sim']], v:p.publicado?'sim':'nao'},
+  );
+
+  const v = await formModal(titulo, campos);
+  if(!v) return;
+  if(!String(v.nome ?? '').trim()) return toast('O produto precisa de um nome.');
+
+  const viraVitrine = v.modo === 'vitrine';
+  const linhas = String(v.bullets ?? '').split('\n').map(x=>x.trim()).filter(Boolean).slice(0, 8);
+
+  const row = {
+    nome: v.nome.trim(), subtitulo: v.subtitulo, descricao: v.descricao, tipo: v.tipo,
+    bullets: linhas,
+    emoji: v.emoji, cor: v.cor, capa_url: v.capa_url || null,
+    modo: viraVitrine ? 'vitrine' : 'gateway',
+    publicado: v.publicado === 'sim',
+    slug: p.slug ?? v.nome.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+            .replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''),
+    // Produto de vitrine não tem preço nem cobrança. Zerar aqui evita que um
+    // valor antigo volte a aparecer se você trocar o modo de ida e volta.
+    preco_centavos:    viraVitrine ? 0    : Math.round(parseFloat(v.preco || 0) * 100),
+    preco_de_centavos: viraVitrine ? null : (v.preco_de ? Math.round(parseFloat(v.preco_de) * 100) : null),
+    cakto_url:         viraVitrine ? null : ((v.cakto_url || '').trim() || null),
+    assentos:          viraVitrine ? 1    : Math.max(1, +v.assentos || 1),
+    gratuito:          viraVitrine ? false: v.gratuito === 'sim',
+  };
+
+  const salvo = id ? await api.upd('produtos', id, row) : await api.ins('produtos', { ...row, ordem: 100 });
+  if(!salvo) return;                       // o aviso do erro já apareceu
+
+  // Produto de vitrine vive das fotos, então já abre onde elas entram.
+  if(!id && viraVitrine && salvo.id){
+    toast('Produto criado. Agora as fotos que vão para a landing.');
+    return modalFotos(salvo.id);
+  }
+  toast('Produto salvo.'); route();
+}
+
+let ADM_PROD = null;
+async function admConteudo(b){
+  const prods = await api.sel('produtos');
+  ADM_PROD ??= prods[0]?.id;
+  const mods = (await api.sel('modulos', { produto_id: ADM_PROD })).sort((a,b)=>a.ordem-b.ordem);
+  const aulas = await api.sel('aulas');
+  const materiais = await api.sel('materiais');
+
+  b.innerHTML = `<div class="panel">
+    <div class="panel-hd"><div><h2>Conteúdo</h2><p class="hint">Módulos, aulas e materiais anexos.</p></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <select id="selProd" style="padding:9px 12px;border-radius:10px;border:1.5px solid var(--line)">
+          ${prods.map(p=>`<option value="${p.id}" ${p.id===ADM_PROD?'selected':''}>${esc(p.nome)}</option>`).join('')}
+        </select>
+        <button class="btn btn-primary btn-sm" id="novoModulo">+ Módulo</button></div></div>
+    ${mods.map(m=>`
+      <div style="border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:8px">
+          <b>${esc(m.titulo)}</b>
+          <span style="display:flex;gap:6px">
+            <button class="btn btn-ghost btn-sm" data-aula="${m.id}">+ Aula</button>
+            <button class="btn btn-ghost btn-sm" data-delmod="${m.id}">Excluir</button></span></div>
+        ${aulas.filter(a=>a.modulo_id===m.id).sort((a,b)=>a.ordem-b.ordem).map(a=>`
+          <div class="row"><span class="emo">${a.tipo==='video'?'▶':'📖'}</span>
+            <div class="txt"><b>${esc(a.titulo)}</b><span>${a.duracao_min} min · ${materiais.filter(x=>x.aula_id===a.id).length} material(is)</span></div>
+            <button class="btn btn-ghost btn-sm" data-editaula="${a.id}">Editar</button>
+            <button class="btn btn-ghost btn-sm" data-mat2="${a.id}">+ Material</button>
+            <button class="btn btn-ghost btn-sm" data-delaula="${a.id}">✕</button></div>`).join('')
+          || '<div class="empty" style="padding:16px">Sem aulas neste módulo.</div>'}
+      </div>`).join('') || '<div class="empty">Este produto ainda não tem módulo.</div>'}
+  </div>`;
+
+  $('#selProd').onchange = e=>{ ADM_PROD = e.target.value; route(); };
+  $('#novoModulo').onclick = async ()=>{
+    const v = await formModal('Novo módulo', [{k:'titulo',l:'Título do módulo'},{k:'ordem',l:'Ordem',v:String(mods.length+1)}]);
+    if(v){ await api.ins('modulos', { produto_id:ADM_PROD, titulo:v.titulo, ordem:+v.ordem||1 }); route(); }
+  };
+  b.querySelectorAll('[data-aula]').forEach(x=>x.onclick=()=>formAula(null, x.dataset.aula));
+  b.querySelectorAll('[data-editaula]').forEach(x=>x.onclick=()=>formAula(x.dataset.editaula));
+  b.querySelectorAll('[data-delaula]').forEach(x=>x.onclick=async()=>{ await api.del('aulas', x.dataset.delaula); toast('Aula excluída.'); route(); });
+  b.querySelectorAll('[data-delmod]').forEach(x=>x.onclick=async()=>{ await api.del('modulos', x.dataset.delmod); toast('Módulo excluído.'); route(); });
+  b.querySelectorAll('[data-mat2]').forEach(x=>x.onclick=async()=>{
+    const v = await formModal('Novo material', [{k:'nome',l:'Nome do arquivo'},{k:'formato',l:'Formato',v:'.xlsx'},
+      {k:'arquivo_path',l:'Caminho no bucket "materiais"',v:'pasta/arquivo.xlsx'}]);
+    if(v){ await api.ins('materiais', { aula_id:x.dataset.mat2, ...v, ordem:1 }); toast('Material anexado.'); route(); }
+  });
+}
+
+async function formAula(id, modulo_id){
+  const [a] = id ? await api.sel('aulas', { id }) : [{}];
+  const v = await formModal(id?'Editar aula':'Nova aula', [
+    {k:'titulo',l:'Título',v:a.titulo},
+    {k:'descricao',l:'Descrição curta',v:a.descricao},
+    {k:'tipo',l:'Tipo',t:'select',opts:[['texto','Texto'],['video','Vídeo']],v:a.tipo},
+    {k:'video_url',l:'URL do vídeo (embed)',v:a.video_url},
+    {k:'conteudo',l:'Conteúdo da aula',t:'textarea',v:a.conteudo},
+    {k:'duracao_min',l:'Duração (min)',v:String(a.duracao_min ?? 10)},
+    {k:'ordem',l:'Ordem',v:String(a.ordem ?? 1)},
+  ]);
+  if(!v) return;
+  const row = { titulo:v.titulo, descricao:v.descricao, tipo:v.tipo, video_url:v.video_url||null,
+    conteudo:v.conteudo, duracao_min:+v.duracao_min||0, ordem:+v.ordem||1 };
+  id ? await api.upd('aulas', id, row) : await api.ins('aulas', { modulo_id, ...row });
+  toast('Aula salva.'); route();
+}
+
+async function admEncontros(b){
+  const encontros = (await api.sel('encontros')).sort((a,b)=>new Date(a.data_hora)-new Date(b.data_hora));
+  const inscr = await api.sel('encontro_inscricoes');
+  const prods = await api.sel('produtos');
+  b.innerHTML = `<div class="panel">
+    <div class="panel-hd"><div><h2>Encontros</h2><p class="hint">Mentorias, lives e workshops.</p></div>
+      <button class="btn btn-primary btn-sm" id="novoEnc">+ Novo encontro</button></div>
+    <table><thead><tr><th>Encontro</th><th>Quando</th><th>Para quem</th><th>Inscritos</th><th></th></tr></thead><tbody>
+    ${encontros.map(e=>`<tr>
+      <td><b>${esc(e.titulo)}</b></td>
+      <td>${dataBR(e.data_hora)} · ${horaBR(e.data_hora)}</td>
+      <td>${e.produto_id ? esc(prods.find(p=>p.id===e.produto_id)?.nome ?? '—') : 'Todos os alunos'}</td>
+      <td>${inscr.filter(i=>i.encontro_id===e.id).length} / ${e.vagas}</td>
+      <td style="text-align:right"><button class="btn btn-ghost btn-sm" data-ed="${e.id}">Editar</button></td></tr>`).join('')
+      || '<tr><td colspan="5"><div class="empty">Nenhum encontro criado.</div></td></tr>'}
+    </tbody></table></div>`;
+  $('#novoEnc').onclick = ()=>formEncontro();
+  b.querySelectorAll('[data-ed]').forEach(x=>x.onclick=()=>formEncontro(x.dataset.ed));
+}
+
+async function formEncontro(id){
+  const [e] = id ? await api.sel('encontros', { id }) : [{}];
+  const prods = await api.sel('produtos');
+  const v = await formModal(id?'Editar encontro':'Novo encontro', [
+    {k:'titulo',l:'Título',v:e.titulo},
+    {k:'descricao',l:'Descrição',t:'textarea',v:e.descricao},
+    {k:'data',l:'Data e hora',t:'datetime-local',v:e.data_hora?new Date(e.data_hora).toISOString().slice(0,16):''},
+    {k:'duracao_min',l:'Duração (min)',v:String(e.duracao_min ?? 90)},
+    {k:'vagas',l:'Vagas',v:String(e.vagas ?? 30)},
+    {k:'link_sala',l:'Link da sala',v:e.link_sala},
+    {k:'produto_id',l:'Para quem',t:'select',opts:[['','Todos os alunos'],...prods.map(p=>[p.id,p.nome])],v:e.produto_id ?? ''},
+  ]);
+  if(!v) return;
+  const row = { titulo:v.titulo, descricao:v.descricao, data_hora:new Date(v.data).toISOString(),
+    duracao_min:+v.duracao_min||60, vagas:+v.vagas||30, link_sala:v.link_sala, produto_id:v.produto_id||null, ativo:true };
+  id ? await api.upd('encontros', id, row) : await api.ins('encontros', row);
+  toast('Encontro salvo.'); route();
+}
+
+async function admAlunos(b){
+  const perfis = (await api.sel('perfis')).filter(p=>p.papel!=='admin');
+  const acessos = await api.sel('acessos');
+  const prods = await api.sel('produtos');
+  b.innerHTML = `<div class="panel">
+    <div class="panel-hd"><div><h2>Alunos</h2><p class="hint">Contas, produtos liberados e criação manual.</p></div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-ghost btn-sm" id="libAcesso">Liberar acesso</button>
+        <button class="btn btn-primary btn-sm" id="novoAluno">+ Novo aluno</button></div></div>
+    <table><thead><tr><th>Aluno</th><th>Perfil</th><th>Produtos</th><th>Entrou em</th><th></th></tr></thead><tbody>
+    ${perfis.map(p=>{
+      const meus = acessos.filter(a=>a.user_id===p.id);
+      return `<tr>
+        <td><b>${esc(p.nome)}</b><br><span style="color:var(--ink-3);font-size:12px">${esc(p.email)}</span></td>
+        <td>${esc((p.perfil_tipo ?? '—').replace(/_/g,' '))}</td>
+        <td>${meus.length ? meus.map(a=>`<span class="pill" style="margin-right:4px">${prods.find(x=>x.id===a.produto_id)?.emoji ?? ''} ${esc((prods.find(x=>x.id===a.produto_id)?.nome ?? '').split(' ').slice(0,2).join(' '))}</span>`).join('') : '<span class="pill pill-mute">nenhum</span>'}</td>
+        <td>${dataBR(p.criado_em)}${p.senha_provisoria?'<br><span class="pill pill-warn">senha provisória</span>':''}</td>
+        <td style="text-align:right"><button class="btn btn-ghost btn-sm" data-lib="${p.id}">Liberar produto</button></td></tr>`;
+    }).join('') || '<tr><td colspan="5"><div class="empty">Nenhum aluno ainda.</div></td></tr>'}
+    </tbody></table></div>`;
+
+  $('#novoAluno').onclick = async ()=>{
+    const v = await formModal('Novo aluno', [
+      {k:'nome',l:'Nome'},{k:'email',l:'E-mail'},
+      {k:'senha',l:'Senha provisória',v:'mudar123'},
+      {k:'produto_id',l:'Já liberar um produto?',t:'select',opts:[['','Nenhum'],...prods.map(p=>[p.id,p.nome])]},
+    ]);
+    if(!v) return;
+    if(DEMO){
+      const novo = { id:uid(), nome:v.nome, email:v.email.toLowerCase(), papel:'aluno', senha_provisoria:true, criado_em:new Date().toISOString(), origem:'manual' };
+      D.perfis.push(novo);
+      if(v.produto_id) D.acessos.push({ id:uid(), user_id:novo.id, email:novo.email, produto_id:v.produto_id, origem:'manual', criado_em:new Date().toISOString() });
+      toast('Aluno criado com senha provisória.'); return route();
+    }
+    if(!CONFIG.FN_ADMIN_ALUNO) return toast('Configure FN_ADMIN_ALUNO para criar aluno.');
+    const { data:{ session } } = await sb.auth.getSession();
+    const r = await fetch(CONFIG.FN_ADMIN_ALUNO, { method:'POST',
+      headers:{'Content-Type':'application/json', Authorization:`Bearer ${session.access_token}`},
+      body: JSON.stringify({ nome:v.nome, email:v.email, senha:v.senha, produto_id:v.produto_id || null }) });
+    toast(r.ok ? 'Aluno criado. A senha provisória foi enviada por e-mail.' : 'Não consegui criar o aluno.');
+    route();
+  };
+
+  const liberar = async (userId)=>{
+    const v = await formModal('Liberar acesso', [
+      ...(userId ? [] : [{k:'user_id',l:'Aluno',t:'select',opts:perfis.map(p=>[p.id,`${p.nome} (${p.email})`])}]),
+      {k:'produto_id',l:'Produto',t:'select',opts:prods.map(p=>[p.id,p.nome])},
+    ]);
+    if(!v) return;
+    const alvo = perfis.find(p=>p.id===(userId ?? v.user_id));
+    if(DEMO) D.acessos.push({ id:uid(), user_id:alvo.id, email:alvo.email, produto_id:v.produto_id, origem:'manual', criado_em:new Date().toISOString() });
+    else await api.ins('acessos', { user_id:alvo.id, email:alvo.email, produto_id:v.produto_id, origem:'manual' });
+    toast('Acesso liberado.'); route();
+  };
+  $('#libAcesso').onclick = ()=>liberar(null);
+  b.querySelectorAll('[data-lib]').forEach(x=>x.onclick=()=>liberar(x.dataset.lib));
+}
+
+async function admVendas(b){
+  const pedidos = (await api.sel('pedidos')).sort((a,b)=>new Date(b.criado_em)-new Date(a.criado_em));
+  const pagas = pedidos.filter(p=>p.status==='pago');
+  b.innerHTML = `
+    <div class="stats">
+      <div class="stat"><span>Receita confirmada</span><b>${BRL(pagas.reduce((s,p)=>s+p.total_centavos,0))}</b></div>
+      <div class="stat"><span>Pedidos pagos</span><b>${pagas.length}</b></div>
+      <div class="stat"><span>Pendentes</span><b>${pedidos.filter(p=>p.status==='pendente').length}</b></div>
+      <div class="stat"><span>Ticket médio</span><b>${pagas.length?BRL(Math.round(pagas.reduce((s,p)=>s+p.total_centavos,0)/pagas.length)):'—'}</b></div>
+    </div>
+    <div class="panel"><h2>Pedidos</h2><p class="hint">Tudo que passou pelo checkout.</p>
+    <table><thead><tr><th>Código</th><th>Cliente</th><th>Valor</th><th>Método</th><th>Status</th><th>Data</th></tr></thead><tbody>
+    ${pedidos.map(p=>`<tr><td><b>${p.codigo}</b></td>
+      <td>${esc(p.nome)}<br><span style="color:var(--ink-3);font-size:12px">${esc(p.email)}</span></td>
+      <td>${BRL(p.total_centavos)}</td><td>${esc(p.metodo ?? '—')}</td>
+      <td><span class="pill ${p.status==='pago'?'':'pill-warn'}">${p.status}</span></td>
+      <td>${dataBR(p.criado_em)}</td></tr>`).join('')
+      || '<tr><td colspan="6"><div class="empty">Nenhum pedido ainda.</div></td></tr>'}
+    </tbody></table></div>`;
+}
+
+/* ---------------------- TELA: COMPRA DIRETA (deep link da landing) ---------------------- */
+async function telaComprar(slug){
+  const [p] = await api.sel('produtos', { slug });
+  if(!p){ location.hash = '#/explorar'; return; }
+  head('Explorar', p.nome);
+  const ids = await meusAcessos();
+
+  if(ids.includes(p.id)){
+    $('#content').innerHTML = `<div class="panel" style="max-width:560px">
+      <h2>Você já tem este produto</h2>
+      <p class="hint">${esc(p.nome)} está liberado na sua conta.</p>
+      <button class="btn btn-primary" onclick="location.hash='#/produto/${p.slug}'">Abrir agora</button></div>`;
+    return;
+  }
+
+  $('#content').innerHTML = `<div class="panel" style="max-width:560px">
+    <div class="row" style="border:0;padding-top:0"><span class="emo">${p.emoji}</span>
+      <div class="txt"><b>${esc(p.nome)}</b><span>${esc(p.subtitulo ?? '')}</span></div></div>
+    <p class="hint">${esc(p.descricao ?? '')}</p>
+    <button class="btn btn-primary btn-block" id="btnIrCheckout">
+      ${p.gratuito ? 'Liberar agora, é grátis' : `Comprar por ${BRL(p.preco_centavos)}`}</button>
+    <p class="mini-note" style="margin-top:10px;font-size:12.5px;color:var(--ink-3);text-align:center">
+      Pagamento seguro · acesso liberado assim que o pagamento cair</p>
+  </div>`;
+  $('#btnIrCheckout').onclick = ()=>comprar(p.id);
+  comprar(p.id);   // já abre o checkout, sem clique extra
+}
+
+/* ---------------------- TELA: MINHA EQUIPE ---------------------- */
+async function telaEquipe(){
+  head('Minha equipe', 'Minha equipe');
+  MINHAS_LICENCAS = await api.sel('licencas', DEMO ? { titular_email: EU.email } : {});
+  if(!MINHAS_LICENCAS.length){
+    return $('#content').innerHTML = `<div class="empty"><div class="big">👥</div>
+      Você ainda não tem produto com acesso para equipe.<br>
+      <button class="btn btn-primary btn-sm" style="margin-top:12px" onclick="location.hash='#/explorar'">Ver o catálogo</button></div>`;
+  }
+  const prods = await api.sel('produtos');
+  const membros = await api.sel('licenca_membros');
+
+  $('#content').innerHTML = MINHAS_LICENCAS.map(l=>{
+    const prod = prods.find(p=>p.id===l.produto_id);
+    const meus = membros.filter(m=>m.licenca_id===l.id);
+    const livres = l.assentos - 1 - meus.length;   // o titular ocupa 1
+    return `<div class="panel" style="margin-bottom:18px">
+      <div class="panel-hd">
+        <div><h2>${prod?.emoji ?? '📦'} ${esc(prod?.nome ?? 'Produto')}</h2>
+          <p class="hint">Cada pessoa da equipe entra com o próprio e-mail, faz o próprio progresso e recebe o próprio certificado.</p></div>
+        <span class="pill ${livres>0?'':'pill-warn'}">${livres} de ${l.assentos} assentos livres</span>
+      </div>
+
+      <div class="row"><span class="emo">★</span>
+        <div class="txt"><b>${esc(EU.nome || EU.email)}</b><span>${esc(l.titular_email)} · titular</span></div>
+        <span class="pill pill-mute">você</span></div>
+
+      ${meus.map(m=>`<div class="row"><span class="emo">${iniciais(m.nome || m.email)}</span>
+        <div class="txt"><b>${esc(m.nome || m.email)}</b><span>${esc(m.email)} · desde ${dataBR(m.criado_em)}</span></div>
+        <button class="btn btn-ghost btn-sm" data-rm="${m.id}">Remover</button></div>`).join('')}
+
+      ${livres > 0 ? `<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">
+          <input class="eq-nome" data-lic="${l.id}" placeholder="Nome (opcional)" style="flex:1;min-width:130px;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line)">
+          <input class="eq-email" data-lic="${l.id}" placeholder="e-mail da pessoa" style="flex:2;min-width:180px;padding:10px 12px;border-radius:10px;border:1.5px solid var(--line)">
+          <button class="btn btn-primary" data-add="${l.id}">Liberar acesso</button>
+        </div>
+        <p class="mini-note" style="text-align:left;margin-top:8px;font-size:12.5px;color:var(--ink-3)">
+          Se a pessoa ainda não tiver conta, o acesso fica reservado e abre sozinho quando ela se cadastrar com esse e-mail.</p>`
+        : `<p class="hint" style="margin-top:16px">Todos os assentos estão ocupados. Remova alguém ou fale com a gente para ampliar a licença.</p>`}
+    </div>`;
+  }).join('');
+
+  $('#content').querySelectorAll('[data-add]').forEach(b=>b.onclick = ()=>addMembro(b.dataset.add));
+  $('#content').querySelectorAll('[data-rm]').forEach(b=>b.onclick = ()=>rmMembro(b.dataset.rm));
+}
+
+async function addMembro(licId){
+  const email = $(`.eq-email[data-lic="${licId}"]`).value.trim().toLowerCase();
+  const nome  = $(`.eq-nome[data-lic="${licId}"]`).value.trim();
+  if(!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email)) return toast('Confira o e-mail.');
+  const lic = MINHAS_LICENCAS.find(l=>l.id===licId);
+
+  if(DEMO){
+    const usados = D.licenca_membros.filter(m=>m.licenca_id===licId).length;
+    if(usados >= lic.assentos - 1) return toast('Todos os assentos estão ocupados.');
+    if(D.licenca_membros.some(m=>m.licenca_id===licId && m.email===email)) return toast('Essa pessoa já está na equipe.');
+    D.licenca_membros.push({ id:uid(), licenca_id:licId, email, nome, criado_em:new Date().toISOString() });
+    const perfil = D.perfis.find(p=>p.email===email);
+    D.acessos.push({ id:uid(), user_id: perfil?.id ?? null, email, produto_id: lic.produto_id, origem:'equipe', criado_em:new Date().toISOString() });
+  } else {
+    const { error } = await sb.rpc('adicionar_membro', { p_licenca: licId, p_email: email, p_nome: nome || null });
+    if(error) return toast(error.message.includes('assentos') ? 'Todos os assentos estão ocupados.' : 'Não consegui liberar agora.');
+  }
+  toast('Acesso liberado para a equipe.');
+  route();
+}
+
+async function rmMembro(id){
+  if(DEMO){
+    const m = D.licenca_membros.find(x=>x.id===id);
+    const lic = D.licencas.find(l=>l.id===m.licenca_id);
+    D.acessos = D.acessos.filter(a=>!(a.email===m.email && a.produto_id===lic.produto_id && a.origem==='equipe'));
+    D.licenca_membros = D.licenca_membros.filter(x=>x.id!==id);
+  } else {
+    const { error } = await sb.rpc('remover_membro', { p_membro: id });
+    if(error) return toast('Não consegui remover agora.');
+  }
+  toast('Acesso removido.');
+  route();
+}
+
+/* ---------------------- TELA: MATERIAIS + CERTIFICADOS ---------------------- */
+async function telaMateriais(){
+  head('Materiais', 'Materiais e certificados');
+  const ids = await meusAcessos();
+  const prods = (await api.sel('produtos')).filter(p=>ids.includes(p.id));
+  const mods  = (await api.sel('modulos')).filter(m=>ids.includes(m.produto_id));
+  const aulas = (await api.sel('aulas')).filter(a=>mods.some(m=>m.id===a.modulo_id));
+  const mats  = (await api.sel('materiais')).filter(mt=>aulas.some(a=>a.id===mt.aula_id));
+  const certs = await api.sel('certificados', DEMO ? { user_id: EU.id } : {});
+
+  const conclusoes = [];
+  for(const p of prods){
+    const pr = await progressoProduto(p.id);
+    if(pr.total > 0 && pr.feitas === pr.total) conclusoes.push({ p, horas: Math.max(1, Math.round(pr.aulas.reduce((s,a)=>s+(a.duracao_min||0),0)/60*10)/10) });
+  }
+
+  const linha = mt => {
+    const aula = aulas.find(a=>a.id===mt.aula_id);
+    const mod  = mods.find(m=>m.id===aula?.modulo_id);
+    const prod = prods.find(p=>p.id===mod?.produto_id);
+    return `<div class="row" data-busca="${esc((mt.nome+' '+(prod?.nome??'')+' '+(aula?.titulo??'')).toLowerCase())}">
+      <span class="emo">📎</span>
+      <div class="txt"><b>${esc(mt.nome)}</b><span>${esc(prod?.nome ?? '')} · ${esc(aula?.titulo ?? '')}</span></div>
+      <button class="btn btn-ghost btn-sm" onclick="location.hash='#/aula/${aula?.id}'">Ver aula</button>
+      <button class="btn btn-primary btn-sm" data-mat="${esc(mt.arquivo_path)}">Baixar</button></div>`;
+  };
+
+  $('#content').innerHTML = `
+    <div class="panel" style="margin-bottom:20px">
+      <div class="panel-hd"><div><h2>Seus materiais</h2><p class="hint">Todo anexo dos seus produtos em um lugar só, sem caçar aula por aula.</p></div></div>
+      <div class="field" style="margin-bottom:16px"><input id="buscaMat" placeholder="Buscar por nome, produto ou aula..."></div>
+      <div id="listaMat">${mats.map(linha).join('') || '<div class="empty"><div class="big">📎</div>Nenhum material nos seus produtos ainda.</div>'}</div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-hd"><div><h2>Certificados</h2><p class="hint">Emitidos ao concluir 100% de um produto. Cada um tem código de validação.</p></div></div>
+      ${certs.map(c=>`<div class="row"><span class="emo">🎓</span>
+        <div class="txt"><b>${esc(c.produto_snapshot)}</b><span>${c.horas}h · código ${c.codigo} · ${dataBR(c.emitido_em)}</span></div>
+        <button class="btn btn-ghost btn-sm" data-vercert="${c.id}">Ver</button>
+        <button class="btn btn-primary btn-sm" data-pdf="${c.id}">Baixar PDF</button></div>`).join('')}
+      ${conclusoes.filter(x=>!certs.some(c=>c.produto_id===x.p.id)).map(x=>`
+        <div class="row"><span class="emo">${x.p.emoji}</span>
+          <div class="txt"><b>${esc(x.p.nome)}</b><span>Concluído · ${x.horas}h · certificado disponível</span></div>
+          <button class="btn btn-accent btn-sm" data-emitir="${x.p.id}">Emitir certificado</button></div>`).join('')}
+      ${!certs.length && !conclusoes.length ? '<div class="empty"><div class="big">🎓</div>Conclua um produto para liberar o certificado.</div>' : ''}
+    </div>`;
+
+  $('#buscaMat').oninput = e=>{
+    const t = e.target.value.toLowerCase().trim();
+    $('#listaMat').querySelectorAll('[data-busca]').forEach(r=>
+      r.classList.toggle('hide', t && !r.dataset.busca.includes(t)));
+  };
+  $('#content').querySelectorAll('[data-mat]').forEach(b=>b.onclick = ()=>baixar(b.dataset.mat));
+  $('#content').querySelectorAll('[data-emitir]').forEach(b=>b.onclick = ()=>emitirCertificado(b.dataset.emitir));
+  $('#content').querySelectorAll('[data-vercert]').forEach(b=>b.onclick = async ()=>{
+    const [c] = await api.sel('certificados', { id: b.dataset.vercert }); preverCertificado(c);
+  });
+  $('#content').querySelectorAll('[data-pdf]').forEach(b=>b.onclick = async ()=>{
+    const [c] = await api.sel('certificados', { id: b.dataset.pdf }); baixarCertificadoPDF(c);
+  });
+}
+
+async function emitirCertificado(pid){
+  const [p] = await api.sel('produtos', { id: pid });
+  const pr = await progressoProduto(pid);
+  if(pr.total === 0 || pr.feitas < pr.total) return toast('Conclua todas as aulas para emitir.');
+
+  let cert;
+  if(DEMO){
+    const horas = Math.max(1, Math.round(pr.aulas.reduce((s,a)=>s+(a.duracao_min||0),0)/60*10)/10);
+    cert = D.certificados.find(c=>c.user_id===EU.id && c.produto_id===pid);
+    if(!cert){
+      cert = { id:uid(), codigo: Math.random().toString(36).slice(2,12).toUpperCase(), user_id:EU.id, produto_id:pid,
+        nome_snapshot: EU.nome, produto_snapshot: p.nome, horas, emitido_em: new Date().toISOString() };
+      D.certificados.push(cert);
+    }
+  } else {
+    const { data, error } = await sb.rpc('emitir_certificado', { pid });
+    if(error) return toast('Não consegui emitir agora.');
+    cert = data;
+  }
+  toast('Certificado emitido 🎓');
+  preverCertificado(cert);
+}
+
+const certHTML = c => `
+  <div style="border:3px double var(--teal);border-radius:10px;padding:26px 24px;text-align:center;background:#fff;color:#1a1c1b">
+    <div style="font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#8a918c">${esc(CONFIG.MARCA)}</div>
+    <div style="font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-top:14px">Certificado de conclusão</div>
+    <div style="font-size:12.5px;color:#565c58;margin-top:18px">Certificamos que</div>
+    <div style="font-size:25px;font-weight:800;letter-spacing:-.02em;margin:6px 0">${esc(c.nome_snapshot || '—')}</div>
+    <div style="font-size:13px;color:#565c58;max-width:44ch;margin:8px auto 0;line-height:1.6">
+      concluiu <b>${esc(c.produto_snapshot)}</b>, com carga horária de <b>${c.horas} hora(s)</b>,
+      em ${new Date(c.emitido_em).toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'})}.
+    </div>
+    <div style="margin-top:24px;font-size:11px;color:#8a918c">
+      Código de validação <b style="color:#1a1c1b;letter-spacing:.08em">${c.codigo}</b>
+    </div>
+  </div>`;
+
+function preverCertificado(c){
+  abrirModal(`
+    <div class="mhd"><h3>Seu certificado</h3><button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+    <div class="mbd">
+      ${certHTML(c)}
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <button class="btn btn-primary" id="cPdf">Baixar PDF</button>
+        <button class="btn btn-ghost" id="cLink">Copiar link de validação</button>
+      </div>
+      <p class="auth-note">Quem receber o link confere nome, produto e carga horária sem precisar de conta.</p>
+    </div>`);
+  $('#cPdf').onclick = ()=>baixarCertificadoPDF(c);
+  $('#cLink').onclick = async ()=>{
+    const url = location.origin + location.pathname + '#/validar/' + c.codigo;
+    try{ await navigator.clipboard.writeText(url); toast('Link copiado.'); }
+    catch{ toast(url); }
+  };
+}
+
+async function baixarCertificadoPDF(c){
+  try{
+    const { jsPDF } = await import('https://cdn.jsdelivr.net/npm/jspdf@2.5.1/+esm');
+    const doc = new jsPDF({ orientation:'landscape', unit:'mm', format:'a4' });
+    const W = 297, H = 210, cx = W/2;
+    doc.setDrawColor(15,118,110); doc.setLineWidth(1.6); doc.rect(12,12,W-24,H-24);
+    doc.setLineWidth(0.4); doc.rect(16,16,W-32,H-32);
+
+    doc.setFont('helvetica','normal'); doc.setFontSize(10); doc.setTextColor(120,140,136);
+    doc.text(CONFIG.MARCA.toUpperCase().split('').join(' '), cx, 38, { align:'center' });
+
+    doc.setFont('helvetica','bold'); doc.setFontSize(15); doc.setTextColor(15,118,110);
+    doc.text('CERTIFICADO DE CONCLUSÃO'.split('').join(' '), cx, 58, { align:'center' });
+
+    doc.setFont('helvetica','normal'); doc.setFontSize(12); doc.setTextColor(84,106,102);
+    doc.text('Certificamos que', cx, 78, { align:'center' });
+
+    doc.setFont('helvetica','bold'); doc.setFontSize(30); doc.setTextColor(15,31,28);
+    doc.text(c.nome_snapshot || '—', cx, 95, { align:'center' });
+
+    doc.setFont('helvetica','normal'); doc.setFontSize(13); doc.setTextColor(84,106,102);
+    const corpo = `concluiu ${c.produto_snapshot}, com carga horária de ${c.horas} hora(s), em ${new Date(c.emitido_em).toLocaleDateString('pt-BR',{day:'2-digit',month:'long',year:'numeric'})}.`;
+    doc.text(doc.splitTextToSize(corpo, 190), cx, 110, { align:'center' });
+
+    doc.setDrawColor(190,205,201); doc.setLineWidth(0.4); doc.line(cx-45, 152, cx+45, 152);
+    doc.setFontSize(11); doc.setTextColor(15,31,28);
+    doc.text(CONFIG.MARCA, cx, 159, { align:'center' });
+
+    doc.setFontSize(9); doc.setTextColor(140,158,154);
+    doc.text(`Código de validação: ${c.codigo}`, cx, 178, { align:'center' });
+    doc.text('Valide em ' + location.origin + location.pathname + '#/validar/' + c.codigo, cx, 184, { align:'center' });
+
+    doc.save(`certificado-${c.codigo}.pdf`);
+  }catch(e){
+    console.warn('jsPDF indisponível, caindo para impressão', e);
+    imprimirCertificado(c);
+  }
+}
+
+function imprimirCertificado(c){
+  const w = window.open('', '_blank');
+  if(!w) return toast('Libere o pop-up para baixar o certificado.');
+  w.document.write(`<html><head><title>Certificado ${c.codigo}</title>
+    <style>@page{size:A4 landscape;margin:14mm}
+      body{font-family:system-ui,sans-serif;margin:0;color:#1b1a19}
+      :root{--brand:#26874e;--ink:#1b1a19;--ink-2:#546a66;--ink-3:#8b9c98}</style></head>
+    <body>${certHTML(c)}<script>window.onload=()=>window.print()<\/script></body></html>`);
+  w.document.close();
+}
+
+/* ---------------------- VALIDAÇÃO PÚBLICA ---------------------- */
+async function buscarCertificado(cod){
+  if(DEMO) return D.certificados.find(c=>c.codigo.toUpperCase() === cod.toUpperCase()) ?? null;
+  const { data } = await sb.rpc('validar_certificado', { cod });
+  return data?.[0] ? { ...data[0], nome_snapshot:data[0].nome, produto_snapshot:data[0].produto, codigo:cod.toUpperCase() } : null;
+}
+
+async function telaValidar(cod){
+  head('Validação', 'Validar certificado');
+  const c = cod ? await buscarCertificado(cod) : null;
+  $('#content').innerHTML = `<div class="panel" style="max-width:620px">
+    <h2>Validar certificado</h2><p class="hint">Digite o código impresso no rodapé do certificado.</p>
+    <div style="display:flex;gap:10px;margin-bottom:18px">
+      <input id="vCod" value="${esc(cod ?? '')}" placeholder="Ex: A1B2C3D4E5" style="flex:1;padding:11px 13px;border-radius:10px;border:1.5px solid var(--line)">
+      <button class="btn btn-primary" id="vGo">Validar</button></div>
+    ${cod ? (c ? `<div class="pill" style="margin-bottom:12px">✓ Certificado válido</div>${certHTML(c)}`
+               : '<div class="empty"><div class="big">🚫</div>Nenhum certificado com esse código.</div>') : ''}
+  </div>`;
+  $('#vGo').onclick = ()=>{ const v = $('#vCod').value.trim(); if(v) location.hash = '#/validar/' + v; };
+}
+
+async function validarPublico(cod){
+  const c = await buscarCertificado(cod);
+  abrirModal(`
+    <div class="mhd"><h3>Validação de certificado</h3><button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+    <div class="mbd">${c ? `<div class="pill" style="margin-bottom:12px">✓ Certificado válido</div>${certHTML(c)}`
+      : '<div class="empty"><div class="big">🚫</div>Nenhum certificado com o código <b>'+esc(cod)+'</b>.</div>'}</div>`);
+}
+
+/* ---------------------- TELA: CONTA ---------------------- */
+async function telaConta(){
+  head('Conta', 'Minha conta');
+  $('#content').innerHTML = `<div class="panel" style="max-width:520px">
+    <h2>Seus dados</h2><p class="hint">Isso aparece para você e no seu post da comunidade.</p>
+    <div class="field"><label>Nome</label><input id="ctNome" value="${esc(EU.nome ?? '')}"></div>
+    <div class="field"><label>E-mail</label><input value="${esc(EU.email)}" disabled></div>
+    <div class="field"><label>WhatsApp</label><input id="ctZap" value="${esc(EU.whatsapp ?? '')}"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+      <button class="btn btn-primary" id="ctSalvar">Salvar</button>
+      <button class="btn btn-ghost" id="ctSenha">Trocar senha</button>
+      <button class="btn btn-ghost" id="ctSair">Sair</button>
+    </div></div>`;
+  $('#ctSalvar').onclick = async ()=>{
+    const patch = { nome: $('#ctNome').value.trim(), whatsapp: $('#ctZap').value.trim() };
+    if(DEMO) Object.assign(EU, patch); else await api.upd('perfis', EU.id, patch);
+    Object.assign(EU, patch);
+    $('#meNome').textContent = EU.nome; $('#meAv').textContent = iniciais(EU.nome);
+    toast('Dados salvos.');
+  };
+  $('#ctSenha').onclick = ()=>modalTrocarSenha(false);
+  $('#ctSair').onclick = sair;
+}
+
+function modalTrocarSenha(obrigatorio){
+  abrirModal(`
+    <div class="mhd"><h3>${obrigatorio?'Crie sua senha':'Trocar senha'}</h3>
+      ${obrigatorio?'':'<button class="btn btn-ghost btn-sm" data-fechar>✕</button>'}</div>
+    <div class="mbd">
+      ${obrigatorio?'<p class="hint">Você entrou com a senha provisória que enviamos. Escolha uma senha sua para continuar.</p>':''}
+      <div class="field"><label>Nova senha</label><input id="sn1" type="password" placeholder="mínimo 6 caracteres"></div>
+      <div class="field"><label>Repita a senha</label><input id="sn2" type="password"></div>
+      <button class="btn btn-primary btn-block" id="btnSenha">Salvar senha</button>
+    </div>`, !obrigatorio);
+  $('#btnSenha').onclick = async ()=>{
+    const a = $('#sn1').value, b = $('#sn2').value;
+    if(a.length<6) return toast('Mínimo de 6 caracteres.');
+    if(a!==b) return toast('As senhas não conferem.');
+    if(!DEMO){
+      const { error } = await sb.auth.updateUser({ password: a });
+      if(error) return toast('Não consegui trocar a senha.');
+      await api.upd('perfis', EU.id, { senha_provisoria:false });
+    }
+    EU.senha_provisoria = false;
+    fecharModal(true); toast('Senha atualizada ✓');
+  };
+}
+
+/* ---------------------- UI ---------------------- */
+function abrirModal(html, fechavel = true){
+  $('#mcard').innerHTML = html;
+  $('#ov').classList.add('on');
+  $('#ov').dataset.fechavel = fechavel ? '1' : '0';
+  $('#mcard').querySelectorAll('[data-fechar]').forEach(b=>b.onclick=()=>fecharModal(true));
+}
+function fecharModal(forcar){
+  if(!forcar && $('#ov').dataset.fechavel === '0') return;
+  $('#ov').classList.remove('on');
+}
+$('#ov').onclick = e=>{ if(e.target.id==='ov') fecharModal(); };
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') fecharModal(); });
+
+/* ---------------------- CAMPO DE IMAGEM (capa do produto) ----------------------
+   A imagem é reduzida no próprio navegador antes de sair daqui: 800px de largura,
+   jpeg de qualidade 0.72. Um print de celular de 3 MB vira uns 50 KB, que é o que
+   fica salvo no banco. Sem isso o catálogo ficaria pesado no 4G do aluno.         */
+const CAPA_LARGURA = 800;      // px
+const CAPA_QUALIDADE = 0.72;
+const CAPA_MAX_KB = 250;       // acima disso o admin é avisado
+
+function campoImagem(c){
+  const v = c.v ?? '';
+  return `<div data-img>
+    <input type="hidden" data-k="${c.k}" value="${esc(v)}">
+    <div class="capa-prev" data-prev>${v ? `<img src="${esc(v)}" alt="">` : '<span>Sem capa. O card usa o emoji sobre a cor.</span>'}</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+      <label class="btn btn-ghost btn-sm" style="cursor:pointer">Escolher imagem
+        <input type="file" accept="image/*" data-file hidden></label>
+      <button type="button" class="btn btn-ghost btn-sm" data-limpa ${v?'':'disabled'}>Remover capa</button>
+    </div>
+    <p class="bar-lbl" style="margin:8px 0 0">Use uma imagem larga, tipo 16 por 9. Ela é reduzida sozinha para 800px antes de salvar.</p>
+  </div>`;
+}
+
+function ligarCampoImagem(box){
+  const hidden = box.querySelector('[data-k]');
+  const prev   = box.querySelector('[data-prev]');
+  const limpa  = box.querySelector('[data-limpa]');
+  const pinta  = url => {
+    hidden.value = url;
+    prev.innerHTML = url ? `<img src="${url}" alt="">` : '<span>Sem capa. O card usa o emoji sobre a cor.</span>';
+    limpa.disabled = !url;
+  };
+  limpa.onclick = ()=>pinta('');
+  box.querySelector('[data-file]').onchange = async e => {
+    const f = e.target.files?.[0]; if(!f) return;
+    if(!f.type.startsWith('image/')) return toast('Isso não é uma imagem.');
+    try{
+      const url = await reduzirImagem(f);
+      const kb = Math.round(url.length * 0.75 / 1024);
+      if(kb > CAPA_MAX_KB) toast(`A capa ficou com ${kb} KB. Funciona, mas uma imagem mais simples deixa o catálogo mais rápido.`);
+      pinta(url);
+    }catch(err){ toast('Não consegui ler essa imagem. Tente um JPG ou PNG.'); }
+    e.target.value = '';
+  };
+}
+
+function reduzirImagem(file){
+  return new Promise((ok, erro)=>{
+    const fr = new FileReader();
+    fr.onerror = ()=>erro(new Error('leitura'));
+    fr.onload = ()=>{
+      const img = new Image();
+      img.onerror = ()=>erro(new Error('decode'));
+      img.onload = ()=>{
+        const larg = Math.min(CAPA_LARGURA, img.naturalWidth || CAPA_LARGURA);
+        const alt  = Math.round(larg * (img.naturalHeight / img.naturalWidth));
+        const cv = document.createElement('canvas');
+        cv.width = larg; cv.height = alt;
+        const ctx = cv.getContext('2d');
+        ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, larg, alt);   // PNG transparente não vira preto
+        ctx.drawImage(img, 0, 0, larg, alt);
+        ok(cv.toDataURL('image/jpeg', CAPA_QUALIDADE));
+      };
+      img.src = fr.result;
+    };
+    fr.readAsDataURL(file);
+  });
+}
+
+function formModal(titulo, campos){
+  return new Promise(resolve=>{
+    abrirModal(`
+      <div class="mhd"><h3>${esc(titulo)}</h3><button class="btn btn-ghost btn-sm" data-fechar>✕</button></div>
+      <div class="mbd">
+        ${campos.map(c=>`<div class="field"><label>${esc(c.l)}</label>${
+          c.t==='textarea' ? `<textarea data-k="${c.k}">${esc(c.v ?? '')}</textarea>`
+          : c.t==='select' ? `<select data-k="${c.k}">${c.opts.map(([val,lab])=>`<option value="${esc(val)}" ${String(c.v)===String(val)?'selected':''}>${esc(lab)}</option>`).join('')}</select>`
+          : c.t==='imagem' ? campoImagem(c)
+          : `<input type="${c.t ?? 'text'}" data-k="${c.k}" value="${esc(c.v ?? '')}">`}</div>`).join('')}
+        <button class="btn btn-primary btn-block" id="fmOk">Salvar</button>
+      </div>`);
+    $('#mcard').querySelectorAll('[data-img]').forEach(ligarCampoImagem);
+    $('#fmOk').onclick = ()=>{
+      const v = {};
+      $('#mcard').querySelectorAll('[data-k]').forEach(i=>v[i.dataset.k] = i.value);
+      fecharModal(true); resolve(v);
+    };
+    $('#mcard').querySelectorAll('[data-fechar]').forEach(b=>b.onclick=()=>{ fecharModal(true); resolve(null); });
+  });
+}
+
+let tt;
+function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('on'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('on'),3200); }
+$('#btnConta').onclick = ()=>location.hash = '#/conta';
+let TEMA = matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+function aplicarTema(t){
+  document.documentElement.dataset.tema = t;
+  $('#tema').textContent = t === 'escuro' ? '☀️' : '🌙';
+}
+aplicarTema(TEMA);
+$('#tema').onclick = ()=>{
+  TEMA = TEMA === 'escuro' ? 'claro' : 'escuro';
+  aplicarTema(TEMA);
+  // [PERSISTIR] localStorage.setItem('tema', TEMA);
+};
+$('#bell').onclick = ()=>toast('Notificações chegam aqui quando houver novidade.');
+window.toast = toast;
+</script>
+</body>
+</html>
